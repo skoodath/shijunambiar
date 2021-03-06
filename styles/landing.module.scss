@@ -1,0 +1,42 @@
+@import 'variables';
+
+.wrapper{
+  height: 90vh;
+  background-color: #fff;
+  display: flex;
+  flex: 1;
+  flex-flow: row nowrap;
+}
+.inner{
+  display: flex;
+  flex: 1;
+  flex-flow: column nowrap;
+  align-items: center;
+  justify-content: center;
+}
+.image_wrapper{
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  img{
+    width: 100%;
+    border-radius: 50%;
+  }
+}
+.titlewrapper{
+  margin: 1rem 0 0 0;
+}
+.valuewrapper{
+  width: 70%;
+  margin: 1rem 0 0 0;
+}
+.contacts{
+  display: flex;
+  justify-content: space-evenly;
+  margin: 1rem 0 0 0;
+  svg{
+    margin: 0.2rem;
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+}

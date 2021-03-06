@@ -1,0 +1,16 @@
+.wrapper{
+  background-color: #fff;
+}
+.inner{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  padding: 2rem 4rem;
+  position: relative;
+  overflow: hidden;
+}
+.description{
+  position: relative;
+}

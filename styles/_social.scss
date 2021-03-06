@@ -1,0 +1,27 @@
+.social{
+  height: 8vh;
+}
+.social__inner{
+  display: flex;
+  flex: 1;
+  position: relative;
+}
+.social__wrap{
+  position: fixed;
+  top: 15px;
+  right: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.social__link{
+   text-decoration: none;
+   display: flex;
+   margin: 0.2rem;
+   &:visited{
+       color: #fff;
+   }
+   svg{
+     fill: $primarybg;
+   }
+}

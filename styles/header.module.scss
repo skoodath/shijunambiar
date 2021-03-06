@@ -1,0 +1,14 @@
+@import 'variables';
+
+.wrapper{
+  height: 10vh;
+  background-color:$primarybg;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.heading{
+  color: #fff;
+  font-weight: 300;
+  text-transform: uppercase;
+}
