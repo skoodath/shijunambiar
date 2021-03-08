@@ -1,11 +1,14 @@
 @import 'variables';
 
 .wrapper{
-  height: 90vh;
-  background-color: #fff;
+  height: 70vh;
+  background-color: #aaa;
   display: flex;
   flex: 1;
   flex-flow: row nowrap;
+  padding: 1rem;
+  position: relative;
+
 }
 .inner{
   display: flex;
@@ -13,6 +16,14 @@
   flex-flow: column nowrap;
   align-items: center;
   justify-content: center;
+  background-color: #fff;
+  border-radius: 4px;
+  height: 105%;
+  position: absolute;
+  width: 90%;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
 }
 .image_wrapper{
   width: 150px;

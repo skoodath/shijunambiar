@@ -1,10 +1,10 @@
-import styles from '../../styles/work.module.scss';
+import styles from '../../styles/technology.module.scss';
 
 const WorkCard = () => {
     return(
-        <article className={styles.wrapper}>
-            <div className={styles.inner}>
-                <div className={styles.imagewrapper}>
+        <article className={styles.card_wrapper}>
+            <div className={styles.card_inner}>
+                <div className={styles.card_image}>
                     <img src="/images/shiju2.jpg" alt="sample image" className={styles.image}/>
                 </div>
                 <div className={styles.desc}>

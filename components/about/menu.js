@@ -6,7 +6,7 @@ const AboutMenu = () => {
             <section className={styles.menuwrapper}>
               <div className={styles.menuwrapper__inner}>
                   <Link href="/work">
-                    <a className={[styles.item, styles.menu__left].join(' ')}>work</a>
+                    <a className={[styles.item, styles.left].join(' ')}>work</a>
                   </Link>
               </div>
             </section>

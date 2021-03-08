@@ -15,7 +15,6 @@ const About = () => {
           <HeaderWrapper />
           <PageTitle text={'About'} />
           <AboutList />
-          <AboutMenu />
         </main>
       </>
     )

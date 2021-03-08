@@ -6,23 +6,28 @@ const AboutList = () => {
         <section className={styles.wrapper}>
           <div className={styles.inner} style={{backgroundColor: "#fff"}}>
             <p className={styles.description}>
-                This is the first paragraph that describes my experience
+                I have been passionately learning <span style={{textTransform: 'uppercase', display: 'inline-block'}}>Web technologies</span> over the last few years 
             </p>
-            <LearnMore link="/about/pageone" text="Learn More" />
+            <LearnMore link="/technologies" text="View Work" />
           </div>
           <div className={styles.inner} style={{backgroundColor: "#f9f9f9"}}>
             <p className={styles.description}>
-                This is the first paragraph that describes my experience. I will talk about previous experience as well.
+                
             </p>
             <LearnMore link="/about/pagetwo" text="Learn More" />
           </div>
           <div className={styles.inner} style={{backgroundColor: "#fff"}}>
             <p className={styles.description}>
-                This is the first paragraph that describes my experience. I will talk about previous experience as well.
+              
             </p>
             <LearnMore link="/about/pagethree" text="Learn More" />
           </div>
-           
+          <div className={styles.inner} style={{backgroundColor: "#f9f9f9"}}>
+            <p className={styles.description}>
+              I take great interest in a varied areas like photography, instrumental music, blogging, social issues.
+            </p>
+            <LearnMore link="/about/photography" text="Sample Photos" />
+          </div>
         </section>
     )
 }

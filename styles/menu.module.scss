@@ -14,33 +14,15 @@
     width: 70%;
     margin: 0 auto;
 }
-.menu__left{
+.left{
     margin-right: auto;
     text-transform: uppercase;
     color: $primarycolor;
     position: relative;
-    &::before{
-        position: absolute;
-        content: '';
-        height: 1px;
-        width: 100%;
-        right: 120%;
-        top: 50%;
-        background: $primarybg;
-    }
 }
-.menu__right{
+.right{
     margin-left: auto;
     text-transform: uppercase;
     position: relative;
     color: $primarycolor;
-    &::after{
-        position: absolute;
-        content: '';
-        height: 1px;
-        width: 100%;
-        left: 120%;
-        top: 50%;
-        background: $primarybg;
-    }
 }

@@ -1,14 +1,14 @@
 import HeaderWrapper from '../../components/headerwrapper';
 import WorkMenu from '../../components/work/menu';
 
-const PageOne = () => {
+const Photography = () => {
   return (
     <>
       <HeaderWrapper />
-      <h2>Page One</h2>
+      <h2>Photography</h2>
       <WorkMenu />
     </>
   )
 }
 
-export default PageOne;
+export default Photography;

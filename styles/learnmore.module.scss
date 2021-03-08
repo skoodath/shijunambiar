@@ -6,13 +6,4 @@
   right: 0;
   margin: 0 3rem 1rem auto;
   z-index: 1;
-  &::after{
-    position: absolute;
-    content: '';
-    height: 1px;
-    width: 100%;
-    left: 120%;
-    top: 50%;
-    background: $primarybg;
-}
 }
