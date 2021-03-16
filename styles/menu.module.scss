@@ -1,28 +1,46 @@
 @import 'variables';
 .menuwrapper{
     position: fixed;
-    width: 100%;
-    height: 7vh;
+    width: 80%;
+    height: 35px;
     bottom: 0;
     margin: 0 auto 1rem;
 }
 .menuwrapper__inner{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     height: 100%;
-    width: 70%;
     margin: 0 auto;
+    border: 1px solid $primarybg;
+    border-radius: 3px;
+    position: relative;
+    &::after{
+       position: absolute;
+       content: '';
+       height: 100%;
+       width: 1px;
+       z-index: 1;
+       background-color: $primarybg;
+       top: 0;
+       left: 50%;
+       transform: translateX(-50%);
+    }
 }
 .left{
-    margin-right: auto;
     text-transform: uppercase;
-    color: $primarycolor;
+    color: $secondarycolor;
     position: relative;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
 }
 .right{
-    margin-left: auto;
     text-transform: uppercase;
     position: relative;
-    color: $primarycolor;
+    color: $secondarycolor;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
 }

@@ -1,8 +1,8 @@
 import HeaderWrapper from '../components/headerwrapper';
 import PageTitle from '../components/pagetitle';
-import WorkMenu from '../components/work/menu';
+import WorkMenu from '../components/work/worklink';
 import WorkCard from '../components/work/workcard';
-import styles from  '../styles/technology.module.scss'
+import styles from  '../styles/technology.module.scss';
 
 const Technologies = () => {
   return (
@@ -38,10 +38,29 @@ const Technologies = () => {
           </ul> 
         </div>
         <div className={styles.inner}>
-          <WorkCard />
+          <h3 className={styles.card_header}>My work</h3>
+        </div>
+        <div className={styles.inner}>
+          <WorkCard 
+            imgsrc={'/images/networked.png'}
+            alttext={'networkEd'}
+            desc={'React website styled with Styled-compoents and animated by gsap'}
+            sitelink={'https://www.networked.in'}
+          />
+          <WorkCard 
+            imgsrc={'/images/solarsystem.png'}
+            alttext={'Solar system 3D'}
+            desc={'A html/css/JavaScript 3D model of solar system'}
+            sitelink={'https://solar-system-sn.netlify.app/'}
+          />
+          <WorkCard 
+            imgsrc={'/images/weatherappjs.png'} 
+            alttext={'Weather App'}
+            desc={'Vanilla Javascript weather app'}
+            sitelink={'https://weather-sn.netlify.app/'}
+          />
         </div>
       </div>
-      <WorkMenu />
     </>
   )
 }

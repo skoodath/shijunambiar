@@ -1,14 +1,20 @@
 import styles from '../../styles/technology.module.scss';
 
-const WorkCard = () => {
+const WorkCard = ({imgsrc, alttext, desc, sitelink}) => {
     return(
         <article className={styles.card_wrapper}>
             <div className={styles.card_inner}>
                 <div className={styles.card_image}>
-                    <img src="/images/shiju2.jpg" alt="sample image" className={styles.image}/>
+                    <img src={imgsrc} alt={alttext} className={styles.image}/>
                 </div>
                 <div className={styles.desc}>
-                    <p>Built on React, a site to manage this and that</p>
+                    <p className={styles.desc_text}>{desc}</p>
+                    <a 
+                      href={sitelink} 
+                      target="blank" 
+                      className={styles.worksite}>
+                        visit site
+                     </a>
                 </div>
             </div>
         </article>

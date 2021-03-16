@@ -3,9 +3,14 @@
 @import 'social';
 
 .wrapper{
+  position: fixed;
+  height: 8vh;
   display: flex;
+  padding: 0 0.5rem;
+  align-items: center;
   top: 0;
   left: 0;
   width: 100%;
-  z-index: 999;
+  z-index: 2;
+  background-color: #fcfcfc;
 }

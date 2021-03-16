@@ -1,5 +1,5 @@
 import styles from '../styles/headerwrapper.module.scss';
-import { FaEnvelope, FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedinIn } from 'react-icons/fa';
 
 const Social = () => {
     return(
@@ -7,14 +7,9 @@ const Social = () => {
           <div className={styles.social__inner}>
             <div className={styles.social__wrap}>
               <a 
-                href="mailto:shiju.nambiar@outlook.com" 
-                className={styles.social__link}>
-                  <FaEnvelope />
-              </a>
-              <a 
                 className={styles.social__link}
                 href="https://www.linkedin.com/in/nambiars/">
-                  <FaLinkedin />
+                  <FaLinkedinIn />
               </a>
               <a 
                 className={styles.social__link}

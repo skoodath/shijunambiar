@@ -1,7 +1,6 @@
 import Head from 'next/head';
 import HeaderWrapper from '../components/headerwrapper';
 import PageTitle from '../components/pagetitle';
-import WorkMenu from '../components/work/menu';
 import WorkCard from '../components/work/workcard';
 
 const Work = () => {
@@ -14,7 +13,6 @@ const Work = () => {
           <HeaderWrapper />
           <PageTitle text={'Work'} />
           <WorkCard />
-          <WorkMenu />
         </main>
         
       </>

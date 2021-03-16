@@ -6,7 +6,6 @@ const Photography = () => {
     <>
       <HeaderWrapper />
       <h2>Photography</h2>
-      <WorkMenu />
     </>
   )
 }

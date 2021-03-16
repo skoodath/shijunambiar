@@ -1,15 +1,13 @@
 .brand{
-    height: 8vh;
+    height: auto;
+    width: 100%;
 }
 .brand__inner{
     display: flex;
-    flex: 1;
     position: relative;
 }
 .brand__wrap{
-    position: fixed;
-    top: 15px;
-    left: 15px;
+
     width: 20px;
     height: 20px;
     display: flex;
