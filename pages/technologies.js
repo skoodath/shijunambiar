@@ -1,10 +1,11 @@
 import HeaderWrapper from '../components/headerwrapper';
 import PageTitle from '../components/pagetitle';
-import WorkMenu from '../components/work/worklink';
 import WorkCard from '../components/work/workcard';
 import styles from  '../styles/technology.module.scss';
+import { useState } from 'react';
 
 const Technologies = () => {
+
   return (
     <>
       <HeaderWrapper />
