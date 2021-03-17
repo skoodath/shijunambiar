@@ -1,5 +1,4 @@
 import HeaderWrapper from '../../components/headerwrapper';
-import WorkMenu from '../../components/work/menu';
 
 const Photography = () => {
   return (

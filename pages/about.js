@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import AboutList from '../components/about/aboutlist';
-import AboutMenu from '../components/about/menu';
 import HeaderWrapper from '../components/headerwrapper';
 import PageTitle from '../components/pagetitle';
 
