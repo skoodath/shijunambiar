@@ -1,7 +1,8 @@
 import Head from 'next/head';
-import AboutList from '../components/about/aboutlist';
-import HeaderWrapper from '../components/headerwrapper';
-import PageTitle from '../components/pagetitle';
+import Menu from '../components/globalmenu';
+import Brand from '../components/brand';
+import Introduction from '../components/about/intro';
+
 
 const About = () => {
     return (
@@ -11,9 +12,9 @@ const About = () => {
         </Head>
   
         <main>
-          <HeaderWrapper />
-          <PageTitle text={'About'} />
-          <AboutList />
+          <Brand />
+          <Menu />
+          <Introduction />
         </main>
       </>
     )

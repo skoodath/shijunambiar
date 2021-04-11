@@ -1,45 +1,108 @@
 @import 'variables';
+@import 'brand';
+@import 'menu';
+@import 'social';
 
 .wrapper{
-  height: 60vh;
-  background-color:#cccccc;
-  display: flex;
-  flex: 1;
-  flex-flow: row nowrap;
-  padding: 1rem;
+  height: 100vh;
+  background-color:#ffffff;
+  padding: 0;
   position: relative;
-
 }
 .inner{
   display: flex;
-  flex: 1;
   flex-flow: column nowrap;
-  align-items: center;
-  justify-content: center;
   background-color: #fff;
-  border-radius: 4px;
-  height: 105%;
-  position: absolute;
-  width: 90%;
-  top: -50px;
-  left: 50%;
-  transform: translateX(-50%);
-}
-.image_wrapper{
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  img{
-    width: 100%;
-    border-radius: 50%;
-  }
-}
-.titlewrapper{
-  margin: 1rem 0 0 0;
-}
-.valuewrapper{
-  width: 80%;
-  max-width: 260px;
-  margin: 1rem 0 0 0;
+  max-width: $xxl;
+  margin: 0 auto;
+  padding: 0 3rem;
+  height: 100%;
+  position: relative;
 }
 
+.salute{
+  background-color:$primarybg;
+  display: flex;
+  align-items: center;
+}
+.salute_para{
+  font-size: 1.7rem;
+}
+.name{
+  margin: 20% 0 0 0;
+  display: flex;
+  flex-direction: column;
+  background-color: $primarybg;
+}
+.namewrapper{
+  display: flex;
+  align-items: center;
+}
+.nametext{
+  font-size: 7rem;
+  font-weight: 400;
+  line-height: normal;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: $secondarycolor;
+}
+.value{
+  height: auto;
+  width: 100%;
+  padding: 1rem 3rem;
+}
+.value_para{
+  font-size: 1.5rem;
+  line-height: 1.5;
+  letter-spacing: 0.10rem;
+  word-spacing: 0.15rem;
+}
+
+@media screen and (max-width: $xl) {
+  .name{
+    margin: 30% 0 0 0;
+  }
+}
+
+@media screen and (max-width: $lg){
+  .inner{
+    padding: 0 1.5rem;
+  }
+  .nametext{
+    font-size: 7rem;
+  }
+  .cta{
+    font-size: 1.3rem;
+  }
+  .namewrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .value{
+    padding: 0;
+    margin: 0 0 1rem 0;
+  }
+  .value_para{
+    font-size: 1.2rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.10rem;
+  }
+}
+@media screen and (max-width: $md){
+  .name{
+    margin: 40% 0 0 0;
+  }
+  .nametext{
+    font-size: 4rem;
+  }
+  .value_para{
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    word-spacing: 0.10rem;
+  }
+  .cta{
+    font-size: 1.1rem;
+  }
+}

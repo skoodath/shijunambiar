@@ -1,29 +1,41 @@
-.brand{
-    height: auto;
-    width: 100%;
-}
-.brand__inner{
-    display: flex;
-    position: relative;
-}
-.brand__wrap{
+@import 'variables';
 
-    width: 20px;
-    height: 20px;
+.brand{
+    height: 10vh;
+    position: fixed;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    left: 3rem;
+    z-index: 101;
+    user-select: none;
+  }
+  .brand__wrap{
+  
+    width: 2.6rem;
+    height: 2.6rem;
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: $primarybg;
+    background-color: $accentcolor;
     border-radius: 50%;
-    padding: 1rem;
     z-index: 99;
-}
-.brand__link{
+  }
+  .brand__link{
      
-     color: #fff;
+     color: $secondarycolor;
      text-decoration: none;
-     
+     font-size:1.2rem;
+     line-height: normal;
      &:visited{
-         color: #fff;
+         color: $secondarycolor;
      }
+  }
+
+@media screen and (max-width: $lg){
+  .brand{
+    left: 1.5rem;
+  }
 }

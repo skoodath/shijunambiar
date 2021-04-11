@@ -1,0 +1,68 @@
+@import 'variables';
+
+.menuwrapper{
+  position: fixed;
+  height: 10vh;
+  width: 100%;
+  padding: 0 2rem 0 0;
+  top: 0;
+  right: 0;
+  z-index: 1;
+}
+.menuwrapper__inner{
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  height: 100%;
+  margin: 0;
+  position: relative;
+  background-color: #ffffff;
+}
+.menuitem{
+  text-transform: uppercase;
+  color: #091768;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  letter-spacing: 1px;
+  transition-property: font-size;
+  transition-duration: 0.2s;
+  &:hover{
+    font-size: 1.8rem;
+    text-decoration: underline;
+    color: $accentcolor;
+  }
+}
+
+
+@media screen and (max-width: $lg){
+
+  .menuwrapper{
+    padding: 0 1.5rem 0 0;
+  }
+  .menuwrapper__inner{
+    margin: 0;
+
+  }
+  .menuitem{
+    margin: 0 0.5rem;
+    font-size: 1.2rem;
+
+    &:hover{
+      font-size: 1.5rem;
+    }
+  }
+}
+@media screen and (max-width: $lg){
+  .menuitem{
+    margin: 0 0.5rem;
+    font-size: 1rem;
+
+    &:hover{
+      font-size: 1.2rem;
+    }
+  }
+}

@@ -1,26 +1,21 @@
-.social{
+.cta_wrapper{
   height: auto;
-  width: 100%;
-}
-.social__inner{
-  display: flex;
   position: relative;
-  justify-content: flex-end;
-  align-items: flex-end;
-}
-.social__wrap{
+  align-items: center;
   display: flex;
-  z-index: 99;
 }
-.social__link{
-   text-decoration: none;
-   display: flex;
-   margin: 0.2rem;
-   &:visited{
-       color: #fff;
-   }
-   svg{
-     fill: $primarybg;
-     font-size: 24px;
-   }
+.cta{
+  color: $primarycolor;
+  font-size: 1.5rem;
+  transition-property: letter-spacing;
+  transition-duration: 0.2s;
+  margin: 0 1rem 0 0;
+  &:visited{
+    color: $primarycolor;
+  }
+  &:hover{
+    color: #1f44ffd5;
+    letter-spacing: 2px;
+    border-bottom: 2px solid;
+  }
 }

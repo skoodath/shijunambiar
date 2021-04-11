@@ -1,6 +1,5 @@
 import Head from 'next/head';
 import LandingPage from './home';
-import Footer from '../components/footer';
 
 const Home = () => {
   return (

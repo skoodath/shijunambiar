@@ -1,16 +1,133 @@
+@import 'variables';
+
 .wrapper{
-  background-color: #fff;
-  padding: 1rem;
+  background-color:#ffffff;
+  padding: 0;
+  position: relative;
+
 }
 .inner{
   display: flex;
-  min-height: 200px;
-  padding: 1rem 2rem;
+  flex-flow: column nowrap;
+  background-color: #fff;
+  padding: 0;
+  margin: 0 auto;
+  max-width: $xxl;
+  height: 100%;
   position: relative;
-  overflow: hidden;
-  border-radius: 4px;
 }
-.description{
-  position: relative;
+
+
+.intro_wrapper{
+  margin: 10vh 0 0 0;
+}
+.intro_section_intro{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 70vh;
+}
+.image_wrapper{
+  width: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_inner{
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  overflow: hidden;
+  img{
+    width: 100%;
+  }
+}
+
+.text_wrapper{
+  width: 100%;
+}
+.introduction{
   letter-spacing: 1px;
+  padding: 0 5rem 0 0;
+  font-size: 1.2rem;
+}
+.intro_skills_wrapper{
+  display: flex;
+  flex-direction: column;
+}
+
+.intro_skills_inner_alt{
+  display: flex;
+  background-color: #fdfdfd;
+  padding: 0 3rem;
+}
+.intro_skills_inner{
+  display: flex;
+  background-color: #ffffff;
+  padding: 0 3rem;
+}
+.card_wrapper{
+  margin: 0 0 4rem 0;
+  padding: 2rem 0
+}
+.card_title{
+  margin: 0 0 2rem 0;
+  font-size: 2rem;
+  font-weight: 300;
+}
+.card_text{
+  letter-spacing: 1px;
+}
+@media screen and (max-width: $xxl){
+  .introduction{
+    padding: 0 5rem;
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (max-width: $lg){
+  .intro_section_intro{
+    flex-direction: column;
+    height: 50vh;
+  }
+  .image_inner{
+    margin: 0 0 3rem 0;
+    img{
+      width: 100%;
+    }
+  }
+  .introduction{
+    letter-spacing: 1px;
+    padding: 0 5rem;
+  }
+}
+
+@media screen and (max-width: $sm){
+  .intro_section_intro{
+    flex-direction: column;
+    height: 80vh;
+  }
+  .image_inner{
+    width: 130px;
+  height: 130px;
+    margin: 0 0 3rem 0;
+    img{
+      width: 100%;
+    }
+  }
+  .introduction{
+    letter-spacing: 1px;
+    padding: 0 2rem;
+    font-size: 1rem;
+  }
+  .card_wrapper{
+    margin: 0 0 2rem 0;
+    padding: 2rem 0;
+  }
+  .intro_skills_inner_alt{
+    padding: 0 2rem;
+  }
+  .intro_skills_inner{
+    padding: 0 2rem;
+  }
 }

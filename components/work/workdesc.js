@@ -1,4 +1,4 @@
-import styles from '../../styles/technology.module.scss';
+import styles from '../../styles/work.module.scss';
 
 const WorkDesc = ({text}) => (
   <p className={styles.desc_text}>{text}</p>
