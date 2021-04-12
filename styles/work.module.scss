@@ -30,16 +30,28 @@
 }
 .techlistitem{
   list-style-type: none;
-  padding: 0.2rem 1rem;
-  color: #333;
+  padding: 0.2rem 0.5rem;
+  color: $primarycolor;
   margin: 0.2rem;
   display: flex;
   justify-content: center;
   align-items: center;
-  border-radius: 5px;
-  box-shadow: 0 0 1px 1px #eee;
   user-select: none;
-  font-size: 0.8rem;
+  font-size: 1rem;
+  border: 1px solid transparent;
+  position: relative;
+  &::after{
+    position: absolute;
+    content: '';
+    height: 0;
+    top: 50%;
+    left: 0;
+    width: 0;
+    transform: translateY(-50%);
+    border-top: 5px solid transparent;
+    border-bottom: 5px solid transparent;
+    border-left: 5px solid $primarycolor;
+  }
 }
 
 .card_header{
@@ -124,27 +136,58 @@
     user-select: none;
     font-size: 0.8rem;
   }
-.worksite{
-  text-transform: uppercase;
-  width: 100px;
-  padding: 0.5rem;
-  margin: 0 auto;
-  font-size: 0.8rem;
-  align-items: center;
+
+.viewbutton{
+  width: 130px;
+  height: 35px;
+  display: flex;
   justify-content: center;
+  align-items: center;
   position: relative;
-  color: #ffffff;
-  display: flex;
-  justify-content: center;
-}
-.banner{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #000000c2;
   overflow: hidden;
-  border-radius: 4px;
+  cursor: pointer;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+  transition: color 0.5s;
+  box-shadow: 1px 1px 2px rgb(201, 201, 201),
+            -1px -1px 2px rgb(201, 201, 201);
+  &:hover{
+    background-color: $accentcolor;
+    color: $primarycolor;
+    .view_text{
+      color: $primarycolor;
+    }
+  }
+
 }
+.view_dark{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $primarycolor;
+}
+.view_lite{
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background-color: $accentcolor;
+  width: 0;
+  transition: width 0.3s cubic-bezier(0.95, 0.885, 0.00032, 0.002);
+
+}
+.view_lite_fill{
+  width: 100%;
+}
+.view_text{
+  color: #ffffff;
+  z-index: 2;
+  transition: color 0.5s;
+}
+
 @media screen and (max-width: $lg){
   .inner{
     padding: 0 1.5rem;
@@ -225,6 +268,9 @@
 
 }
 @media screen and (max-width: $sm) {
+  .card_wrapper{
+    margin: 0 0 1rem 0;
+  }
   .desc_text{
     font-size: 0.9rem;
   }

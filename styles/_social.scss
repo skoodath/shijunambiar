@@ -5,13 +5,13 @@
   display: flex;
 }
 .cta{
-  color: $primarycolor;
+  color: #ffdb1f;
   font-size: 1.5rem;
   transition-property: letter-spacing;
   transition-duration: 0.2s;
   margin: 0 1rem 0 0;
   &:visited{
-    color: $primarycolor;
+    color: #ffdb1f;
   }
   &:hover{
     color: #1f44ffd5;

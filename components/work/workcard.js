@@ -1,4 +1,5 @@
 import styles from  '../../styles/work.module.scss';
+import ViewButton from './workbutton';
 
 const WorkCard = () => {
 
@@ -7,8 +8,7 @@ const WorkCard = () => {
       <div className={styles.wrapper}>
         <div className={styles.inner}>
           <ul className={styles.techlist}>
-            <li className={styles.techlistitem}>Adobe XD</li>
-            <li className={styles.techlistitem}>Figma</li>
+            <li className={styles.techlistitem}>Web Designs</li>
             <li className={styles.techlistitem}>HTML</li>
             <li className={styles.techlistitem}>CSS</li>
             <li className={styles.techlistitem}>JavaScript</li>
@@ -17,21 +17,20 @@ const WorkCard = () => {
             <li className={styles.techlistitem}>Redux</li>
             <li className={styles.techlistitem}>Angular</li>
             <li className={styles.techlistitem}>Sass</li>
-            <li className={styles.techlistitem}>Styled-components</li>
+            <li className={styles.techlistitem}>Styled-Components</li>
             <li className={styles.techlistitem}>Node</li>
             <li className={styles.techlistitem}>Express</li>
             <li className={styles.techlistitem}>MongoDB</li>
-            <li className={styles.techlistitem}>JWT</li>
             <li className={styles.techlistitem}>git</li>
             <li className={styles.techlistitem}>Agile</li>
             <li className={styles.techlistitem}>JIRA</li>
             <li className={styles.techlistitem}>Web hosting</li>
-            <li className={styles.techlistitem}>Continuous Deployment</li>
+            <li className={styles.techlistitem}>CICD</li>
 
           </ul> 
         </div>
         <div className={styles.inner}>
-          <h3 className={styles.card_header}>My work</h3>
+          <h3 className={styles.card_header}>Projects</h3>  
         </div>
         <div className={styles.exp_inner}>
         <article 
@@ -53,11 +52,7 @@ const WorkCard = () => {
                             <li className={styles.cardtechitem}>Greensock</li>
                             <li className={styles.cardtechitem}>ParticleJS</li>
                          </ul> 
-                        <div className={styles.banner}>
-                            <span className={styles.worksite}>
-                                <a href='https://www.networked.in' target="blank">View site</a>
-                            </span>
-                        </div>
+                        <ViewButton link={'https://www.networked.in'} />
                 </div>
           
             </div>
@@ -83,13 +78,9 @@ const WorkCard = () => {
                   <li className={styles.cardtechitem}>Netlify</li>
 
                 </ul> 
-              <div className={styles.banner}>
-                <span className={styles.worksite}>
-                    <a href='https://www.networked.in' target="blank">View site</a>
-                </span>
-              </div>
+              <ViewButton link={'https://solar-system-sn.netlify.app/'} />
             </div>
-            </div>
+          </div>
         </article>
         <article 
             className={styles.card_wrapper}
@@ -112,14 +103,9 @@ const WorkCard = () => {
                     <li className={styles.cardtechitem}>Sass</li>
                     <li className={styles.cardtechitem}>Github</li>
                     <li className={styles.cardtechitem}>Netlify</li>
-
-                  </ul>
-                  <div className={styles.banner}>
-                    <span className={styles.worksite}>
-                      <a href='https://www.networked.in' target="blank">View site</a>
-                    </span>
-                  </div>
-                </div>
+                </ul>
+                <ViewButton link={`https://weather-sn.netlify.app/`} />
+              </div>
           </div>
         </article>
         <article 
@@ -144,11 +130,7 @@ const WorkCard = () => {
                     <li className={styles.cardtechitem}>Netlify</li>
 
                   </ul>
-                  <div className={styles.banner}>
-                    <span className={styles.worksite}>
-                      <a href='https://www.networked.in' target="blank">View site</a>
-                    </span>
-                  </div>
+                  <ViewButton link={'https://snweather.netlify.app/'} />
                 </div>
           </div>
         </article>
