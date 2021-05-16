@@ -8,8 +8,6 @@ const Landing = () => {
     return (
         <div className={styles.wrapper}>
           <div className={styles.inner}>
-            <Brand />
-            <Menu />
             <Name />
             <Social />
           </div>

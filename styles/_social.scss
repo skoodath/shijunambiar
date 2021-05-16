@@ -1,20 +1,20 @@
-.cta_wrapper{
+.cta_wrapper {
   height: auto;
   position: relative;
   align-items: center;
   display: flex;
 }
-.cta{
-  color: #ffdb1f;
+.cta {
+  color: $buttoncolor;
   font-size: 1.5rem;
   transition-property: letter-spacing;
   transition-duration: 0.2s;
   margin: 0 1rem 0 0;
-  &:visited{
-    color: #ffdb1f;
+  &:visited {
+    color: $buttoncolor;
   }
-  &:hover{
-    color: #1f44ffd5;
+  &:hover {
+    color: $accentcolor;
     letter-spacing: 2px;
     border-bottom: 2px solid;
   }

@@ -1,133 +1,98 @@
-@import 'variables';
+@import "variables";
+@import "skillcard";
 
-.wrapper{
-  background-color:#ffffff;
+.wrapper {
+  background-color: $accentcolor;
   padding: 0;
   position: relative;
-
-}
-.inner{
   display: flex;
-  flex-flow: column nowrap;
-  background-color: #fff;
-  padding: 0;
-  margin: 0 auto;
-  max-width: $xxl;
-  height: 100%;
-  position: relative;
 }
-
-
-.intro_wrapper{
-  margin: 10vh 0 0 0;
-}
-.intro_section_intro{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 70vh;
-}
-.image_wrapper{
-  width: 70%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-.image_inner{
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  overflow: hidden;
-  img{
-    width: 100%;
-  }
-}
-
-.text_wrapper{
-  width: 100%;
-}
-.introduction{
-  letter-spacing: 1px;
-  padding: 0 5rem 0 0;
-  font-size: 1.2rem;
-}
-.intro_skills_wrapper{
+.inner {
   display: flex;
   flex-direction: column;
-}
-
-.intro_skills_inner_alt{
-  display: flex;
-  background-color: #fdfdfd;
-  padding: 0 3rem;
-}
-.intro_skills_inner{
-  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 20vh 0 0;
+  margin: 0 auto;
+  max-width: $xxl;
+  position: relative;
   background-color: #ffffff;
-  padding: 0 3rem;
 }
-.card_wrapper{
-  margin: 0 0 4rem 0;
-  padding: 2rem 0
+.intro_card {
+  background-color: #ffffff;
+  height: 100vh;
 }
-.card_title{
-  margin: 0 0 2rem 0;
-  font-size: 2rem;
-  font-weight: 300;
+
+.intro_inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
 }
-.card_text{
+.image_wrapper {
+  width: 100%;
+  height: 50%;
+  margin: 0;
+}
+.image_inner {
+  width: 80%;
+  height: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+  img {
+    width: 100%;
+    max-width: 350px;
+  }
+}
+
+.text_wrapper {
+  padding: 1rem 0 0 0;
+}
+.introduction {
   letter-spacing: 1px;
-}
-@media screen and (max-width: $xxl){
-  .introduction{
-    padding: 0 5rem;
-    font-size: 1.5rem;
-  }
+  padding: 0;
+  font-size: 1rem;
 }
 
-@media screen and (max-width: $lg){
-  .intro_section_intro{
-    flex-direction: column;
-    height: 50vh;
+@media screen and (min-width: $xl) {
+  .wrapper {
+    padding: 0 2rem;
   }
-  .image_inner{
-    margin: 0 0 3rem 0;
-    img{
+  .inner {
+    background-color: transparent;
+  }
+  .intro_card {
+    height: 60vh;
+  }
+  .intro_inner {
+    height: 60vh;
+    flex-direction: row;
+    padding: 0;
+  }
+  .image_wrapper {
+    width: 30%;
+    min-width: 420px;
+    height: 100%;
+    margin: 0;
+  }
+  .image_inner {
+    width: 100%;
+    height: 100%;
+    margin: 0 auto;
+    img {
       width: 100%;
+      height: 100%;
+      max-width: 100%;
     }
   }
-  .introduction{
-    letter-spacing: 1px;
+  .text_wrapper {
+    width: 70%;
+  }
+  .introduction {
     padding: 0 5rem;
-  }
-}
-
-@media screen and (max-width: $sm){
-  .intro_section_intro{
-    flex-direction: column;
-    height: 80vh;
-  }
-  .image_inner{
-    width: 130px;
-  height: 130px;
-    margin: 0 0 3rem 0;
-    img{
-      width: 100%;
-    }
-  }
-  .introduction{
-    letter-spacing: 1px;
-    padding: 0 2rem;
-    font-size: 1rem;
-  }
-  .card_wrapper{
-    margin: 0 0 2rem 0;
-    padding: 2rem 0;
-  }
-  .intro_skills_inner_alt{
-    padding: 0 2rem;
-  }
-  .intro_skills_inner{
-    padding: 0 2rem;
+    font-size: 2rem;
   }
 }

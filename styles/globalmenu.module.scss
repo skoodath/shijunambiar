@@ -1,68 +1,90 @@
-@import 'variables';
+@import "variables";
 
-.menuwrapper{
+.brand {
+  height: 10vh;
+  position: fixed;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 1rem;
+  z-index: 101;
+  user-select: none;
+}
+.brand__wrap {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #ffffff;
+  border-radius: 50%;
+  z-index: 99;
+}
+.brand__link {
+  color: $primarycolor;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: normal;
+  &:visited {
+    color: $primarycolor;
+  }
+}
+
+.menuwrapper {
   position: fixed;
   height: 10vh;
   width: 100%;
-  padding: 0 2rem 0 0;
+  padding: 0;
   top: 0;
   right: 0;
   z-index: 1;
+  background-color: $accentcolor;
 }
-.menuwrapper__inner{
+.menuwrapper__inner {
   display: flex;
   justify-content: flex-end;
   align-items: center;
   height: 100%;
   margin: 0;
   position: relative;
-  background-color: #ffffff;
+  padding: 0 1rem 0 0;
 }
-.menuitem{
+.menuitem {
   text-transform: uppercase;
-  color: #091768;
+  color: $primarycolor;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 0 1rem;
-  font-size: 1.5rem;
+  margin: 0 0 0 0.5rem;
+  font-size: 0.8rem;
   letter-spacing: 1px;
   transition-property: font-size;
   transition-duration: 0.2s;
-  &:hover{
+  &:hover {
     font-size: 1.8rem;
     text-decoration: underline;
-    color: $accentcolor;
+    color: #ffffff;
   }
 }
 
-
-@media screen and (max-width: $lg){
-
-  .menuwrapper{
-    padding: 0 1.5rem 0 0;
+@media screen and (min-width: $xl) {
+  .menuwrapper {
+    padding: 0;
+    background-color: transparent;
   }
-  .menuwrapper__inner{
+  .menuwrapper__inner {
     margin: 0;
-
+    padding: 2rem;
   }
-  .menuitem{
+  .menuitem {
     margin: 0 0.5rem;
     font-size: 1.2rem;
 
-    &:hover{
+    &:hover {
       font-size: 1.5rem;
-    }
-  }
-}
-@media screen and (max-width: $lg){
-  .menuitem{
-    margin: 0 0.5rem;
-    font-size: 1rem;
-
-    &:hover{
-      font-size: 1.2rem;
     }
   }
 }

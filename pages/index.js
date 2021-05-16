@@ -1,5 +1,7 @@
 import Head from 'next/head';
-import LandingPage from './home';
+import Brand from '../components/brand';
+import Landing from '../components/home/landing';
+import Menu from '../components/menu';
 
 const Home = () => {
   return (
@@ -9,7 +11,9 @@ const Home = () => {
       </Head>
 
       <main>
-        <LandingPage />
+        <Brand />
+        <Menu />
+        <Landing />
       </main>
     </>
   )

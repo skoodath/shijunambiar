@@ -1,35 +1,22 @@
 import styles from '../../styles/about.module.scss';
-import LearnMore from '../learnmore';
 
-const AboutList = () => {
+const AboutMe = () => {
     return(
-        <section className={styles.wrapper}>
-          <div className={styles.inner} style={{backgroundColor: "#fff"}}>
-            <p className={styles.description}>
-                I have been passionately learning <span style={{textTransform: 'uppercase', display: 'inline-block'}}>Web technologies</span> over the last few years 
-            </p>
-            <LearnMore link="/technologies" text="View work" />
+        <article className={styles.intro_card}>
+          <div className={styles.intro_inner}>
+              <div className={styles.image_wrapper}>
+                  <div className={styles.image_inner}>
+                    <img className={styles.profile} src="../../images/profile.jpg" alt="Shiju Nambiar" />
+                  </div> 
+              </div>
+              <div className={styles.text_wrapper}>
+                <p className={styles.introduction}>
+                  I am self taught software developer who is in love with web technologies. I consistently perserve to learn new skills. I am self taught software developer who is in love with web technologies. I consistently perserve to learn new skills. I am self taught software developer who is in love with web technologies. I consistently perserve to learn new skills.
+                </p>
+              </div>
           </div>
-          <div className={styles.inner} style={{backgroundColor: "#f9f9f9"}}>
-            <p className={styles.description}>
-                
-            </p>
-            <LearnMore link="/about/pagetwo" text="Learn more" />
-          </div>
-          <div className={styles.inner} style={{backgroundColor: "#fff"}}>
-            <p className={styles.description}>
-              
-            </p>
-            <LearnMore link="/about/pagethree" text="Learn more" />
-          </div>
-          <div className={styles.inner} style={{backgroundColor: "#f9f9f9"}}>
-            <p className={styles.description}>
-              I take great interest in a varied areas like photography, instrumental music, blogging, social issues.
-            </p>
-            <LearnMore link="/about/photography" text="My shots" />
-          </div>
-        </section>
+        </article>
     )
 }
 
-export default AboutList;
+export default AboutMe;

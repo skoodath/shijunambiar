@@ -1,60 +1,23 @@
-@import 'variables';
+@import "variables";
 
-.wrapper{
-  margin: 10vh 0 0 0;
-}
-.inner{
+.wrapper {
+  margin: 0;
+  background-color: #ffffff;
   display: flex;
-  flex-flow: row wrap;
-  padding: 0;
-  max-width: $xxl;
-  margin: 0 auto;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
-.exp_inner{
+
+.exp_inner {
   display: flex;
-  flex-flow: column;
+  flex-direction: column;
   padding: 0 3rem;
   max-width: $xxl;
-  margin: 0 auto;
-
-}
-.techlist{
-  display: flex;
-  flex-flow: row wrap;
-  flex: auto;
-  justify-content: center;
-  align-items: center;
-  padding: 1rem;
-  width: 80%;
-  margin: 0 auto;
-}
-.techlistitem{
-  list-style-type: none;
-  padding: 0.2rem 0.5rem;
-  color: $primarycolor;
-  margin: 0.2rem;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  user-select: none;
-  font-size: 1rem;
-  border: 1px solid transparent;
-  position: relative;
-  &::after{
-    position: absolute;
-    content: '';
-    height: 0;
-    top: 50%;
-    left: 0;
-    width: 0;
-    transform: translateY(-50%);
-    border-top: 5px solid transparent;
-    border-bottom: 5px solid transparent;
-    border-left: 5px solid $primarycolor;
-  }
+  margin: 20vh auto 0;
 }
 
-.card_header{
+.card_header {
   font-size: 1.2rem;
   text-transform: uppercase;
   font-weight: 300;
@@ -62,82 +25,81 @@
   margin: 2rem auto;
 }
 
-.card_wrapper{
+.card_wrapper {
   overflow: hidden;
   flex: none;
   padding: 2rem 0;
-  height: 400px;
-  &:last-child{
+  height: auto;
+  &:last-child {
     margin: 0 0 3rem 0;
   }
 }
 
-.card_inner{
+.card_inner {
   position: relative;
   display: flex;
+  flex-direction: column;
   height: 100%;
 }
-.card_image{
-  width: 40vw;
-  max-width: 500px;
-  height: 300px;
+.card_image {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
   padding: 0;
   overflow: hidden;
   background-color: #ffffff;
   display: flex;
   justify-content: center;
   align-items: center;
-  img{
-    max-width: 40vw;
-    max-height: 240px;
-    box-shadow:0 0 10px rgb(182, 182, 182);
-    border-radius: 3px;
-
+  margin: 0 auto;
+  height: 100%;
+  border-radius: 3px 3px 0 0;
+  img {
+    max-width: 100%;
+    box-shadow: 0 0 10px rgb(182, 182, 182);
+    border-radius: 3px 3px 0 0;
   }
 }
 
-.desc{
-  width: 70%;
+.desc {
   height: 100%;
   display: flex;
   flex-direction: column;
   background-color: #ffffff;
   align-items: center;
-  padding: 2rem;
+  padding: 1rem 0.5rem;
   transform: translateY(0%);
   transition: all 0.5s cubic-bezier(1, 0.82, 0.165, 1);
 }
-.desc_text{
-    margin: 0 0 2rem 0;
-    font-size: 1.5rem;
-    color: $primarycolor;
-  }
+.desc_text {
+  margin: 0 0 2rem 0;
+  font-size: 1rem;
+}
 
-  .cardtech{
-    display: flex;
-    flex-flow: row wrap;
-    flex: 0;
-    justify-content: center;
-    align-items: center;
-    padding: 1rem;
-    width: 80%;
-    margin: 0 auto;
-  }
-  .cardtechitem{
-    list-style-type: none;
-    padding: 0.2rem 1rem;
-    color: #333;
-    margin: 0.2rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 2px;
-    box-shadow: 0 0 1px 1px #eee;
-    user-select: none;
-    font-size: 0.8rem;
-  }
+.cardtech {
+  display: flex;
+  flex-flow: row wrap;
+  flex: 0;
+  justify-content: center;
+  align-items: center;
+  padding: 0 0.2rem;
+  margin: 0 auto 1rem;
+}
+.cardtechitem {
+  list-style-type: none;
+  padding: 0.2rem;
+  margin: 0.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 2px;
+  box-shadow: 0 0 1px 1px #eee;
+  user-select: none;
+  font-size: 0.8rem;
+  color: $buttoncolor;
+}
 
-.viewbutton{
+.viewbutton {
   width: 130px;
   height: 35px;
   display: flex;
@@ -149,110 +111,82 @@
   text-transform: uppercase;
   font-size: 0.9rem;
   transition: color 0.5s;
-  box-shadow: 1px 1px 2px rgb(201, 201, 201),
-            -1px -1px 2px rgb(201, 201, 201);
-  &:hover{
+  box-shadow: 1px 1px 2px rgb(201, 201, 201), -1px -1px 2px rgb(201, 201, 201);
+  &:hover {
     background-color: $accentcolor;
     color: $primarycolor;
-    .view_text{
-      color: $primarycolor;
+    .view_text {
+      color: $accentcolor;
     }
   }
-
 }
-.view_dark{
+.view_dark {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $primarycolor;
+  background-color: $secondarycolor1;
 }
-.view_lite{
+.view_lite {
   position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
   left: 0;
-  background-color: $accentcolor;
+  background-color: $secondarycolor;
   width: 0;
   transition: width 0.3s cubic-bezier(0.95, 0.885, 0.00032, 0.002);
-
 }
-.view_lite_fill{
+.view_lite_fill {
   width: 100%;
 }
-.view_text{
+.view_text {
   color: #ffffff;
   z-index: 2;
   transition: color 0.5s;
 }
 
-@media screen and (max-width: $lg){
-  .inner{
-    padding: 0 1.5rem;
+@media screen and (min-width: $xl) {
+  .wrapper {
+    background-color: $accentcolor;
   }
-  .exp_inner{
-    padding: 0 1.5rem;
-  
+  .card_inner {
+    flex-direction: row;
+    height: 100%;
   }
-  .card_wrapper{
-    height: auto;
-    &:last-child{
+  .card_wrapper {
+    height: 400px;
+    &:last-child {
       margin: 0 0 3rem 0;
     }
   }
-  .card_inner{
-    flex-direction: row;
-  }
-  .desc{
-    padding: 1rem;
-    width: 60%;
-  }
-  .cardtech{
-    width: 100%;
-  }
-
-}
-@media screen and (max-width: $md){
-  .techlist{
-    display: flex;
-    flex-flow: row wrap;
-    flex: auto;
-    justify-content: center;
-    align-items: center;
-    padding: 0;
-    width: 100%;
-    margin: 1rem auto;
-  }
-  .card_inner{
-    flex-direction: column;
-  }
-  .desc{
-    padding: 1rem;
-    width: 100%;
-  }
-  .card_image{  
-    width: 100%;
-    margin: 0 auto;
+  .card_image {
+    width: 40vw;
+    max-width: 500px;
+    overflow: hidden;
     height: 100%;
-    img{
-      max-width: 100%;
+    margin: 0 auto;
+    border-radius: 3px;
+    img {
+      max-width: 40vw;
+      max-height: 240px;
     }
   }
-  .desc{
-    max-width: 500px;
-    padding: 0.5rem 0.2rem;
+  .desc {
+    width: 70%;
+    height: 100%;
+    padding: 2rem;
     margin: 0 auto;
   }
-  .desc_text{
-    font-size: 1.1rem;
+  .desc_text {
+    font-size: 1.5rem;
     margin: 0 auto 1rem;
   }
-  .cardtech{
+  .cardtech {
     padding: 0.5rem 0;
   }
-  .worksite{
+  .worksite {
     text-transform: uppercase;
     width: 100px;
     padding: 0.3rem;
@@ -265,14 +199,4 @@
     display: flex;
     justify-content: center;
   }
-
-}
-@media screen and (max-width: $sm) {
-  .card_wrapper{
-    margin: 0 0 1rem 0;
-  }
-  .desc_text{
-    font-size: 0.9rem;
-  }
-
 }

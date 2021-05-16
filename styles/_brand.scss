@@ -1,41 +1,39 @@
-@import 'variables';
+@import "variables";
 
-.brand{
-    height: 10vh;
-    position: fixed;
-    display: flex;
-    padding: 0;
-    align-items: center;
-    justify-content: center;
-    top: 0;
-    left: 3rem;
-    z-index: 101;
-    user-select: none;
+.brand {
+  height: 10vh;
+  position: fixed;
+  display: flex;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 3rem;
+  z-index: 101;
+  user-select: none;
+}
+.brand__wrap {
+  width: 2.6rem;
+  height: 2.6rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $accentcolor;
+  border-radius: 50%;
+  z-index: 99;
+}
+.brand__link {
+  color: #0026eb;
+  text-decoration: none;
+  font-size: 1.2rem;
+  line-height: normal;
+  &:visited {
+    color: $secondarycolor;
   }
-  .brand__wrap{
-  
-    width: 2.6rem;
-    height: 2.6rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color: $accentcolor;
-    border-radius: 50%;
-    z-index: 99;
-  }
-  .brand__link{
-     
-     color: $secondarycolor;
-     text-decoration: none;
-     font-size:1.2rem;
-     line-height: normal;
-     &:visited{
-         color: $secondarycolor;
-     }
-  }
+}
 
-@media screen and (max-width: $lg){
-  .brand{
+@media screen and (max-width: $lg) {
+  .brand {
     left: 1.5rem;
   }
 }

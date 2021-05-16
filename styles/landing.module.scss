@@ -1,108 +1,81 @@
-@import 'variables';
-@import 'brand';
-@import 'menu';
-@import 'social';
+@import "variables";
+@import "social";
 
-.wrapper{
+.wrapper {
   height: 100vh;
-  background-color:#ffffff;
+  background-color: $accentcolor;
   padding: 0;
   position: relative;
-}
-.inner{
   display: flex;
-  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+.inner {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #fff;
   max-width: $xxl;
   margin: 0 auto;
-  padding: 0 3rem;
-  height: 100%;
+  padding: 0;
   position: relative;
+  height: 100%;
 }
 
-.salute{
-  background-color:$primarybg;
-  display: flex;
-  align-items: center;
-}
-.salute_para{
-  font-size: 1.7rem;
-}
-.name{
-  margin: 20% 0 0 0;
+.name {
+  margin: 0;
   display: flex;
   flex-direction: column;
   background-color: $primarybg;
-}
-.namewrapper{
-  display: flex;
+  justify-content: center;
   align-items: center;
 }
-.nametext{
-  font-size: 7rem;
-  font-weight: 400;
-  line-height: normal;
+.namewrapper {
   display: flex;
   flex-direction: column;
-  width: 100%;
-  color: $secondarycolor;
+  align-items: center;
+  justify-content: center;
 }
-.value{
+.nametext {
+  font-size: 3rem;
+  font-weight: 400;
+  line-height: normal;
+  width: 100%;
+  color: $accentcolor;
+  text-align: center;
+}
+.value {
   height: auto;
   width: 100%;
   padding: 1rem 3rem;
 }
-.value_para{
-  font-size: 1.5rem;
+.value_para {
+  font-size: 1rem;
   line-height: 1.5;
-  letter-spacing: 0.10rem;
+  letter-spacing: 0.1rem;
   word-spacing: 0.15rem;
 }
 
-@media screen and (max-width: $xl) {
-  .name{
-    margin: 30% 0 0 0;
+@media screen and (min-width: $xl) {
+  .wrapper {
+    padding: 0;
   }
-}
-
-@media screen and (max-width: $lg){
-  .inner{
-    padding: 0 1.5rem;
+  .inner {
+    height: 60vh;
   }
-  .nametext{
+  .nametext {
     font-size: 7rem;
   }
-  .cta{
-    font-size: 1.3rem;
+  .value {
+    padding: 1rem 5rem;
   }
-  .namewrapper{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  .value{
-    padding: 0;
-    margin: 0 0 1rem 0;
-  }
-  .value_para{
-    font-size: 1.2rem;
+  .value_para {
+    font-size: 2rem;
     letter-spacing: 0.05rem;
-    word-spacing: 0.10rem;
+    word-spacing: 0.1rem;
   }
-}
-@media screen and (max-width: $md){
-  .name{
-    margin: 40% 0 0 0;
-  }
-  .nametext{
-    font-size: 4rem;
-  }
-  .value_para{
-    font-size: 1rem;
-    letter-spacing: 0.05rem;
-    word-spacing: 0.10rem;
-  }
-  .cta{
+  .cta {
     font-size: 1.1rem;
   }
 }
