@@ -6,6 +6,7 @@
 .skill_card {
   width: 100%;
   height: 50vh;
+  max-height: 485px;
   display: flex;
   margin: 0 0 2rem 0;
   flex-direction: column;
@@ -41,6 +42,11 @@
     background-color: #fcfcfc;
   }
   .skill_title_text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5rem;
   }
   .skill_desc {
     width: 100%;
@@ -48,5 +54,10 @@
     background-color: #ffffff;
   }
   .skill_desc_text {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
   }
 }

@@ -47,7 +47,7 @@
   height: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -116,7 +116,7 @@
     background-color: $accentcolor;
     color: $primarycolor;
     .view_text {
-      color: $accentcolor;
+      color: #ffffff;
     }
   }
 }
