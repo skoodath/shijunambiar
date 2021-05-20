@@ -13,8 +13,8 @@
   user-select: none;
 }
 .brand__wrap {
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -26,10 +26,10 @@
 .brand__link {
   color: #ffffff;
   text-decoration: none;
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: inline-block;
-  width: 45px;
-  height: 45px;
+  width: 35px;
+  height: 35px;
   &:visited {
     color: #ffffff;
   }
@@ -42,8 +42,7 @@
   padding: 0;
   top: 0;
   right: 0;
-  z-index: 1;
-  background-color: $accentcolor;
+  z-index: 2;
 }
 .menuwrapper__inner {
   display: flex;
@@ -73,9 +72,17 @@
 }
 
 @media screen and (min-width: $xl) {
+  .brand__wrap {
+    width: 45px;
+    height: 45px;
+  }
+  .brand__link {
+    width: 45px;
+    height: 45px;
+    font-size: 2.5rem;
+  }
   .menuwrapper {
     padding: 0;
-    background-color: transparent;
   }
   .menuwrapper__inner {
     margin: 0;

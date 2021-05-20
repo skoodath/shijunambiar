@@ -3,13 +3,14 @@
   position: relative;
   align-items: center;
   display: flex;
+  padding: 0 3rem;
 }
 .cta {
   color: $buttoncolor;
-  font-size: 1.5rem;
+  font-size: 1rem;
   transition-property: letter-spacing;
   transition-duration: 0.2s;
-  margin: 0 1rem 0 0;
+  margin: 0 0.5rem 0 0;
   &:visited {
     color: $buttoncolor;
   }
@@ -17,5 +18,13 @@
     color: $accentcolor;
     letter-spacing: 2px;
     border-bottom: 2px solid;
+  }
+}
+@media screen and (min-width: $xl) {
+  .cta_wrapper {
+    padding: 0 5rem;
+  }
+  .cta {
+    font-size: 1.5rem;
   }
 }

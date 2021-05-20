@@ -2,7 +2,7 @@ import styles from '../../styles/about.module.scss';
 
 const CardRight = ({title, desc}) => {
   return (
-    <article className={styles.skill_card}>
+    <article className={styles.skill_card_right}>
         <div className={styles.skill_title}>
           <p className={styles.skill_title_text}>{title}</p>
         </div>

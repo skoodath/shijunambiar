@@ -2,8 +2,8 @@
 @import "skillcard";
 
 .wrapper {
-  background-color: $accentcolor;
-  padding: 0;
+  background-color: #f1e4a5;
+  padding: 0 2rem;
   position: relative;
   display: flex;
 }
@@ -28,7 +28,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem;
+  padding: 0 1rem;
 }
 .image_wrapper {
   width: 100%;

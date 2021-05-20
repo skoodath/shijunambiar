@@ -3,8 +3,8 @@
 
 .wrapper {
   height: 100vh;
-  background-color: $accentcolor;
-  padding: 0;
+  background-color: #8edeed;
+  padding: 0 2rem 2rem;
   position: relative;
   display: flex;
   justify-content: center;
@@ -14,7 +14,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
   background-color: #fff;
   max-width: $xxl;
   margin: 0 auto;
@@ -28,8 +27,6 @@
   display: flex;
   flex-direction: column;
   background-color: $primarybg;
-  justify-content: center;
-  align-items: center;
 }
 .namewrapper {
   display: flex;
@@ -42,40 +39,40 @@
   font-weight: 400;
   line-height: normal;
   width: 100%;
-  color: $accentcolor1;
-  text-align: center;
+  color: #62d1e6;
+  padding: 0 0 0 3rem;
 }
 .value {
   height: auto;
   width: 100%;
-  padding: 1rem 3rem;
+  padding: 0 3rem;
 }
 .value_para {
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.1rem;
-  word-spacing: 0.15rem;
+  word-spacing: 0.1rem;
+  color: #8eafed;
 }
 
 @media screen and (min-width: $xl) {
   .wrapper {
-    padding: 0;
+    padding: 0 3rem;
   }
   .inner {
     height: 60vh;
   }
   .nametext {
     font-size: 7rem;
+    padding: 0 0 0 5rem;
   }
   .value {
-    padding: 1rem 5rem;
+    padding: 0 5rem;
   }
   .value_para {
     font-size: 2rem;
     letter-spacing: 0.05rem;
     word-spacing: 0.1rem;
-  }
-  .cta {
-    font-size: 1.1rem;
+    width: 70%;
   }
 }

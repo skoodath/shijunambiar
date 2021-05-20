@@ -9,7 +9,7 @@ const Name = () => {
             </h1>
             <div className={styles.value}>
               <p className={styles.value_para}>
-                I create static websites or dynamic websites that make use of public APIs. I create static websites or dynamic websites that make use of public APIs. I create static websites or dynamic websites that make use of public APIs.
+                I am a web developer and tech enthusiast based in India, creating modern, accessible and responsive websites.
               </p>
             </div>
           </section>

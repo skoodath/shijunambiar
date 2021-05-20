@@ -2,27 +2,21 @@
 
 .wrapper {
   margin: 0;
-  background-color: #ffffff;
+  background-color: #d39fc2;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  padding: 0 2rem 2rem;
 }
 
 .exp_inner {
   display: flex;
   flex-direction: column;
-  padding: 0 3rem;
+  padding: 0 1rem;
   max-width: $xxl;
-  margin: 20vh auto 0;
-}
-
-.card_header {
-  font-size: 1.2rem;
-  text-transform: uppercase;
-  font-weight: 300;
-  width: 80%;
-  margin: 2rem auto;
+  margin: 15vh auto 0;
+  background-color: #ffffff;
 }
 
 .card_wrapper {
@@ -47,13 +41,13 @@
   height: auto;
   padding: 0;
   overflow: hidden;
-  background-color: #fcfcfc;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 auto;
   height: 100%;
   border-radius: 3px 3px 0 0;
+  background-color: #ffffff;
   img {
     max-width: 100%;
     box-shadow: 0 0 10px rgb(182, 182, 182);
@@ -149,7 +143,10 @@
 
 @media screen and (min-width: $xl) {
   .wrapper {
-    background-color: $accentcolor;
+    background-color: #d39fc2;
+  }
+  .exp_inner {
+    background-color: #ffffff;
   }
   .card_inner {
     flex-direction: row;
