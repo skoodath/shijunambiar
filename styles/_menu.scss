@@ -1,10 +1,11 @@
-.menuwrapper{
+.menuwrapper {
   position: fixed;
   height: 10vh;
   margin: 0 2rem 0 0;
   right: 0;
+  z-index: 99;
 }
-.menuwrapper__inner{
+.menuwrapper__inner {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -12,9 +13,9 @@
   margin: 0 auto;
   position: relative;
 }
-.menuitem{
+.menuitem {
   text-transform: uppercase;
-  color: $primarycolor;
+  color: $accentcolor2;
   position: relative;
   display: flex;
   justify-content: center;
@@ -24,28 +25,26 @@
   letter-spacing: 1px;
   transition-property: font-size;
   transition-duration: 0.2s;
-  &:hover{
+  z-index: 99;
+  &:hover {
     font-size: 1.8rem;
     text-decoration: underline;
     color: $accentcolor;
   }
 }
 
-
-@media screen and (max-width: $lg){
-
-  .menuwrapper{
+@media screen and (max-width: $lg) {
+  .menuwrapper {
     margin: 0 1.5rem 0 0;
   }
-  .menuwrapper__inner{
+  .menuwrapper__inner {
     margin: 0;
-
   }
-  .menuitem{
+  .menuitem {
     margin: 0 0.5rem;
     font-size: 1.2rem;
 
-    &:hover{
+    &:hover {
       font-size: 1.5rem;
     }
   }

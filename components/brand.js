@@ -7,7 +7,7 @@ const Brand = () => {
             <div className={styles.brand__wrap}>
                 <Link href="/">
                     <a className={styles.brand__link}>
-                        sn
+                        <img src='/images/logo.png' alt='logo' />
                     </a>
                 </Link>
             </div>

@@ -6,18 +6,13 @@ const Skills = ({carddesc}) => {
   return (
     <div className={styles.skill_wrapper}>
       <div className={styles.skill_inner}>
-        <CardRight
+        <CardLeft
           title='Technology'
         />
-        <CardLeft
+        <CardRight
           title='Leadership'
         />
-        <CardRight
-          title='Networking'
-        />
-        <CardLeft
-          title='Photography'
-        />
+
       </div>
 
     </div>

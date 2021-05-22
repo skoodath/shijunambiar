@@ -1,9 +1,10 @@
 @import "variables";
 @import "skillcard";
+@import "overlay";
 
 .wrapper {
-  background-color: #f1e4a5;
-  padding: 0 2rem;
+  background-color: $accentcolor2;
+  padding: 0;
   position: relative;
   display: flex;
 }
@@ -12,14 +13,12 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  padding: 20vh 0 0;
-  margin: 0 auto;
+  padding: 2rem 0;
+  margin: 15vh auto 2rem;
   max-width: $xxl;
   position: relative;
-  background-color: #ffffff;
 }
 .intro_card {
-  background-color: #ffffff;
   height: 100vh;
 }
 
@@ -57,10 +56,39 @@
   padding: 0;
   font-size: 1rem;
 }
+@media screen and (min-width: $md) {
+  .text_wrapper {
+    padding: 1rem 3rem 0;
+  }
+  .introduction {
+    font-size: 1.5rem;
+  }
+}
+@media screen and (min-width: $lg) {
+  .introduction {
+    font-size: 2rem;
+  }
+  .intro_inner {
+    padding: 0 1rem;
+    flex-direction: row;
+  }
+  .image_wrapper {
+    width: 40%;
+    height: 100%;
+    margin: 0;
+  }
+  .text_wrapper {
+    width: 70%;
+    padding: 0 3rem 3rem 0;
+  }
+  .introduction {
+    font-size: 1.6rem;
+  }
+}
 
 @media screen and (min-width: $xl) {
   .wrapper {
-    padding: 0 2rem;
+    padding: 0;
   }
   .inner {
     background-color: transparent;
@@ -77,9 +105,6 @@
   }
   .image_wrapper {
     width: 30%;
-    min-width: 420px;
-    height: 100%;
-    margin: 0;
   }
   .image_inner {
     width: 100%;

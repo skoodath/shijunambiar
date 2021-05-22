@@ -5,6 +5,7 @@ import Skill from './skills';
 const Introduction = () => {
   return (
     <div className={styles.wrapper}>
+      <div className={styles.overlay}></div>
       <div className={styles.inner}>
         <AboutMe />
         <Skill />

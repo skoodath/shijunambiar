@@ -1,23 +1,29 @@
 .cta_wrapper {
   height: auto;
+  width: 100%;
   position: relative;
   align-items: center;
   display: flex;
   padding: 0 3rem;
 }
 .cta {
-  color: $buttoncolor;
+  color: $accentcolor2;
   font-size: 1rem;
   transition-property: letter-spacing;
   transition-duration: 0.2s;
   margin: 0 0.5rem 0 0;
   &:visited {
-    color: $buttoncolor;
+    color: $accentcolor2;
   }
   &:hover {
     color: $accentcolor;
     letter-spacing: 2px;
     border-bottom: 2px solid;
+  }
+}
+@media screen and (min-width: $md) {
+  .cta {
+    font-size: 1.5rem;
   }
 }
 @media screen and (min-width: $xl) {

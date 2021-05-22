@@ -1,4 +1,5 @@
 import styles from '../../styles/landing.module.scss'; 
+import Social from './social';
 
 const Name = () => {
     return (
@@ -12,6 +13,7 @@ const Name = () => {
                 I am a web developer and tech enthusiast based in India, creating modern, accessible and responsive websites.
               </p>
             </div>
+            <Social />
           </section>
         </section>
     )

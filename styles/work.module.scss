@@ -1,13 +1,13 @@
 @import "variables";
-
+@import "overlay";
 .wrapper {
   margin: 0;
-  background-color: #d39fc2;
+  background-color: $accentcolor;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 2rem 2rem;
+  padding: 0;
 }
 
 .exp_inner {
@@ -24,6 +24,7 @@
   flex: none;
   padding: 2rem 0;
   height: auto;
+  background-color: #ffffff;
   &:last-child {
     margin: 0 0 3rem 0;
   }
@@ -47,7 +48,6 @@
   margin: 0 auto;
   height: 100%;
   border-radius: 3px 3px 0 0;
-  background-color: #ffffff;
   img {
     max-width: 100%;
     box-shadow: 0 0 10px rgb(182, 182, 182);
@@ -59,15 +59,14 @@
   height: 100%;
   display: flex;
   flex-direction: column;
-  background-color: #ffffff;
   align-items: center;
-  padding: 1rem 0.5rem;
+  padding: 0.5rem 0;
   transform: translateY(0%);
   transition: all 0.5s cubic-bezier(1, 0.82, 0.165, 1);
 }
 .desc_text {
   margin: 0 0 2rem 0;
-  font-size: 1rem;
+  font-size: 0.95rem;
 }
 
 .cardtech {
@@ -94,8 +93,8 @@
 }
 
 .viewbutton {
-  width: 130px;
-  height: 35px;
+  width: 100px;
+  height: 30px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -140,10 +139,19 @@
   z-index: 2;
   transition: color 0.5s;
 }
+@media screen and (min-width: $md) {
+  .desc {
+    padding: 0;
+  }
+  .desc_text {
+    margin: 0 0 2rem 0;
+    font-size: 1.5rem;
+  }
+}
 
 @media screen and (min-width: $xl) {
   .wrapper {
-    background-color: #d39fc2;
+    background-color: $accentcolor;
   }
   .exp_inner {
     background-color: #ffffff;
@@ -173,7 +181,7 @@
   .desc {
     width: 70%;
     height: 100%;
-    padding: 2rem;
+    padding: 3rem 2rem;
     margin: 0 auto;
   }
   .desc_text {
@@ -195,5 +203,9 @@
     color: #ffffff;
     display: flex;
     justify-content: center;
+  }
+  .viewbutton {
+    width: 130px;
+    height: 35px;
   }
 }

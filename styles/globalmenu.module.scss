@@ -18,7 +18,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: $secondarycolor;
+  //background-color: $secondarycolor;
   border-radius: 50%;
   z-index: 99;
   overflow: hidden;
@@ -30,8 +30,16 @@
   display: inline-block;
   width: 35px;
   height: 35px;
+  position: relative;
+  border-radius: 50%;
+  background-color: $primarycolor;
   &:visited {
     color: #ffffff;
+  }
+  img {
+    width: 100%;
+    position: absolute;
+    transform: translateY(-10px);
   }
 }
 
@@ -55,13 +63,14 @@
 }
 .menuitem {
   text-transform: uppercase;
-  color: $primarycolor;
+  color: $accentcolor2;
   position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: 0 0 0 0.5rem;
   font-size: 0.8rem;
+  font-weight: 700;
   letter-spacing: 1px;
   transition-property: font-size;
   transition-duration: 0.2s;
@@ -70,8 +79,7 @@
     color: #ffffff;
   }
 }
-
-@media screen and (min-width: $xl) {
+@media screen and (min-width: $md) {
   .brand__wrap {
     width: 45px;
     height: 45px;
@@ -79,7 +87,18 @@
   .brand__link {
     width: 45px;
     height: 45px;
+  }
+  .menuitem {
+    font-size: 1.5rem;
+  }
+}
+
+@media screen and (min-width: $xl) {
+  .brand__link {
     font-size: 2.5rem;
+    img {
+      transform: translateY(-13px);
+    }
   }
   .menuwrapper {
     padding: 0;

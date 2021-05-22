@@ -6,6 +6,7 @@ const WorkCard = () => {
   return (
     <>
       <div className={styles.wrapper}>
+      <div className={styles.overlay}></div>
         <div className={styles.exp_inner}>
           <article 
               className={styles.card_wrapper}

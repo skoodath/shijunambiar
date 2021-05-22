@@ -1,9 +1,10 @@
 @import "variables";
 @import "social";
+@import "overlay";
 
 .wrapper {
   height: 100vh;
-  background-color: #8edeed;
+  background-color: $accentcolor2;
   padding: 0 2rem 2rem;
   position: relative;
   display: flex;
@@ -14,32 +15,31 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  background-color: #fff;
   max-width: $xxl;
-  margin: 0 auto;
+  margin: 15vh auto 0;
   padding: 0;
   position: relative;
-  height: 100%;
+  height: 80%;
 }
 
 .name {
   margin: 0;
   display: flex;
   flex-direction: column;
-  background-color: $primarybg;
 }
 .namewrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  position: relative;
 }
 .nametext {
   font-size: 3rem;
   font-weight: 400;
   line-height: normal;
   width: 100%;
-  color: #62d1e6;
+  color: #ffffff;
   padding: 0 0 0 3rem;
 }
 .value {
@@ -52,15 +52,35 @@
   line-height: 1.5;
   letter-spacing: 0.1rem;
   word-spacing: 0.1rem;
-  color: #8eafed;
+  color: #c0c0c0;
 }
-
+@media screen and (min-width: $md) {
+  .nametext {
+    font-size: 7rem;
+  }
+  .value_para {
+    font-size: 1.5rem;
+  }
+}
 @media screen and (min-width: $xl) {
   .wrapper {
     padding: 0 3rem;
   }
   .inner {
     height: 60vh;
+    margin: 0 auto;
+  }
+  .namewrapper {
+    &::before {
+      position: absolute;
+      content: "";
+      left: 0;
+      top: 0;
+      height: 100%;
+      width: 20px;
+      background-color: #ffda1f;
+      border-radius: 20px;
+    }
   }
   .nametext {
     font-size: 7rem;
