@@ -3,8 +3,7 @@
 @import "overlay";
 
 .wrapper {
-  background-color: $accentcolor2;
-  padding: 0;
+  background-color: $accentcolor1;
   position: relative;
   display: flex;
 }
@@ -49,7 +48,7 @@
 }
 
 .text_wrapper {
-  padding: 1rem 0 0 0;
+  padding: 1rem 1.9rem 0;
 }
 .introduction {
   letter-spacing: 1px;
@@ -72,6 +71,10 @@
     padding: 0 1rem;
     flex-direction: row;
   }
+  .intro_card {
+    height: 40vh;
+  }
+
   .image_wrapper {
     width: 40%;
     height: 100%;

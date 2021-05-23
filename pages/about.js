@@ -8,11 +8,10 @@ const About = () => {
     return (
       <>
         <Head>
-          <title>About: Shiju Nambiar</title>
+          <title>My learning and experience</title>
         </Head>
   
         <main>
-          <Brand />
           <Menu />
           <Introduction />
         </main>

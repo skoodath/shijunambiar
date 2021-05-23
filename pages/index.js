@@ -7,11 +7,10 @@ const Home = () => {
   return (
     <>
       <Head>
-        <title>Home: Shiju Nambiar</title>
+        <title>Shiju Nambiar: Home page and how to connect</title>
       </Head>
 
       <main>
-        <Brand />
         <Menu />
         <Landing />
       </main>

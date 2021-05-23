@@ -8,9 +8,8 @@ const Work = () => {
   return (
     <>
       <Head>
-          <title>Work: Shiju Nambiar</title>
+          <title>Projects and skills</title>
         </Head>
-      <Brand />
       <Menu />
       <WorkCard />
     </>

@@ -1,22 +1,17 @@
 @import "variables";
 @import "overlay";
 .wrapper {
-  margin: 0;
-  background-color: $accentcolor;
+  background-color: $primarybg;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
+  position: relative;
 }
 
 .exp_inner {
   display: flex;
   flex-direction: column;
-  padding: 0 1rem;
+  padding: 2rem;
   max-width: $xxl;
   margin: 15vh auto 0;
-  background-color: #ffffff;
 }
 
 .card_wrapper {
@@ -24,7 +19,6 @@
   flex: none;
   padding: 2rem 0;
   height: auto;
-  background-color: #ffffff;
   &:last-child {
     margin: 0 0 3rem 0;
   }
@@ -151,7 +145,7 @@
 
 @media screen and (min-width: $xl) {
   .wrapper {
-    background-color: $accentcolor;
+    background-color: $accentcolor1;
   }
   .exp_inner {
     background-color: #ffffff;
