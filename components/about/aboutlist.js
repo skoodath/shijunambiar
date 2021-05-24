@@ -10,10 +10,19 @@ const AboutMe = () => {
                   </div> 
               </div>
               <div className={styles.text_wrapper}>
-                <p className={styles.introduction}>
-                  I am self taught software developer who is in love with web technologies. I consistently perserve to learn new skills. I am self taught software developer who is in love with web technologies. I consistently perserve to learn new skills. I am self taught software developer who is in love with web technologies. I consistently perserve to learn new skills.
-                </p>
+                <dl>
+                    <dt>Core Skills </dt>
+                    <dd>React / Angular</dd>
+                    <dt>Design Tools</dt>
+                    <dd>Figma / AdobeXD / Framer</dd>
+                    <dt>Layout &amp; styling</dt>
+                    <dd>HTML5 / CSS3 / Sass / Styled-Components / Bootstrap / Material Design</dd>
+                    <dt>Additional skills</dt>
+                    <dd>git / NodeJS / Express / MongoDB / GSAP / Framer Motion / React Spring</dd>
+                </dl>
+                <div>Download Resume</div>
               </div>
+              
           </div>
         </article>
     )

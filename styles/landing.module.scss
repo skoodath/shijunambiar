@@ -35,8 +35,9 @@
   font-weight: 400;
   line-height: normal;
   width: 100%;
-  color: #ffffff;
+  color: #e6deb6;
   padding: 0 0 0 3rem;
+  text-transform: uppercase;
 }
 .value {
   height: auto;
@@ -47,7 +48,7 @@
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.08rem;
-  color: #c0c0c0;
+  color: #d8d0a9;
 }
 @media screen and (min-width: $md) {
   .nametext {
@@ -89,5 +90,10 @@
     letter-spacing: 0.05rem;
     word-spacing: 0.1rem;
     width: 70%;
+  }
+}
+@media screen and (min-width: $xxxl) {
+  .nametext {
+    font-size: 8rem;
   }
 }

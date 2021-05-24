@@ -66,7 +66,7 @@
   display: inline-block;
   margin: 0 0 0.3rem 0;
   font-size: 0.8rem;
-  font-weight: 700;
+  font-weight: bold;
   letter-spacing: 1px;
   transition-property: all;
   transition-duration: 0.2s;
@@ -122,5 +122,10 @@
     margin: 0 0 0.5rem 0;
     font-size: 2rem;
     text-align: right;
+  }
+}
+@media screen and (min-width: $xxxl) {
+  .menuitem {
+    font-size: 3rem;
   }
 }
