@@ -1,12 +1,11 @@
 import styles from  '../../styles/work.module.scss';
 import ViewButton from './workbutton';
 
-const WorkCard = () => {
+const Work = () => {
 
   return (
     <>
-      <div className={styles.wrapper}>
-      <div className={styles.overlay}></div>
+      <div className={styles.wrapper} name='work'>
         <div className={styles.exp_inner}>
           <article 
               className={styles.card_wrapper}
@@ -115,4 +114,4 @@ const WorkCard = () => {
   )
 }
 
-export default WorkCard;
+export default Work;

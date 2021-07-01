@@ -1,7 +1,7 @@
 @import "variables";
-@import "overlay";
+
 .wrapper {
-  background-color: $accentcolor1;
+  background-color: #ffffff;
   display: flex;
   position: relative;
 }
@@ -9,19 +9,15 @@
 .exp_inner {
   display: flex;
   flex-direction: column;
-  padding: 2rem;
-  max-width: $xxl;
-  margin: 15vh auto 0;
+  padding: 2rem 2rem 0;
+  margin: 0 auto 20vh;
 }
 
 .card_wrapper {
   overflow: hidden;
   flex: none;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
   height: auto;
-  &:last-child {
-    margin: 0 0 3rem 0;
-  }
 }
 
 .card_inner {
@@ -144,11 +140,11 @@
 }
 
 @media screen and (min-width: $xl) {
-  .wrapper {
-    background-color: $accentcolor1;
-  }
   .exp_inner {
-    background-color: #ffffff;
+    width: 1200px;
+    max-width: 1200px;
+    margin: 30vh 0 0;
+    padding: 2rem 0 0;
   }
   .card_inner {
     flex-direction: row;
@@ -156,9 +152,6 @@
   }
   .card_wrapper {
     height: 400px;
-    &:last-child {
-      margin: 0 0 3rem 0;
-    }
   }
   .card_image {
     width: 40vw;
@@ -201,5 +194,10 @@
   .viewbutton {
     width: 130px;
     height: 35px;
+  }
+}
+@media screen and (min-width: $xxl) {
+  .exp_inner {
+    margin: 30vh auto 0;
   }
 }

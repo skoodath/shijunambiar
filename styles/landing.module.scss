@@ -1,10 +1,9 @@
 @import "variables";
 @import "social";
-@import "overlay";
 
 .wrapper {
   height: 100vh;
-  background-color: $accentcolor1;
+  background-color: #ffffff;
   position: relative;
   display: flex;
   justify-content: center;
@@ -32,10 +31,10 @@
 }
 .nametext {
   font-size: 3rem;
-  font-weight: 400;
+  font-weight: 600;
   line-height: normal;
   width: 100%;
-  color: #e6deb6;
+  color: #000000;
   padding: 0 0 0 3rem;
   text-transform: uppercase;
 }
@@ -48,7 +47,7 @@
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.08rem;
-  color: #d8d0a9;
+  color: #878787;
 }
 @media screen and (min-width: $md) {
   .nametext {
@@ -71,11 +70,10 @@
       position: absolute;
       content: "";
       left: 0;
-      top: 0;
-      height: 100%;
+      top: 10%;
+      height: 110%;
       width: 15px;
-      background-color: $accentcolor1;
-      padding: 0 0 2rem 0;
+      background-image: linear-gradient(#7328ff, #7328ffad);
     }
   }
   .nametext {

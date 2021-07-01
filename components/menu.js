@@ -1,15 +1,30 @@
 import styles from '../styles/globalmenu.module.scss';
-import Link from 'next/link';
+import { Link } from 'react-scroll';
 
 const Menu = () => {
     return (
-            <section className={styles.menuwrapper}>
+            <section className={styles.menuwrapper}> 
               <div className={styles.menuwrapper__inner}>
-                  <Link href="/about">
-                    <a className={styles.menuitem}>about</a>
+                <Link 
+                    to="home"
+                    className={styles.menuitem}
+                    smooth={true}
+                    >
+                    home
                   </Link>
-                  <Link href="/work">
-                    <a className={styles.menuitem}>work</a>
+                  <Link 
+                    to="about"
+                    className={styles.menuitem}
+                    smooth={true}
+                    >
+                    about
+                  </Link>
+                  <Link 
+                    to="work"
+                    className={styles.menuitem}
+                    smooth={true}
+                  >
+                    work
                   </Link>
               </div>
             </section>
