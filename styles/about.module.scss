@@ -1,8 +1,9 @@
 @import "variables";
 @import "skillcard";
+@import "title";
 
 .wrapper {
-  background-color: #000000;
+  background-color: #ffffff;
   position: relative;
   display: flex;
 }
@@ -12,27 +13,32 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin: 0 auto 20vh;
+  margin: 10vh auto;
   position: relative;
+  max-width: 1200px;
 }
 
 .intro_inner {
   display: flex;
   flex-direction: column;
-  padding: 2rem 1rem 1rem;
+  justify-content: center;
+  align-items: center;
 }
 .image_wrapper {
   width: 100%;
   height: 50%;
-  margin: 0;
+  margin: 0 0 2rem 0;
 }
 .image_inner {
-  width: 80%;
+  width: 180px;
+  height: 180px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   position: relative;
+  overflow: hidden;
+  border-radius: 50%;
   img {
     width: 100%;
     max-width: 350px;
@@ -40,8 +46,14 @@
 }
 
 .text_wrapper {
-  padding: 1.5rem;
+  width: 80%;
   height: 100%;
+  margin: 0 auto;
+}
+.text_para {
+  letter-spacing: 1px;
+  margin: 0 0 1rem 0;
+  color: #000000;
 }
 .skill_list {
   display: flex;
@@ -69,13 +81,9 @@
     padding: 2rem 0 0 0;
   }
   .intro_card {
-    height: 85vh;
     display: flex;
-    align-items: flex-start;
+    align-items: center;
     width: 100%;
-  }
-  .intro_inner {
-    padding: 5vh 0 0 0;
   }
   .skill_list {
     width: 100%;
@@ -95,22 +103,17 @@
   }
 }
 @media screen and (min-width: $lg) {
-  .intro_inner {
-    padding: 10vh 5vw 0;
-    flex-direction: row;
-  }
-  .intro_card {
-    height: 100vh;
-  }
-
   .image_wrapper {
-    width: 285px;
+    width: 200px;
     height: 100%;
     margin: 0;
   }
   .text_wrapper {
     width: 70%;
     padding: 0 0 3rem 0;
+  }
+  .text_para {
+    font-size: 2rem;
   }
   .skill_listitem {
     font-size: 1.3rem;
@@ -121,65 +124,5 @@
   }
   .skill_item_text {
     width: 70%;
-  }
-}
-
-@media screen and (min-width: $xl) {
-  .wrapper {
-    padding: 0;
-  }
-  .inner {
-    width: 1024px;
-    max-width: 1024px;
-  }
-  .intro_card {
-    height: 100vh;
-  }
-  .intro_inner {
-    height: 100vh;
-    flex-direction: row;
-    align-items: center;
-  }
-  .image_wrapper {
-    width: 30%;
-  }
-  .image_inner {
-    width: 100%;
-    margin: 0 auto;
-    img {
-      width: 100%;
-      max-width: 100%;
-    }
-  }
-  .text_wrapper {
-    width: 70%;
-    padding: 2rem;
-  }
-  .skill_list {
-    display: flex;
-    flex-direction: column;
-  }
-  .skill_listitem {
-    font-size: 1.5rem;
-    margin: 0 0 1rem 0;
-  }
-  .skill_item_header {
-    width: 30%;
-    margin: 0 1rem 0 0;
-  }
-  .skill_item_text {
-    width: 70%;
-  }
-}
-@media screen and (min-width: $xxl) {
-  .inner {
-    width: 1200px;
-    max-width: 1200px;
-    margin: 30vh auto 0;
-    padding: 0;
-  }
-
-  .intro_inner {
-    padding: 10vh 0 0 0;
   }
 }
