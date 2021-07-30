@@ -5,7 +5,6 @@
   background-color: #fafafa;
   display: flex;
   position: relative;
-  height: 100vh;
 }
 
 .exp_inner {
@@ -30,11 +29,11 @@
   padding: 0;
   margin: 0 0 1rem 0;
   width: 290px;
-  height: 300px;
+  height: 380px;
   box-shadow: 0 0 90px -10px rgba(0, 0, 0, 0.15);
   &:hover {
     img {
-      transform: scale3d(1.05, 1.05, 1.05);
+      transform: scale3d(1.02, 1.02, 1.02);
       transition: transform 0.5s ease-in;
     }
   }
@@ -51,24 +50,22 @@
   .card_image {
     display: flex;
     width: 100%;
-    max-width: 400px;
-    height: 156px;
-    padding: 1rem;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    overflow: hidden;
-  }
-  img {
-    position: relative;
-    max-height: 156px;
-    transition: all 0.3s ease-out;
+    background-color: #f6f6f6;
+    height: 180px;
+    img {
+      position: relative;
+      transition: all 0.3s ease-out;
+      box-shadow: 2px 1px 15px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+    }
   }
 }
 
 .desc {
-  height: 220px;
-  position: absolute;
+  position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -77,26 +74,14 @@
   opacity: 1;
   visibility: visible;
   background-color: rgba(255, 255, 255, 0.98);
-  bottom: 40px;
   left: 0;
-  box-shadow: 12px 0 50px -5px rgba(0, 0, 0, 0.2);
   transition-property: transform, visibility, opacity;
   transition: 0.3s ease-in;
 }
-.desc_show {
-  opacity: 1;
-  visibility: visible;
-  transform: translateY(0);
-}
-.desc_hide {
-  visibility: hidden;
-  opacity: 0;
-  transform: translateY(100%);
-}
+
 .desc_title {
   font-size: 1.2rem;
   padding: 1rem;
-  height: 20%;
 }
 .desc_text {
   font-size: 1.2rem;
@@ -122,29 +107,8 @@
   position: absolute;
   bottom: 0;
   letter-spacing: 1px;
-}
-
-.viewbutton_lite {
-  background-color: #ffffff;
-  color: #000000;
-}
-.viewbutton_dark {
   background-color: #000000;
   color: #ffffff;
-}
-.view_common {
-  display: flex;
-  flex-direction: column-reverse;
-  align-items: center;
-  &:hover {
-    svg {
-      transform: translateY(-5px);
-      transition: transform 0.3s ease-out;
-    }
-  }
-  svg {
-    transition: transform 0.3s ease-out;
-  }
 }
 
 .view_link {
@@ -189,9 +153,7 @@
   }
   .card_image {
     width: 100%;
-    overflow: hidden;
     margin: 0 auto;
-    padding: 1rem;
   }
   .desc {
     margin: 0 auto;

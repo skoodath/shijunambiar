@@ -18,9 +18,8 @@ const WorkCard = ({ ...work }) => {
     <DetailContext.Provider value={{ details, setDetails }}>
       <article className={styles.card_wrapper}>
         <div className={styles.card_inner}>
-          <h3 className={styles.desc_title}>{title}</h3>
           <div className={styles.card_image}>
-            <Image
+            <img
               src={src}
               alt={alt}
               className={image}
@@ -28,6 +27,7 @@ const WorkCard = ({ ...work }) => {
               height={height}
             />
           </div>
+          <h3 className={styles.desc_title}>{title}</h3>
           <div
             className={
               details
