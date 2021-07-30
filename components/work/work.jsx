@@ -1,5 +1,5 @@
 import styles from "../../styles/work.module.scss";
-import WorkCard from "./WorkCard";
+import WorkCard from "./workcard";
 import works from "../../components/data/workdata";
 
 const Work = () => {

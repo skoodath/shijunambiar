@@ -1,4 +1,4 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { FaChevronRight, FaChevronUp } from "react-icons/fa";
 import styles from "../../styles/work.module.scss";
 import DetailContext from "../context";
@@ -8,7 +8,14 @@ const ViewButton = ({ link, caption, showDetails }) => {
 
   return (
     <>
-      <div className={styles.viewbutton} onClick={showDetails}>
+      <div
+        className={
+          details
+            ? `${[styles.viewbutton, styles.viewbutton_lite].join(" ")}`
+            : `${[styles.viewbutton, styles.viewbutton_dark].join(" ")}`
+        }
+        onClick={showDetails}
+      >
         <div className={styles.view_text}>
           {!details ? (
             <span className={styles.view_common}>

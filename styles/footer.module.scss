@@ -1,1 +1,63 @@
 @import "variables";
+
+.wrapper {
+  height: 200px;
+  background-color: #000000;
+  margin: 3rem 0;
+}
+.inner {
+  display: flex;
+  height: 100%;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.name {
+  color: #ffffff;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.5rem;
+  font-weight: 300;
+  margin: 0 0 1rem 0;
+}
+.social {
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  margin: 0 0 0.2rem 0;
+}
+.socialicons {
+  fill: #ffffff;
+  margin: 0.5rem;
+  font-size: 2rem;
+  cursor: pointer;
+  &:hover {
+    fill: #ececec;
+  }
+}
+.copyright {
+  color: #ffffff;
+}
+@media (min-width: $md) {
+  .name {
+    font-size: 2rem;
+  }
+  .socialicons {
+    font-size: 2.2rem;
+  }
+  .copyright {
+    font-size: 1.2rem;
+  }
+}
+@media (min-width: $lg) {
+  .name {
+    font-size: 2.5rem;
+  }
+  .wrapper {
+    margin: 0;
+  }
+  .copyright {
+    font-size: 1.5rem;
+  }
+}

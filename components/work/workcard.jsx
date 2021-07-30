@@ -34,6 +34,7 @@ const WorkCard = ({ ...work }) => {
                 ? `${[styles.desc, styles.desc_show].join(" ")}`
                 : `${[styles.desc, styles.desc_hide].join(" ")}`
             }
+            onClick={showDetails}
           >
             <p className={styles.desc_text}>{description}</p>
           </div>
