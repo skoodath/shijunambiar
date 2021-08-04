@@ -27,11 +27,10 @@
 .image_wrapper {
   width: 100%;
   height: 50%;
-  margin: 0 0 2rem 0;
 }
 .image_inner {
-  width: 180px;
-  height: 180px;
+  width: 150px;
+  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -39,21 +38,18 @@
   position: relative;
   overflow: hidden;
   border-radius: 50%;
-  img {
-    width: 100%;
-    max-width: 350px;
-  }
 }
 
 .text_wrapper {
-  width: 80%;
+  width: 65%;
   height: 100%;
-  margin: 0 auto;
+  margin: 2rem auto;
 }
 .text_para {
   letter-spacing: 1px;
+  line-height: 1.5;
   margin: 0 0 1rem 0;
-  color: #000000;
+  font-weight: 500;
 }
 .skill_list {
   display: flex;
@@ -113,7 +109,7 @@
     padding: 0 0 3rem 0;
   }
   .text_para {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
   .skill_listitem {
     font-size: 1.3rem;
