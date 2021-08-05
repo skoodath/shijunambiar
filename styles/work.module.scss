@@ -109,8 +109,11 @@
   letter-spacing: 1px;
   background-color: #4a00d3;
   color: #ffffff;
+  transition: background-color 0.3s ease-out;
   &:hover {
     background-color: #5e07ff;
+    transform-origin: left center;
+    transition: background-color 0.3s ease-out;
   }
 }
 
