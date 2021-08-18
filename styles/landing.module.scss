@@ -1,14 +1,15 @@
 @import "variables";
 @import "social";
+@import "sectioncount";
 
 .wrapper {
   height: 100vh;
   background-color: #ffffff;
-  background-image: linear-gradient(
+  /* background-image: linear-gradient(
       rgba(255, 255, 255, 1),
       rgba(255, 255, 255, 0.95)
     ),
-    url("../public/images/bg.webp");
+    url("../public/images/bg.webp"); */
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;

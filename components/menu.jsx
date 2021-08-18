@@ -1,11 +1,12 @@
 import styles from "../styles/globalmenu.module.scss";
-import { Link } from "react-scroll";
+import { Link as ScrollLink } from "react-scroll";
+import Link from "next/link";
 
 const Menu = () => {
   return (
     <section className={styles.menuwrapper}>
       <nav className={styles.menuwrapper__inner}>
-        <Link
+        <ScrollLink
           to="home"
           spy={true}
           smooth={true}
@@ -13,12 +14,25 @@ const Menu = () => {
           className={styles.menuitem}
         >
           Home
-        </Link>
-        <Link to="work" spy={true} smooth={true} className={styles.menuitem}>
+        </ScrollLink>
+        <ScrollLink
+          to="work"
+          spy={true}
+          smooth={true}
+          className={styles.menuitem}
+        >
           work
-        </Link>
-        <Link to="about" spy={true} smooth={true} className={styles.menuitem}>
+        </ScrollLink>
+        <ScrollLink
+          to="about"
+          spy={true}
+          smooth={true}
+          className={styles.menuitem}
+        >
           about
+        </ScrollLink>
+        <Link href="/resume">
+          <span className={styles.menuitem}>Resume</span>
         </Link>
       </nav>
     </section>

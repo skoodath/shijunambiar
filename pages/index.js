@@ -18,7 +18,9 @@ const Home = () => {
           content="Web development and web design portfolio site showcasing websites with react, html, css, javascript, nextjs, styled-components, scss and other javascript libraries "
         />
         <meta name="author" content="Shiju Nambiar" />
-        <title>Shiju Nambiar: Web Development Portfolio</title>
+        <title>
+          Web Developer | React Developer | Web Designer | Shiju Nambiar
+        </title>
       </Head>
 
       <main>

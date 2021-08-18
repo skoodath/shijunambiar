@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: #f4f4f4;
+  padding: 5vh 0;
+  font-family: "Montserrat", sans-serif;
+}
+.inner {
+  width: 968px;
+  background-color: #ffffff;
+  box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.2);
+}
+
+.header {
+  display: flex;
+  height: 130px;
+  border-bottom: 1px solid #dddddd;
+  padding: 1rem 5rem;
+  align-items: center;
+}
+.header_left {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.header_name {
+  font-size: 2rem;
+  font-weight: 600;
+}
+.header_title {
+  font-size: 1.1rem;
+  font-weight: 500;
+  line-height: 1.6;
+}
+.header_contact {
+  font-size: 0.9rem;
+  line-height: 1.5;
+}
+.header_right {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+.header_links {
+  &:hover {
+    text-decoration: underline;
+  }
+}
+.summary,
+.experience,
+.projects,
+.education,
+.techstack {
+  padding: 2rem 7rem;
+}
+.sectiontitle {
+  font-size: 0.8rem;
+  color: #666666;
+  text-transform: uppercase;
+  border-bottom: 1px solid #666666;
+  padding-bottom: 0.2rem;
+}
+
+.prevexp {
+  display: flex;
+  padding: 1rem 0 0;
+}
+.prevexp_left,
+.prevexp_right {
+  width: 100%;
+}
+.prevexp_left {
+  padding-right: 1rem;
+  border-right: 1px solid #cccccc;
+}
+.prevexp_right {
+  padding-left: 1rem;
+}
+.org,
+.org_old {
+  padding: 0.3rem 0 0 0;
+}
+.org_old {
+  font-size: 1rem;
+}
+.roles {
+  color: #999999;
+  padding-top: 0.5rem;
+}
+.jd {
+  padding-bottom: 1rem;
+}
+.project {
+  padding-top: 1rem;
+  display: flex;
+}
+.proj_title {
+  padding-bottom: 1rem;
+}
+.edu_wrapper {
+  padding-top: 0.5rem;
+}
+.edu_desc {
+  color: #999999;
+  font-size: 0.9rem;
+  padding-bottom: 0.5rem;
+  font-weight: 500;
+}
+.techlist {
+  display: flex;
+  flex-wrap: wrap;
+  padding-top: 0.5rem;
+}
+.techitem {
+  color: #999999;
+  padding: 0 0.5rem;
+  margin-bottom: 0.5rem;
+  //border-right: 2px solid #434343;
+  position: relative;
+  &::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+    background-color: #434343;
+    height: 90%;
+    width: 2px;
+    border-radius: 20px;
+  }
+  &:first-child {
+    padding-left: 0;
+  }
+  &:last-child {
+    border-right: none;
+  }
+}
+.resume_links {
+  width: 968px;
+  padding: 0;
+  margin-bottom: 0.5rem;
+}
+.home_btn {
+  background-color: #000000;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem;
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #525252;
+  }
+}
+.download {
+  background-color: #525252;
+  color: #ffffff;
+  font-size: 1.3rem;
+  padding: 0.3rem 1rem;
+  margin-bottom: 0.5rem;
+  margin-left: 0.5rem;
+  cursor: pointer;
+  &:hover {
+    background-color: #000000;
+  }
+}

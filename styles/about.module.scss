@@ -1,9 +1,19 @@
 @import "variables";
 @import "skillcard";
 @import "title";
+@import "sectioncount";
 
 .wrapper {
   background-color: #ffffff;
+  /* background-image: linear-gradient(
+      rgba(255, 255, 255, 1),
+      rgba(255, 255, 255, 0.95)
+    ),
+    url("../public/images/bg.webp"); */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
   position: relative;
   display: flex;
 }

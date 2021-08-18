@@ -5,6 +5,11 @@ import works from "../../components/data/workdata";
 const Work = () => {
   return (
     <div className={styles.wrapper} name="work">
+      <div className={styles.out_circle}>
+        <div className={styles.inner_circle}>
+          <span>2</span>
+        </div>
+      </div>
       <div className={styles.exp_inner}>
         <h2 className={styles.text}>My Work</h2>
         <div className={styles.card_container}>
