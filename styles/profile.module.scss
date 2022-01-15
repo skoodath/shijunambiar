@@ -5,17 +5,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f4f4f4;
+  background-color: #ffffff;
   padding: 5vh 0;
   font-family: "Montserrat", sans-serif;
 }
 .inner {
   width: 968px;
   background-color: #ffffff;
-  box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.2);
+  //box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.2);
 }
 
-.header {
+/* .header {
   display: flex;
   height: 130px;
   border-bottom: 1px solid #dddddd;
@@ -50,7 +50,7 @@
   &:hover {
     text-decoration: underline;
   }
-}
+} */
 .summary,
 .experience,
 .projects,

@@ -6,6 +6,7 @@ import Menu from "../components/menu";
 
 const Work = dynamic(() => import("../components/work/work"));
 const About = dynamic(() => import("../components/about/about"));
+const Profile = dynamic(() => import("../components/profile/profile"));
 const Footer = dynamic(() => import("../components/footer"));
 
 const Home = () => {
@@ -28,6 +29,7 @@ const Home = () => {
         <Landing />
         <Work />
         <About />
+        <Profile />
         <Footer />
       </main>
     </>

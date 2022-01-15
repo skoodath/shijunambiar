@@ -31,9 +31,14 @@ const Menu = () => {
         >
           About
         </ScrollLink>
-        <Link href="/resume">
-          <span className={styles.menuitem}>Resume</span>
-        </Link>
+        <ScrollLink
+          to="profile"
+          spy={true}
+          smooth={true}
+          className={styles.menuitem}
+        >
+          Profile
+        </ScrollLink>
       </nav>
     </section>
   );

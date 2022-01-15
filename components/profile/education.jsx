@@ -1,4 +1,4 @@
-import styles from "../../styles/resume.module.scss";
+import styles from "../../styles/profile.module.scss";
 import Title from "./title";
 
 const Education = () => {

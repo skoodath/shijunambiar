@@ -4,17 +4,14 @@
 
 .wrapper {
   background-color: #ffffff;
-  /* background-image: linear-gradient(
-      rgba(255, 255, 255, 1),
-      rgba(255, 255, 255, 0.95)
-    ),
-    url("../public/images/bg.webp"); */
+  background-image: url("../public/images/bg3.png");
   background-size: cover;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
+  background-size: cover;
+  background-position: right top;
   position: relative;
   display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .inner {
   display: flex;
