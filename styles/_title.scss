@@ -7,12 +7,12 @@
   position: relative;
   font-size: 2rem;
   color: #000000;
-  &:before {
+  /* &:before {
     position: absolute;
     content: "";
     width: 30%;
     height: 3px;
-    top: 50%;
+    top: 75%;
     left: -30%;
     background-color: #4a00d3;
   }
@@ -21,10 +21,10 @@
     content: "";
     width: 30%;
     height: 3px;
-    top: 50%;
+    top: 75%;
     right: -30%;
     background-color: #4a00d3;
-  }
+  } */
 }
 
 @media (min-width: $lg) {

@@ -19,10 +19,8 @@
   margin: 0 auto;
   position: relative;
   padding: 0.5rem;
-  max-width: 1200px;
 }
 .menuitem {
-  text-transform: uppercase;
   color: #000000;
   position: relative;
   display: block;
@@ -35,7 +33,7 @@
   transition-timing-function: cubic-bezier(0.0075, 0.00082, 0.00098, 0.8);
   cursor: pointer;
   padding: 0.5rem 0;
-  margin: 0 2rem;
+  margin: 0 0.7rem;
   &::before {
     position: absolute;
     content: "";
@@ -71,6 +69,7 @@
 @media screen and (min-width: $md) {
   .menuitem {
     font-size: 2rem;
+    margin: 0 1rem;
   }
 }
 
@@ -82,9 +81,9 @@
     width: 100%;
   }
   .menuwrapper__inner {
-    width: 40%;
     margin: 0 auto;
     padding: 1rem;
+    justify-content: flex-end;
   }
   .menuitem {
     font-size: 2rem;

@@ -2,8 +2,20 @@
 
 .wrapper {
   height: 200px;
-  background-color: #000000;
+  //background-color: #f0f0f0;
   margin: 3rem 0;
+  position: relative;
+  &::before {
+    position: absolute;
+    content: "";
+    width: 200px;
+    height: 2px;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: #b7b7b7;
+  }
 }
 .inner {
   display: flex;
@@ -28,16 +40,16 @@
   margin: 0 0 0.2rem 0;
 }
 .socialicons {
-  fill: #ffffff;
   margin: 0.5rem;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
+  stroke: #000000;
   &:hover {
-    fill: #ececec;
+    stroke: #7328ff;
   }
 }
 .copyright {
-  color: #ffffff;
+  color: #000000;
 }
 @media (min-width: $md) {
   .name {

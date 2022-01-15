@@ -21,7 +21,7 @@ const Menu = () => {
           smooth={true}
           className={styles.menuitem}
         >
-          work
+          Projects
         </ScrollLink>
         <ScrollLink
           to="about"
@@ -29,7 +29,7 @@ const Menu = () => {
           smooth={true}
           className={styles.menuitem}
         >
-          about
+          About
         </ScrollLink>
         <Link href="/resume">
           <span className={styles.menuitem}>Resume</span>

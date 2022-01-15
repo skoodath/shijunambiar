@@ -1,16 +1,17 @@
 import styles from "../../styles/landing.module.scss";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const Social = () => {
   return (
     <div className={styles.cta_wrapper}>
       <a href="mailto:shiju.nambiar@outlook.com" className={styles.cta}>
-        email
+        <FiMail />
       </a>
       <a href="https://github.com/skoodath" className={styles.cta}>
-        github
+        <FiGithub />
       </a>
       <a href="https://www.linkedin.com/in/nambiars/" className={styles.cta}>
-        linkedin
+        <FiLinkedin />
       </a>
     </div>
   );
