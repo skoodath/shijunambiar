@@ -4,7 +4,7 @@
 .wrapper {
   height: 100vh;
   background-color: #ffffff;
-  background-image: url("../public/images/bg3.png");
+  background-image: url("../public/images/bg1.png");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: right top;
@@ -27,7 +27,7 @@
 .name {
   margin: 0 auto;
   display: flex;
-  flex-direction: column;
+  flex-direction: column-reverse;
   justify-content: space-between;
   padding: 3rem 0;
   position: relative;
@@ -37,13 +37,16 @@
   width: 100%;
 }
 .name_text {
-  font-size: 2.2rem;
+  font-size: 1.2rem;
   font-weight: 600;
   line-height: normal;
   width: 100%;
   color: #000000;
   text-transform: uppercase;
   margin: 0 auto;
+}
+.profile_text {
+  font-size: 2.2rem;
 }
 .name_divider {
   height: 1px;
@@ -60,8 +63,33 @@
   letter-spacing: 0.08rem;
   color: #878787;
 }
+.name_right {
+  width: 100%;
+  position: relative;
+  img {
+    width: 70%;
+    filter: grayscale(100%);
+  }
+}
+.profile_mask {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1),
+    rgba(255, 255, 255, 0.1)
+  );
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 @media screen and (min-width: $md) {
   .name_text {
+    font-size: 1.5rem;
+  }
+  .profile_text {
     font-size: 4rem;
   }
   .value_para {
@@ -72,11 +100,24 @@
   .inner {
     margin: 0 auto;
   }
+  .name {
+    flex-direction: column;
+  }
   .name_left {
     flex-direction: row;
+    width: 65%;
   }
   .name_text {
-    font-size: 5rem;
+    font-size: 1.4rem;
+  }
+  .name_right {
+    width: 35%;
+    img {
+      width: 80%;
+    }
+  }
+  .profile_text {
+    font-size: 4rem;
   }
   .value {
     width: 100%;
@@ -86,11 +127,5 @@
     font-size: 2rem;
     letter-spacing: 0.05rem;
     word-spacing: 0.1rem;
-  }
-}
-@media screen and (min-width: $xl) {
-  .value {
-    width: 50%;
-    margin: 0 0 0 auto;
   }
 }
