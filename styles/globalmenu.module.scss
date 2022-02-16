@@ -10,12 +10,12 @@
   z-index: 2;
   background-color: #ffffff;
   width: 100%;
-  &::before {
+  /*  &::before {
     position: absolute;
     content: "";
     width: 60%;
     height: 1px;
-    bottom: 10%;
+    top: 0;
     left: 0;
     background-color: #ff2849;
   }
@@ -24,10 +24,10 @@
     content: "";
     width: 60%;
     height: 1px;
-    bottom: 0;
+    top: 10%;
     right: 0;
     background-color: #7328ff;
-  }
+  } */
 }
 .menuwrapper__inner {
   display: flex;
@@ -40,7 +40,7 @@
   padding: 0.5rem;
 }
 .menuitem {
-  color: #000000;
+  color: #322e2e;
   position: relative;
   display: block;
   text-align: center;
