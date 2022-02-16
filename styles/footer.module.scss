@@ -8,13 +8,24 @@
   &::before {
     position: absolute;
     content: "";
-    width: 200px;
-    height: 2px;
+    width: 60%;
+    height: 1px;
     top: 0;
-    left: 50%;
-    transform: translateX(-50%);
+    left: 0;
+    //transform: translateX(-50%);
     z-index: 1;
-    background-color: #b7b7b7;
+    background-color: #ff2849;
+  }
+  &::after {
+    position: absolute;
+    content: "";
+    width: 60%;
+    height: 1px;
+    top: 5%;
+    right: 0;
+    //transform: translateX(-50%);
+    z-index: 1;
+    background-color: #7328ff;
   }
 }
 .inner {

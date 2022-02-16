@@ -36,7 +36,7 @@
 
 .card_wrapper {
   overflow: hidden;
-  padding: 1rem;
+  padding: 0.7rem;
   margin: 0 0 1rem 0;
   display: flex;
   flex-direction: column;
@@ -44,11 +44,11 @@
   background-color: #ffffff;
   position: relative;
   border-radius: 5px;
-  &:hover {
+  /* &:hover {
     transform: scale3d(1.005, 1.005, 1.005);
     transition: transform 0.3s ease-in, box-shadow 0.2s ease-in-out;
     box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.15);
-  }
+  } */
   &::before {
     content: "";
     position: absolute;
@@ -58,6 +58,7 @@
     border-left: 12px solid #7328ff;
     border-bottom: 12px solid transparent;
     border-right: 12px solid transparent;
+    border-radius: 5px 0 0 0;
     top: 10px;
     left: 10px;
     z-index: 1;
@@ -71,6 +72,7 @@
     border-left: 8px solid transparent;
     border-right: 8px solid #7328ff;
     border-bottom: 8px solid #7328ff;
+    border-radius: 0 0 3px 0;
     bottom: 10px;
     right: 10px;
     z-index: 1;
@@ -82,6 +84,12 @@
   flex-direction: column;
   height: 100%;
   background-color: #ffffff;
+  padding: 0.5rem;
+  box-shadow: 0 0 10px -4px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease-in, box-shadow 0.2s ease-in-out;
+  &:hover {
+    transform: scale3d(1.005, 1.005, 1.005);
+  }
 }
 .card_image {
   display: flex;
@@ -178,7 +186,7 @@
   }
   .card_wrapper {
     margin: 0 1rem 1rem 0;
-    width: 400px;
+    width: 380px;
   }
 }
 

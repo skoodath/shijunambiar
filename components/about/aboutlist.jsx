@@ -4,7 +4,7 @@ const AboutMe = () => {
   return (
     <article className={styles.intro_card}>
       <div className={styles.intro_inner}>
-        <div className={styles.image_wrapper}>
+        {/*         <div className={styles.image_wrapper}>
           <div className={styles.image_inner}>
             <img
               className={styles.profile}
@@ -14,7 +14,7 @@ const AboutMe = () => {
               height="150"
             />
           </div>
-        </div>
+        </div> */}
         <div className={styles.text_wrapper}>
           <div className={styles.text_inner}>
             <p className={styles.text_para}>

@@ -9,15 +9,7 @@ const Name = () => {
           <h3 className={styles.name_text}>Shiju Nambiar</h3>
           <h1 className={styles.profile_text}>Frontend Web Developer</h1>
         </div>
-        <div>
-          <div className={styles.profile_mask}></div>
-          <img
-            className={styles.profile}
-            src="../../images/profile.png"
-            alt="Shiju Nambiar"
-            width="100"
-          />
-        </div>
+
         <div className={styles.name_right}>
           <div className={styles.value}>
             <p className={styles.value_para}>
