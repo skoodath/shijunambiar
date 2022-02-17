@@ -2,10 +2,12 @@
 @import "social";
 
 .wrapper {
-  height: 100vh;
+  height: 60vh;
+  min-height: 598px;
   background-color: #ffffff;
   position: relative;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 }
@@ -18,15 +20,31 @@
   height: 100%;
   max-width: 1200px;
 }
+.section_separator {
+  height: 200px;
+  width: 100%;
+}
 .profile {
   width: 100px;
   height: 100px;
-  border-radius: 50%;
-  background-color: #e6e6e6;
+  //border-radius: 50%;
+  //background-color: #e6e6e6;
   display: flex;
   position: relative;
   overflow: hidden;
   margin: 1rem 0;
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100px;
+    height: 60px;
+    background-image: linear-gradient(#ffffff, #fab6c1);
+    z-index: 0;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    //border-radius: 50%;
+  }
 }
 .profile_pic {
   width: 90%;
@@ -39,7 +57,7 @@
   margin: 0 auto;
   display: flex;
   place-items: center;
-  padding: 3rem 0;
+  padding: 0;
   position: relative;
   overflow: hidden;
   background-color: #ffffff;
@@ -60,12 +78,13 @@
   font-weight: 600;
   line-height: normal;
   width: 100%;
-  color: #322e2e;
+  color: #8b8b8b;
   text-transform: uppercase;
   margin: 0 auto;
 }
 .profile_text {
-  font-size: 2.2rem;
+  font-size: 1.8rem;
+  margin: 0 0 1rem 0;
 }
 .name_divider {
   height: 1px;
@@ -75,6 +94,9 @@
 .value {
   height: auto;
   width: 100%;
+  background-color: #ffebee;
+  padding: 1rem;
+  border-radius: 10px;
 }
 .value_para {
   font-size: 1rem;
@@ -94,15 +116,22 @@
   .profile {
     width: 120px;
     height: 120px;
+    &::before {
+      width: 120px;
+      height: 60px;
+    }
   }
   .profile_text {
-    font-size: 4rem;
+    font-size: 3rem;
   }
   .value_para {
     font-size: 1.5rem;
   }
 }
 @media screen and (min-width: $lg) {
+  .wrapper {
+    min-height: 660px;
+  }
   .inner {
     margin: 0 auto;
   }
@@ -115,9 +144,10 @@
   .profile {
     width: 150px;
     height: 150px;
-  }
-  .profile_text {
-    font-size: 4rem;
+    &::before {
+      width: 150px;
+      height: 85px;
+    }
   }
   .value {
     width: 100%;
@@ -127,5 +157,12 @@
     font-size: 2rem;
     letter-spacing: 0.05rem;
     word-spacing: 0.1rem;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      background-color: #d31b39;
+      height: 50%;
+    }
   }
 }

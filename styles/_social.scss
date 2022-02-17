@@ -16,7 +16,9 @@
   padding: 0.3rem;
   cursor: pointer;
   &:hover {
-    stroke: #7328ff;
+    svg {
+      stroke: #7328ff;
+    }
   }
 }
 @media screen and (min-width: $md) {
@@ -28,7 +30,9 @@
   .cta {
     font-size: 2.2rem;
     &:hover {
-      stroke: #7328ff;
+      svg {
+        stroke: #7328ff;
+      }
     }
   }
   .cta_wrapper {

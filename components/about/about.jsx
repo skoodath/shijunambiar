@@ -5,7 +5,9 @@ const About = () => {
   return (
     <div className={styles.wrapper} name="about">
       <div className={styles.inner}>
-        <h2 className={styles.text}>About Me</h2>
+        <h2 className={styles.text} style={{ color: "#322e2e" }}>
+          About Me
+        </h2>
         <AboutMe />
       </div>
     </div>
