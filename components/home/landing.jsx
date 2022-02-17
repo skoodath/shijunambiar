@@ -18,7 +18,7 @@ const Landing = () => {
               <div className={styles.name_title}>
                 <h3 className={styles.name_text}>Shiju Nambiar</h3>
                 <h1 className={styles.profile_text}>
-                  web developer &amp; cloud enthusiast
+                  Web Developer &amp; Cloud Enthusiast
                 </h1>
               </div>
 

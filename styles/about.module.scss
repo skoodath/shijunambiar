@@ -19,7 +19,7 @@
   align-items: center;
   justify-content: center;
   padding: 0;
-  margin: 6vh auto;
+  margin: 0 auto;
   position: relative;
   max-width: 1200px;
 }
@@ -54,37 +54,22 @@
 .text_inner {
   position: relative;
   z-index: 1;
-  margin: 0 0 3rem 0;
+  border-radius: 10px;
+  display: flex;
+  height: 180px;
+  justify-content: center;
+  align-items: center;
   &:nth-child(odd) {
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 50%;
-      //border-radius: 50%;
-      background-color: rgb(204, 204, 204);
-      top: 50%;
-      left: -10px;
-      transform: skewX(15deg);
-      z-index: -1;
-      filter: blur(3px);
-    }
+    margin: 0 0 1rem 0;
+    width: 100%;
+    box-shadow: 0 0 5px #cccccc;
   }
   &:nth-child(even) {
     position: relative;
     z-index: 1;
-    &::before {
-      content: "";
-      position: absolute;
-      width: 100%;
-      height: 50%;
-      background-color: rgba(204, 204, 204);
-      top: 50%;
-      right: -10px;
-      transform: skewX(-15deg);
-      z-index: -1;
-      filter: blur(3px);
-    }
+    margin: 0 0 1rem 0;
+    width: 100%;
+    box-shadow: 0 0 5px #cccccc;
   }
 }
 
@@ -92,10 +77,8 @@
   letter-spacing: 1px;
   line-height: 1.5;
   font-weight: 500;
-  box-shadow: 0 0 50px rgb(0 0 0 / 5%) inset;
   padding: 1rem;
   position: relative;
-  height: 100%;
   z-index: 0;
   background-color: #ffffff;
 }
@@ -124,6 +107,20 @@
 @media screen and (min-width: $md) {
   .text_wrapper {
     padding: 2rem 0 0 0;
+  }
+  .text_inner {
+    height: 220px;
+    &:nth-child(odd) {
+      width: 45%;
+      margin: 0 auto 0 0;
+    }
+    &:nth-child(even) {
+      width: 45%;
+      margin: 0 0 0 auto;
+    }
+  }
+  .text_para {
+    font-size: 1.2rem;
   }
   .intro_card {
     display: flex;
@@ -156,8 +153,18 @@
   .text_wrapper {
     width: 68%;
   }
+  .text_inner {
+    &:nth-child(odd) {
+      width: 45%;
+      margin: 0 auto 0 0;
+    }
+    &:nth-child(even) {
+      width: 45%;
+      margin: 0 0 0 auto;
+    }
+  }
   .text_para {
-    font-size: 1.5rem;
+    font-size: 1.3rem;
   }
   .skill_listitem {
     font-size: 1.3rem;
