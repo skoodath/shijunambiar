@@ -19,7 +19,7 @@ const Landing = () => {
               <div className={styles.value}>
                 <p className={styles.value_para}>
                   I am web developer and tech enthusiast based out of India. I
-                  want to built websites which are accessible, responsive,
+                  love creating websites which are accessible, responsive,
                   elegant and purposeful.
                 </p>
               </div>
