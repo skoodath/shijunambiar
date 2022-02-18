@@ -20,58 +20,46 @@
   height: 100%;
   max-width: 1200px;
 }
-.section_separator {
-  height: 200px;
-  width: 100%;
-}
 .profile {
-  width: 100px;
-  height: 100px;
-  //border-radius: 50%;
-  //background-color: #e6e6e6;
   display: flex;
-  position: relative;
+  position: absolute;
   overflow: hidden;
-  margin: 1rem 0;
-  &::before {
-    content: "";
-    position: absolute;
-    width: 100px;
-    height: 60px;
-    background-image: linear-gradient(#ffffff, #fab6c1);
-    z-index: 0;
-    bottom: 0;
-    left: 50%;
-    transform: translateX(-50%);
-    //border-radius: 50%;
-  }
+  margin: 0;
+  bottom: 0;
+  right: 10%;
+  z-index: 2;
 }
 .profile_pic {
-  width: 90%;
+  width: 180px;
   height: auto;
   display: inline-block;
-  position: absolute;
-  bottom: 0;
 }
 .name {
   margin: 0 auto;
   display: flex;
   place-items: center;
-  padding: 0;
+  padding: 0 1rem;
   position: relative;
   overflow: hidden;
-  background-color: #ffffff;
-  background-repeat: no-repeat;
-  background-position: bottom;
   border-radius: 5px;
-  overflow: hidden;
   width: 80%;
   height: 70%;
-  //box-shadow: 0 0 1px rgb(157, 157, 157), 0 0 2px rgb(189, 189, 189),
-  //0 0 2px rgb(208, 208, 208);
+  z-index: 0;
+  perspective: 400px;
+}
+.banner {
+  position: absolute;
+  width: 100%;
+  height: 80%;
+  transform: rotateY(10deg);
+  background-color: #e2e7fd;
+  background-image: linear-gradient(90deg, #ffffff, #e2e7fd);
+  z-index: 1;
 }
 .name_left {
   width: 100%;
+  position: relative;
+  z-index: 3;
 }
 .name_text {
   font-size: 1.2rem;
@@ -81,10 +69,15 @@
   color: #8b8b8b;
   text-transform: uppercase;
   margin: 0 auto;
+  position: relative;
+  z-index: 3;
 }
+
 .profile_text {
   font-size: 1.8rem;
   margin: 0 0 1rem 0;
+  position: relative;
+  z-index: 3;
 }
 .name_divider {
   height: 1px;
@@ -94,15 +87,18 @@
 .value {
   height: auto;
   width: 100%;
-  background-color: #ffebee;
-  padding: 1rem;
+  padding: 0;
   border-radius: 10px;
+  z-index: 3;
 }
 .value_para {
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.08rem;
   color: #413d3d;
+  width: 80%;
+  position: relative;
+  z-index: 3;
 }
 .name_right {
   width: 100%;
@@ -113,19 +109,15 @@
   .name_text {
     font-size: 1.5rem;
   }
-  .profile {
-    width: 120px;
-    height: 120px;
-    &::before {
-      width: 120px;
-      height: 60px;
-    }
+  .profile_pic {
+    width: 200px;
   }
   .profile_text {
     font-size: 3rem;
   }
   .value_para {
     font-size: 1.5rem;
+    width: 90%;
   }
 }
 @media screen and (min-width: $lg) {
@@ -135,19 +127,17 @@
   .inner {
     margin: 0 auto;
   }
+  .name {
+    padding: 0 2rem;
+  }
   .name_left {
     flex-direction: row;
   }
   .name_text {
     font-size: 1.4rem;
   }
-  .profile {
-    width: 150px;
-    height: 150px;
-    &::before {
-      width: 150px;
-      height: 85px;
-    }
+  .profile_pic {
+    width: 300px;
   }
   .value {
     width: 100%;
@@ -158,11 +148,6 @@
     letter-spacing: 0.05rem;
     word-spacing: 0.1rem;
     position: relative;
-    &::before {
-      content: "";
-      position: absolute;
-      background-color: #d31b39;
-      height: 50%;
-    }
+    width: 80%;
   }
 }
