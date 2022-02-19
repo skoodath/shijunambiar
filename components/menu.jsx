@@ -4,7 +4,7 @@ import Link from "next/link";
 
 const Menu = () => {
   return (
-    <section className={styles.menuwrapper}>
+    <header className={styles.menuwrapper}>
       <nav className={styles.menuwrapper__inner}>
         <ScrollLink
           to="home"
@@ -40,7 +40,7 @@ const Menu = () => {
           Profile
         </ScrollLink>
       </nav>
-    </section>
+    </header>
   );
 };
 

@@ -22,7 +22,7 @@
   padding: 0.5rem;
 }
 .menuitem {
-  color: #322e2e;
+  color: $primarycolor;
   position: relative;
   display: block;
   text-align: center;
@@ -39,7 +39,7 @@
     content: "";
     width: 100%;
     height: 0;
-    background-color: #7328ff;
+    background-color: $accentcolor1;
     top: 0;
     left: 0;
     z-index: 1;
