@@ -15,10 +15,10 @@
   margin: 0 0.3rem 0 0;
   padding: 0.3rem;
   cursor: pointer;
-  color: #bdbdbd;
+  color: $litecolor;
   &:hover {
     svg {
-      stroke: #7328ff;
+      stroke: #79c3f3;
     }
   }
 }
@@ -30,11 +30,6 @@
 @media screen and (min-width: $lg) {
   .cta {
     font-size: 2.2rem;
-    &:hover {
-      svg {
-        stroke: #7328ff;
-      }
-    }
   }
   .cta_wrapper {
     top: 93%;

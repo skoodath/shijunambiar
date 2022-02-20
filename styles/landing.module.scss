@@ -33,6 +33,7 @@
   width: 180px;
   height: auto;
   display: inline-block;
+  filter: saturate(5%);
 }
 .name {
   margin: 0 auto;
@@ -50,18 +51,8 @@
   position: absolute;
   width: 100%;
   height: 80%;
-  background-image: linear-gradient(90deg, #2e2e2e, #161616);
+  background-image: linear-gradient(90deg, #202330, #191b25);
   z-index: 1;
-  border-radius: 10px;
-  &::before {
-    content: "";
-    position: absolute;
-    background-color: #00000031;
-    left: 0;
-    top: 0;
-    width: 50%;
-    height: 100%;
-  }
 }
 .name_left {
   width: 100%;
@@ -75,7 +66,7 @@
   font-weight: 600;
   line-height: normal;
   width: 100%;
-  color: #bdbdbd;
+  color: #a8f7ef;
   text-transform: uppercase;
   margin: 0 auto;
   position: relative;
@@ -87,7 +78,7 @@
   margin: 0 0 1rem 0;
   position: relative;
   z-index: 3;
-  color: #ffffff;
+  color: $litecolor;
 }
 .value {
   height: auto;
@@ -100,7 +91,7 @@
   font-size: 1rem;
   line-height: 1.5;
   letter-spacing: 0.08rem;
-  color: #bdbdbd;
+  color: #79c3f3;
   position: relative;
   z-index: 3;
 }
