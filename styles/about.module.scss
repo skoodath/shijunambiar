@@ -1,5 +1,4 @@
 @import "variables";
-@import "skillcard";
 @import "title";
 
 .wrapper {
@@ -62,14 +61,12 @@
   &:nth-child(odd) {
     margin: 0 0 1rem 0;
     width: 100%;
-    box-shadow: 0 0 5px #cccccc;
   }
   &:nth-child(even) {
     position: relative;
     z-index: 1;
     margin: 0 0 1rem 0;
     width: 100%;
-    box-shadow: 0 0 5px #cccccc;
   }
 }
 
@@ -109,7 +106,7 @@
     padding: 2rem 0 0 0;
   }
   .text_inner {
-    height: 220px;
+    height: 170px;
     &:nth-child(odd) {
       width: 45%;
       margin: 0 auto 0 0;

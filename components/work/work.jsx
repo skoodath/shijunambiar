@@ -7,9 +7,7 @@ const Work = () => {
     <>
       <div className={styles.wrapper} name="work">
         <div className={styles.exp_inner}>
-          <h2 className={styles.text} style={{ color: "#ffffff" }}>
-            Projects
-          </h2>
+          <h2 className={styles.text}>Projects</h2>
           <div className={styles.card_container}>
             {works.map((work) => (
               <WorkCard key={work.id} {...work} />

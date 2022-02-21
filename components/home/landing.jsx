@@ -26,13 +26,13 @@ const Landing = () => {
               <Social />
             </div>
           </section>
-          <div className={styles.profile}>
+          {/* <div className={styles.profile}>
             <img
               src="../../images/profile.png"
               alt="Shiju Nambiar"
               className={styles.profile_pic}
             />
-          </div>
+          </div> */}
         </div>
       </div>
     </>
