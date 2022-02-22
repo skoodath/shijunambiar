@@ -1,29 +1,17 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap");
+@import "variables";
 
 .wrapper {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #ffffff;
+  background-color: $footerbg;
+  height: 200px;
   padding: 0;
   font-family: "Montserrat", sans-serif;
 }
 .inner {
   background-color: #ffffff;
-  //box-shadow: 1px 1px 7px -3px rgba(0, 0, 0, 0.2);
-}
-.summary,
-.experience,
-.techstack {
-  margin: 2.5rem;
-}
-.sectiontitle {
-  font-size: 0.8rem;
-  color: #666666;
-  text-transform: uppercase;
-  border-bottom: 1px solid #666666;
-  padding-bottom: 0.2rem;
 }
 
 .prevexp {

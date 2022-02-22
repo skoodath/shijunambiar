@@ -56,20 +56,21 @@
 .text_inner {
   position: relative;
   z-index: 1;
-  border-radius: 10px;
   display: flex;
-  height: 140px;
   justify-content: center;
   align-items: center;
+  background-color: #fff;
+  padding: 1rem 0;
   &:nth-child(odd) {
-    margin: 0 0 1rem 0;
+    margin: 0;
     width: 100%;
   }
   &:nth-child(even) {
-    position: relative;
-    z-index: 1;
-    margin: 0 0 1rem 0;
+    margin: 0;
     width: 100%;
+  }
+  &:last-child {
+    border: none;
   }
 }
 
@@ -77,12 +78,27 @@
   letter-spacing: 1px;
   line-height: 1.5;
   font-weight: 500;
-  padding: 1rem;
   position: relative;
   z-index: 0;
-  background-color: #ffffff;
+  .text_span_marker {
+    display: inline-block;
+    content: "";
+    position: absolute;
+    background-color: $primarybg;
+    width: 10px;
+    height: 25px;
+    left: -15px;
+  }
 }
-
+.text_font_big {
+  font-size: 2rem;
+}
+.text_font_medium {
+  font-size: 1.5rem;
+}
+.text_font_small {
+  font-size: 1.2rem;
+}
 .skill_list {
   display: flex;
   flex-direction: column;
@@ -109,14 +125,13 @@
     padding: 2rem 0 0 0;
   }
   .text_inner {
-    height: 170px;
     &:nth-child(odd) {
-      width: 45%;
-      margin: 0 auto 0 0;
+      width: 65%;
+      margin: 0 auto 0 10%;
     }
     &:nth-child(even) {
-      width: 45%;
-      margin: 0 0 0 auto;
+      width: 65%;
+      margin: 0 10% 0 auto;
     }
   }
   .text_para {
@@ -155,11 +170,9 @@
   }
   .text_inner {
     &:nth-child(odd) {
-      width: 45%;
       margin: 0 auto 0 15%;
     }
     &:nth-child(even) {
-      width: 45%;
       margin: 0 15% 0 auto;
     }
   }

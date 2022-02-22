@@ -18,33 +18,60 @@ const About = () => {
             </div>
             <div className={styles.text_wrapper}>
               <div className={styles.text_inner}>
-                <p className={styles.text_para}>
-                  I am a web designer and developer based in India. I am
-                  passionate about building performant, responsive, accessible
-                  websites and build unique brand identity.
+                <p
+                  className={[styles.text_para, styles.text_font_big].join(" ")}
+                >
+                  self-taught{" "}
+                  <span style={{ fontWeight: 900 }}>
+                    User Interface designer
+                  </span>{" "}
+                  and <span style={{ fontWeight: 900 }}>Web Developer</span>{" "}
+                  from India -
                 </p>
               </div>
               <div className={styles.text_inner}>
                 <p className={styles.text_para}>
-                  I am a web designer and developer based in India. I am
+                  i am a web designer and developer based in India. I am
                   passionate about building performant, responsive, accessible
-                  websites and build unique brand identity.
+                  websites and build unique brand identity -
                 </p>
               </div>
 
               <div className={styles.text_inner}>
-                <p className={styles.text_para}>
-                  Over the years I have worked with clients, customers and
-                  various stakeholders across cultural spectrums, leading high
-                  performance teams, taking up challenging roles and
-                  responsibilities,
+                <p
+                  className={[styles.text_para, styles.text_font_medium].join(
+                    " "
+                  )}
+                >
+                  dawned many hats over the years, working with clients,
+                  customers, vendors,{" "}
+                  <span style={{ fontWeight: 700, fontSize: "1.8rem" }}>
+                    helping teams succeed
+                  </span>
+                  , achieve{" "}
+                  <span style={{ fontWeight: 900, fontSize: "2rem" }}>
+                    customer success
+                  </span>{" "}
+                  <span
+                    style={{
+                      display: "inline-block",
+                      width: "5px",
+                      height: "14px",
+                      backgroundColor: "#000",
+                    }}
+                  ></span>
+                  -
                 </p>
               </div>
 
               <div className={styles.text_inner}>
-                <p className={styles.text_para}>
-                  driving efficiency in technology and operations, building
-                  websites and deploying enterprise applications.
+                <p
+                  className={[styles.text_para, styles.text_font_small].join(
+                    " "
+                  )}
+                >
+                  driving efficiency through technology and operations, building
+                  websites and helping deploy enterprise applications
                 </p>
               </div>
             </div>

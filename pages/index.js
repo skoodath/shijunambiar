@@ -5,6 +5,7 @@ import Landing from "../components/home/landing";
 import Menu from "../components/menu";
 
 const Work = dynamic(() => import("../components/work/work"));
+const Project = dynamic(() => import("../components/projects/project"));
 const About = dynamic(() => import("../components/about/about"));
 const Footer = dynamic(() => import("../components/footer"));
 
@@ -26,6 +27,7 @@ const Home = () => {
       <main>
         <Landing />
         <Work />
+        <Project />
         <About />
         <Footer />
       </main>

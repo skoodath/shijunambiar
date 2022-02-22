@@ -3,7 +3,7 @@
 .wrapper {
   height: 200px;
   background-color: $footerbg;
-  margin: 3rem 0;
+  margin: 0 0 3rem 0;
   position: relative;
 }
 .inner {
@@ -23,13 +23,13 @@
   margin: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  stroke: $litecolor;
+  stroke: #c6c9d5;
   &:hover {
-    stroke: $accentcolor;
+    stroke: $litecolor;
   }
 }
 .copyright {
-  color: $litecolor;
+  color: #c6c9d5;
 }
 @media (min-width: $md) {
   .name {
