@@ -30,21 +30,24 @@
   align-items: center;
 }
 .image_wrapper {
-  width: 100%;
+  width: 250px;
   height: 50%;
 }
 .image_inner {
-  width: 150px;
-  height: 150px;
   display: flex;
   justify-content: center;
   align-items: center;
   margin: auto;
   position: relative;
-  overflow: hidden;
-  border-radius: 50%;
+  width: 100%;
+  background-color: $secondarybg;
 }
-
+.profile {
+  width: 90%;
+  filter: saturate(15%) hue-rotate(250deg) brightness(120%);
+  position: relative;
+  z-index: 1;
+}
 .text_wrapper {
   width: 80%;
   height: 100%;
@@ -55,7 +58,7 @@
   z-index: 1;
   border-radius: 10px;
   display: flex;
-  height: 180px;
+  height: 140px;
   justify-content: center;
   align-items: center;
   &:nth-child(odd) {
@@ -143,7 +146,7 @@
 }
 @media screen and (min-width: $lg) {
   .image_wrapper {
-    width: 200px;
+    width: 250px;
     height: 100%;
     margin: 0;
   }
@@ -153,11 +156,11 @@
   .text_inner {
     &:nth-child(odd) {
       width: 45%;
-      margin: 0 auto 0 0;
+      margin: 0 auto 0 15%;
     }
     &:nth-child(even) {
       width: 45%;
-      margin: 0 0 0 auto;
+      margin: 0 15% 0 auto;
     }
   }
   .text_para {

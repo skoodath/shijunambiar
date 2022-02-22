@@ -5,28 +5,6 @@
   background-color: $footerbg;
   margin: 3rem 0;
   position: relative;
-  /* &::before {
-    position: absolute;
-    content: "";
-    width: 60%;
-    height: 1px;
-    top: 0;
-    left: 0;
-    //transform: translateX(-50%);
-    z-index: 1;
-    background-color: #ff2849;
-  }
-  &::after {
-    position: absolute;
-    content: "";
-    width: 60%;
-    height: 1px;
-    top: 5%;
-    right: 0;
-    //transform: translateX(-50%);
-    z-index: 1;
-    background-color: #7328ff;
-  } */
 }
 .inner {
   display: flex;
@@ -45,13 +23,13 @@
   margin: 0.5rem;
   font-size: 1.5rem;
   cursor: pointer;
-  stroke: $secondarycolor;
+  stroke: $litecolor;
   &:hover {
     stroke: $accentcolor;
   }
 }
 .copyright {
-  color: $secondarycolor;
+  color: $litecolor;
 }
 @media (min-width: $md) {
   .name {
