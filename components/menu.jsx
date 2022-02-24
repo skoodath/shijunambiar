@@ -29,7 +29,7 @@ const Menu = () => {
           smooth={true}
           className={styles.menuitem}
         >
-          About
+          About Me
         </ScrollLink>
       </nav>
     </header>

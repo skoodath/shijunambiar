@@ -123,11 +123,11 @@
 .project_desc__text {
   font-size: 1rem;
   border-bottom: 1px solid #c5c5c5;
-  margin: 0 0 1rem 0;
+  padding: 0 0 1rem 0;
 }
 .project_skill__text {
   font-size: 1rem;
-  padding: 0 1rem 0 0;
+  padding: 0 1rem 1rem 0;
 }
 @media screen and (min-width: $md) {
   .exp_inner {

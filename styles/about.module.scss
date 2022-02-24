@@ -2,7 +2,7 @@
 @import "title";
 
 .wrapper {
-  background-color: #ffffff;
+  background-color: #fafbff;
   background-size: cover;
   background-size: cover;
   background-position: right top;
@@ -40,7 +40,7 @@
   margin: auto;
   position: relative;
   width: 100%;
-  background-color: $secondarybg;
+  background-color: #e0e3f0;
 }
 .profile {
   width: 90%;
@@ -59,7 +59,6 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: #fff;
   padding: 1rem 0;
   &:nth-child(odd) {
     margin: 0;
