@@ -52,14 +52,6 @@ const About = () => {
                   <span style={{ fontWeight: 900, fontSize: "2rem" }}>
                     customer success
                   </span>{" "}
-                  <span
-                    style={{
-                      display: "inline-block",
-                      width: "5px",
-                      height: "14px",
-                      backgroundColor: "#000",
-                    }}
-                  ></span>
                   -
                 </p>
               </div>

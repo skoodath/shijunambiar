@@ -170,10 +170,10 @@
   }
   .text_inner {
     &:nth-child(odd) {
-      margin: 0 auto 0 15%;
+      margin: 0 auto 0 10%;
     }
     &:nth-child(even) {
-      margin: 0 15% 0 auto;
+      margin: 0 10% 0 auto;
     }
   }
   .text_para {

@@ -1,22 +1,22 @@
+import { FiLink, FiGithub } from "react-icons/fi";
 import styles from "../../styles/work.module.scss";
-import ViewButton from "./workbutton";
 
 const WorkCard = ({ ...work }) => {
   const {
     src,
     alt,
     url,
+    github,
     title,
     description,
     techstack,
-    caption,
     image,
     width,
     height,
   } = work;
 
   return (
-    <a href={url} className={styles.card_wrapper} target="_blank">
+    <article className={styles.card_wrapper}>
       <div className={styles.card_inner}>
         <h3 className={styles.project_title}>{title}</h3>
         <div className={styles.card_image}>
@@ -27,23 +27,28 @@ const WorkCard = ({ ...work }) => {
             width={width}
             height={height}
           />
-        </div>
-        <div className={styles.project_container}>
           <div className={styles.project_desc}>
-            <div className={styles.project_desc_row_one}>
-              <h4 className={styles.project_subtitle}>About Project</h4>
-              <p className={styles.project_desc_text}>{description}</p>
-            </div>
-            <div className={styles.project_desc_row_two}>
-              <h4 className={styles.project_subtitle}>Technology Stack</h4>
-              <p className={styles.project_desc_text}>{techstack}</p>
+            <p className={styles.project_desc__text}>{description}</p>
+            <div className={styles.project_button__wrapper}>
+              <a href={url} target="blank" className={styles.view_link}>
+                <FiLink />
+              </a>
+              <a href={github} target="blank" className={styles.view_link}>
+                <FiGithub />
+              </a>
             </div>
           </div>
-
-          {/* <ViewButton link={url} caption={caption} /> */}
         </div>
+        <ul className={styles.project_skills}>
+          {techstack &&
+            techstack.map((tech) => (
+              <li key={tech} className={styles.project_skill__text}>
+                {tech}
+              </li>
+            ))}
+        </ul>
       </div>
-    </a>
+    </article>
   );
 };
 
