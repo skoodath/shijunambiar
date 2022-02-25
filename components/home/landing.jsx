@@ -4,7 +4,7 @@ import Social from "./social";
 const Landing = () => {
   return (
     <>
-      <div className={styles.wrapper} name="home">
+      <section className={styles.wrapper} name="home">
         <div className={styles.inner}>
           <section className={styles.name}>
             <div className={styles.banner}></div>
@@ -34,7 +34,7 @@ const Landing = () => {
             />
           </div> */}
         </div>
-      </div>
+      </section>
     </>
   );
 };

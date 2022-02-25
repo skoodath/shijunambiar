@@ -6,24 +6,6 @@
   text-transform: uppercase;
   position: relative;
   font-size: 2rem;
-  /* &:before {
-    position: absolute;
-    content: "";
-    width: 30%;
-    height: 3px;
-    top: 75%;
-    left: -30%;
-    background-color: #4a00d3;
-  }
-  &:after {
-    position: absolute;
-    content: "";
-    width: 30%;
-    height: 3px;
-    top: 75%;
-    right: -30%;
-    background-color: #4a00d3;
-  } */
 }
 
 @media (min-width: $lg) {

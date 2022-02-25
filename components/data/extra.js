@@ -1,25 +1,20 @@
 const extra = [
   {
     id: 1,
-    name: "bank of america",
-    description: `Software engineer in the consumer banking technology team, working
-    with developers, testers, database administrators, service and server
-    support teams during the build, test, deploy and release phases of
-    Pega applications
-    SharePoint UI developer and site collection administrator managing 50
-    plus SharePoint sites for consumer banking operations teams
+    name: "Comments Section",
+    description: `Comment section component was built as part of frontend mentor UI challenge
     `,
-    github: "",
-    livesite: "",
+    github: "https://github.com/skoodath/comments-section",
+    livesite: "https://comments-interactive.netlify.app/",
+    tech: ["ReactJS", "Context API", "LocalStorage", "Styled-Components"],
   },
   {
     id: 2,
-    name: "bank of america",
-    description: `PMO responsibilities for a team of 400+ Information Technology
-    professionals driving key metrics, managing connects, planning,
-    forecasting, risk management`,
-    github: "",
-    livesite: "",
+    name: "Amazon Clone",
+    description: `A UI Clone of Amazon's website`,
+    github: "https://github.com/skoodath/amazon-appama",
+    livesite: "https://amazon-india.netlify.app/",
+    tech: ["ReactJS", "Context API", "Styled-Components"],
   },
 ];
 

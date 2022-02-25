@@ -50,7 +50,7 @@ const works = [
     width: "85",
     height: "150",
     title: "Weather Snapshot",
-    description: `ReactJS, Styled-Components, Rest API, Axios, Responsive Web Design, CICD`,
+    description: `A weather app using two weather APIs`,
     techstack: ["ReactJS", "Styled-Components", "Axios"],
     url: "https://weathersnapshot.netlify.app/",
     github: "https://github.com/skoodath/weather-react",

@@ -2,7 +2,7 @@ import styles from "../../styles/about.module.scss";
 
 const About = () => {
   return (
-    <div className={styles.wrapper} name="about">
+    <section className={styles.wrapper} name="about">
       <div className={styles.inner}>
         <h2 className={styles.text}>About Me</h2>
         <section className={styles.intro_card}>
@@ -70,7 +70,7 @@ const About = () => {
           </div>
         </section>
       </div>
-    </div>
+    </section>
   );
 };
 

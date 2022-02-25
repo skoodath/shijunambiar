@@ -5,8 +5,8 @@ import works from "../data/showcase";
 const Work = () => {
   return (
     <>
-      <div className={styles.wrapper} name="work">
-        <div className={styles.exp_inner}>
+      <section className={styles.wrapper} name="work">
+        <div className={styles.inner}>
           <h2 className={styles.text}>Projects</h2>
           <div className={styles.card_container}>
             {works.map((work) => (
@@ -14,7 +14,7 @@ const Work = () => {
             ))}
           </div>
         </div>
-      </div>
+      </section>
     </>
   );
 };

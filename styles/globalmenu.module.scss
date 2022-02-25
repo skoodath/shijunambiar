@@ -75,12 +75,10 @@
 
 @media screen and (min-width: $lg) {
   .menuwrapper {
-    padding: 0;
     top: 0;
     bottom: auto;
   }
   .menuwrapper__inner {
-    margin: 0 auto;
     padding: 1rem;
     justify-content: flex-end;
     width: 85%;

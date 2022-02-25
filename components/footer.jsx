@@ -2,7 +2,7 @@ import styles from "../styles/footer.module.scss";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 
 const Footer = () => (
-  <div className={styles.wrapper}>
+  <section className={styles.wrapper}>
     <div className={styles.inner}>
       <div className={styles.social}>
         <FiGithub className={styles.socialicons} />
@@ -13,7 +13,7 @@ const Footer = () => (
         &copy;{new Date().getFullYear()} All rights reserved
       </div>
     </div>
-  </div>
+  </section>
 );
 
 export default Footer;

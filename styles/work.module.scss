@@ -18,7 +18,7 @@
   overflow: hidden;
 }
 
-.exp_inner {
+.inner {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -76,6 +76,7 @@
     position: relative;
     transition: all 0.3s ease-out;
     box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
   }
 }
 .project_desc {
@@ -109,16 +110,16 @@
 
 .project_title {
   font-size: 1.2rem;
+  font-weight: 400;
   padding: 0.5rem 0;
   margin: 0 auto;
 }
 
 .project_skills {
-  width: 95%;
+  width: 80%;
   margin: 0;
   display: flex;
   flex-flow: row wrap;
-  justify-content: center;
 }
 .project_desc__text {
   font-size: 1rem;
@@ -126,11 +127,12 @@
   padding: 0 0 1rem 0;
 }
 .project_skill__text {
-  font-size: 1rem;
-  padding: 0 1rem 1rem 0;
+  font-size: 0.9rem;
+  margin: 0 1rem 0.5rem 0;
+  border-bottom: 1px solid;
 }
 @media screen and (min-width: $md) {
-  .exp_inner {
+  .inner {
     width: 85%;
   }
   .card_container {
