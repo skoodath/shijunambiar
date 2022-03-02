@@ -1,10 +1,14 @@
 import styles from "../../styles/about.module.scss";
+import Title from "../title";
 
 const About = () => {
+  const title = {
+    name: "About Me",
+  };
   return (
     <section className={styles.wrapper} name="about">
       <div className={styles.inner}>
-        <h2 className={styles.text}>About Me</h2>
+        <Title text={title.name} />
         <section className={styles.intro_card}>
           <div className={styles.intro_inner}>
             <div className={styles.image_wrapper}>
@@ -21,7 +25,6 @@ const About = () => {
                 <p
                   className={[styles.text_para, styles.text_font_big].join(" ")}
                 >
-                  self-taught{" "}
                   <span style={{ fontWeight: 900 }}>
                     User Interface designer
                   </span>{" "}

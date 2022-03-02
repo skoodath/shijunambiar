@@ -1,6 +1,5 @@
 import styles from "../styles/globalmenu.module.scss";
 import { Link as ScrollLink } from "react-scroll";
-import Link from "next/link";
 
 const Menu = () => {
   return (

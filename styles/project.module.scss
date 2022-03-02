@@ -1,5 +1,4 @@
 @import "variables";
-@import "title";
 
 .wrapper {
   display: flex;
@@ -7,8 +6,7 @@
   justify-content: center;
   align-items: center;
   background-color: $footerbg;
-  padding: 0;
-  font-family: "Montserrat", sans-serif;
+  padding: 0 0 3rem 0;
 }
 .inner {
   display: flex;
@@ -37,7 +35,7 @@
   border-radius: 5px;
   padding: 1rem 0;
   margin: 0 0 1rem 0;
-  box-shadow: 0 0 5px #2f3241, 0 0 5px #343747, 0 0 5px #2f3241;
+  box-shadow: 0 0 5px #2f3241, 0 0 2px #343747, 0 0 2px #2f3241;
 }
 .header {
   display: flex;
@@ -51,7 +49,7 @@
 .title {
   color: #fff;
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 600;
   padding: 0 0 0.5rem 0;
   margin: 0.5rem 0;
   border-bottom: 1px solid #505468;
