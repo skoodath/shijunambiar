@@ -18,35 +18,39 @@ const WorkCard = ({ ...work }) => {
   return (
     <article className={styles.card_wrapper}>
       <div className={styles.card_inner}>
-        <h3 className={styles.project_title}>{title}</h3>
-        <div className={styles.card_image}>
-          <img
-            src={src}
-            alt={alt}
-            className={image}
-            width={width}
-            height={height}
-          />
+        <div className={styles.project_button__wrapper}>
+          <a href={url} target="blank" className={styles.view_link}>
+            <FiLink />
+          </a>
+          <a href={github} target="blank" className={styles.view_link}>
+            <FiGithub />
+          </a>
+        </div>
+        <div className={styles.header}>
+          <h3 className={styles.project_title}>{title}</h3>
+          <div className={styles.card_image}>
+            <img
+              src={src}
+              alt={alt}
+              className={image}
+              width={width}
+              height={height}
+            />
+          </div>
           <div className={styles.project_desc}>
             <p className={styles.project_desc__text}>{description}</p>
-            <div className={styles.project_button__wrapper}>
-              <a href={url} target="blank" className={styles.view_link}>
-                <FiLink />
-              </a>
-              <a href={github} target="blank" className={styles.view_link}>
-                <FiGithub />
-              </a>
-            </div>
           </div>
         </div>
-        <ul className={styles.project_skills}>
-          {techstack &&
-            techstack.map((tech) => (
-              <li key={tech} className={styles.project_skill__text}>
-                {tech}
-              </li>
-            ))}
-        </ul>
+        <div className={styles.footer}>
+          <ul className={styles.project_skills}>
+            {techstack &&
+              techstack.map((tech) => (
+                <li key={tech} className={styles.project_skill__text}>
+                  {tech}
+                </li>
+              ))}
+          </ul>
+        </div>
       </div>
     </article>
   );

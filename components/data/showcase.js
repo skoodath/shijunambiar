@@ -32,13 +32,14 @@ const works = [
     title: "Solar System 3D",
     description: `A fun, responsive 3D model of the solar system`,
     techstack: [
-      "Responsive Web Design",
-      "CSS animation",
-      "CSS Transforms",
-      "JavaScript",
       "HTML",
+
+      "JavaScript",
       "Gulp",
       "Axios",
+      "Responsive",
+      "CSS animation",
+      "CSS Transforms",
     ],
     url: "https://solarsystem3d.netlify.app/",
     github: "https://github.com/skoodath/solar-system",

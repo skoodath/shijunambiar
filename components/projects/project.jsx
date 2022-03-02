@@ -8,7 +8,7 @@ const Project = () => {
       <div className={styles.inner}>
         <h3
           className={styles.text}
-          style={{ color: "#c6c9d5", fontSize: "1.5rem" }}
+          style={{ color: "#ffffff", fontSize: "1.5rem" }}
         >
           Other Projects
         </h3>
