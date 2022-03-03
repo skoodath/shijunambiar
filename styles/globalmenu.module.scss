@@ -10,6 +10,7 @@
   z-index: 4;
   background-color: $primarybg;
   width: 100%;
+  display: none;
 }
 .menuwrapper__inner {
   display: flex;
@@ -77,6 +78,7 @@
   .menuwrapper {
     top: 0;
     bottom: auto;
+    display: block;
   }
   .menuwrapper__inner {
     padding: 1rem;

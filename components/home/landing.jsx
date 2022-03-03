@@ -18,21 +18,14 @@ const Landing = () => {
 
               <div className={styles.value}>
                 <p className={styles.value_para}>
-                  I am web developer and tech enthusiast based out of India. I
-                  love creating websites which are accessible, responsive,
-                  elegant and purposeful.
+                  I am a passionate user interface designer, web developer and a
+                  cloud enthusiast from India who loves creating accessible,
+                  responsive and purposeful web content.
                 </p>
               </div>
               <Social />
             </div>
           </section>
-          {/* <div className={styles.profile}>
-            <img
-              src="../../images/profile.png"
-              alt="Shiju Nambiar"
-              className={styles.profile_pic}
-            />
-          </div> */}
         </div>
       </section>
     </>

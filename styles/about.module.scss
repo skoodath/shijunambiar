@@ -58,9 +58,6 @@
 .text_inner {
   position: relative;
   z-index: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   padding: 1rem 0;
   &:nth-child(odd) {
     margin: 0;
@@ -74,7 +71,47 @@
     border: none;
   }
 }
-
+.skill_wrapper {
+  background-color: #ecedf5;
+  padding: 1rem;
+  border-radius: 10px;
+}
+.subheader {
+  border-bottom: 1px solid #cccedd;
+  margin: 0 0 1rem 0;
+  font-size: 1.2rem;
+}
+.skill {
+  height: 20px;
+  margin: 0 0 0.5rem 0;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+.skill_name {
+  display: inline-block;
+  flex: 42%;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+.skill_bar__bg {
+  width: 100%;
+  height: 100%;
+  background-color: #bec3d8;
+  position: relative;
+  display: inline-block;
+  flex: 58%;
+  border-radius: 3px;
+  overflow: hidden;
+  box-shadow: 0 0 3px rgb(0, 0, 0, 0.15), 0 0 3px rgb(0, 0, 0, 0.15);
+}
+.skill_bar__fg {
+  position: absolute;
+  //background-color: hsl(229, 19%, 49%);
+  height: 100%;
+  left: 0;
+  top: 0;
+}
 .text_para {
   letter-spacing: 1px;
   line-height: 1.5;
@@ -105,15 +142,12 @@
   .text_wrapper {
     padding: 2rem 0 0 0;
   }
-  .text_inner {
-    &:nth-child(odd) {
-      width: 65%;
-      margin: 0 auto 0 10%;
-    }
-    &:nth-child(even) {
-      width: 65%;
-      margin: 0 10% 0 auto;
-    }
+
+  .skill_wrapper {
+    padding: 2rem;
+  }
+  .skill_name {
+    font-size: 1rem;
   }
   .text_para {
     font-size: 1.2rem;
@@ -122,16 +156,6 @@
     display: flex;
     align-items: center;
     width: 100%;
-  }
-
-  .text_font_big {
-    font-size: 2rem;
-  }
-  .text_font_medium {
-    font-size: 1.5rem;
-  }
-  .text_font_small {
-    font-size: 1.2rem;
   }
 }
 @media screen and (min-width: $lg) {
@@ -143,24 +167,8 @@
   .text_wrapper {
     width: 68%;
   }
-  .text_inner {
-    &:nth-child(odd) {
-      margin: 0 auto 0 10%;
-    }
-    &:nth-child(even) {
-      margin: 0 10% 0 auto;
-    }
-  }
+
   .text_para {
     font-size: 1.3rem;
-  }
-  .text_font_big {
-    font-size: 2rem;
-  }
-  .text_font_medium {
-    font-size: 1.5rem;
-  }
-  .text_font_small {
-    font-size: 1.2rem;
   }
 }
