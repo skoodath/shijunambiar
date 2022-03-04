@@ -23,6 +23,8 @@
   font-size: 1.5rem;
   cursor: pointer;
   stroke: #c6c9d5;
+  stroke-width: 1;
+
   &:hover {
     stroke: $litecolor;
   }

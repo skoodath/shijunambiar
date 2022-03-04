@@ -31,19 +31,24 @@
   align-items: center;
 }
 .image_wrapper {
-  width: 250px;
+  width: 100%;
   height: 50%;
-  border-radius: 5px;
+
   overflow: hidden;
+  display: flex;
+  flex-direction: column;
 }
 .image_inner {
+  flex: 30%;
+  max-width: 250px;
+  max-height: 265px;
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: auto;
+  margin: 0 auto 2rem;
   position: relative;
-  width: 100%;
   background-color: #e0e3f0;
+  border-radius: 5px;
 }
 .profile {
   width: 90%;
@@ -59,22 +64,15 @@
   position: relative;
   z-index: 1;
   padding: 1rem 0;
-  &:nth-child(odd) {
-    margin: 0;
-    width: 100%;
-  }
-  &:nth-child(even) {
-    margin: 0;
-    width: 100%;
-  }
-  &:last-child {
-    border: none;
-  }
 }
 .skill_wrapper {
-  background-color: #ecedf5;
-  padding: 1rem;
-  border-radius: 10px;
+  width: 100%;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: column;
+}
+.skill_inner {
+  margin: 0 0 2rem 0;
 }
 .subheader {
   border-bottom: 1px solid #cccedd;
@@ -90,27 +88,27 @@
 }
 .skill_name {
   display: inline-block;
-  flex: 42%;
+  flex: 50%;
   font-size: 0.85rem;
   font-weight: 700;
 }
 .skill_bar__bg {
   width: 100%;
   height: 100%;
-  background-color: #bec3d8;
   position: relative;
-  display: inline-block;
-  flex: 58%;
+  display: flex;
+  align-items: center;
+  flex: 50%;
   border-radius: 3px;
   overflow: hidden;
-  box-shadow: 0 0 3px rgb(0, 0, 0, 0.15), 0 0 3px rgb(0, 0, 0, 0.15);
 }
-.skill_bar__fg {
-  position: absolute;
-  //background-color: hsl(229, 19%, 49%);
-  height: 100%;
-  left: 0;
-  top: 0;
+
+.legend_wrapper {
+  display: flex;
+  justify-content: space-around;
+}
+.legend {
+  font-size: 0.8rem;
 }
 .text_para {
   letter-spacing: 1px;
@@ -118,15 +116,7 @@
   font-weight: 500;
   position: relative;
   z-index: 0;
-  .text_span_marker {
-    display: inline-block;
-    content: "";
-    position: absolute;
-    background-color: $primarybg;
-    width: 10px;
-    height: 25px;
-    left: -15px;
-  }
+  margin: 0 0 1rem 0;
 }
 .text_font_big {
   font-size: 2rem;
@@ -142,9 +132,8 @@
   .text_wrapper {
     padding: 2rem 0 0 0;
   }
-
-  .skill_wrapper {
-    padding: 2rem;
+  .legend {
+    font-size: 1rem;
   }
   .skill_name {
     font-size: 1rem;
@@ -160,12 +149,20 @@
 }
 @media screen and (min-width: $lg) {
   .image_wrapper {
-    width: 250px;
+    width: 70%;
     height: 100%;
     margin: 0;
+    flex-direction: row;
+  }
+  .image_inner {
+    width: 250px;
+    margin: 0 2rem 1rem 0;
+  }
+  .skill_wrapper {
+    width: 70%;
   }
   .text_wrapper {
-    width: 68%;
+    width: 70%;
   }
 
   .text_para {

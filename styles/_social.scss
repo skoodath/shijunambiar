@@ -16,6 +16,9 @@
   padding: 0.3rem;
   cursor: pointer;
   color: $litecolor;
+  svg {
+    stroke-width: 1;
+  }
   &:hover {
     svg {
       stroke: #c6c9d5;

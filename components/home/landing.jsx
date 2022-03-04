@@ -18,9 +18,8 @@ const Landing = () => {
 
               <div className={styles.value}>
                 <p className={styles.value_para}>
-                  I am a passionate user interface designer, web developer and a
-                  cloud enthusiast from India who loves creating accessible,
-                  responsive and purposeful web content.
+                  A passionate user interface designer, web developer and a
+                  cloud enthusiast
                 </p>
               </div>
               <Social />
