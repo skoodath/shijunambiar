@@ -30,6 +30,13 @@ const Menu = () => {
         >
           About Me
         </ScrollLink>
+        <a
+          href="http://blog.shijunambiar.com"
+          className={styles.menuitem}
+          target="new"
+        >
+          Blog
+        </a>
       </nav>
     </header>
   );
