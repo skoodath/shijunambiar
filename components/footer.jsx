@@ -5,7 +5,7 @@ import { Link } from "react-scroll";
 const Footer = () => (
   <section className={styles.wrapper}>
     <div className={styles.inner}>
-      <div className={styles.social}>
+      <div className={styles.sitelinks}>
         <Link
           to="home"
           spy={true}
@@ -13,9 +13,35 @@ const Footer = () => (
           offset={0}
           className={styles.menuitem}
         >
-          <FiHome className={styles.socialicons} />
+          Home
         </Link>
-
+        <Link
+          to="work"
+          spy={true}
+          smooth={true}
+          offset={0}
+          className={styles.menuitem}
+        >
+          Projects
+        </Link>
+        <Link
+          to="about"
+          spy={true}
+          smooth={true}
+          offset={0}
+          className={styles.menuitem}
+        >
+          About
+        </Link>
+        <a
+          href="https://blog.shijunambiar.com"
+          target="new"
+          className={styles.menuitem}
+        >
+          Blog
+        </a>
+      </div>
+      <div className={styles.social}>
         <FiGithub className={styles.socialicons} />
         <FiLinkedin className={styles.socialicons} />
         <FiMail className={styles.socialicons} />
