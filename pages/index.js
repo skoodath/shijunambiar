@@ -1,15 +1,17 @@
 import Head from "next/head";
 import dynamic from "next/dynamic";
 
-import Landing from "../components/home/landing";
+import Landing from "../components/home";
 import Menu from "../components/menu";
 
-const Work = dynamic(() => import("../components/work/work"));
-const Project = dynamic(() => import("../components/projects/project"));
-const About = dynamic(() => import("../components/about/about"));
+const Work = dynamic(() => import("../components/work"));
+const Projects = dynamic(() => import("../components/projects"));
+const About = dynamic(() => import("../components/about"));
+const Profile = dynamic(() => import("../components/profile"));
 const Footer = dynamic(() => import("../components/footer"));
 
 const Home = () => {
+  console.log(Landing);
   return (
     <>
       <Head>
@@ -26,10 +28,10 @@ const Home = () => {
       <Menu />
       <main>
         <Landing />
+        <Profile />
         <About />
         <Work />
-        <Project />
-
+        <Projects />
         <Footer />
       </main>
     </>

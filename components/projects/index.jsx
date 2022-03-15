@@ -2,9 +2,9 @@ import styles from "../../styles/project.module.scss";
 import projects from "../data/extra";
 import Projectcard from "./projectcard";
 
-const Project = () => {
+const ProjectComponent = () => {
   const TitleStyle = {
-    color: "#fff",
+    color: "#12141b",
     fontSize: "1.5rem",
     fontWeight: 400,
     margin: "2rem auto",
@@ -26,4 +26,4 @@ const Project = () => {
   );
 };
 
-export default Project;
+export default ProjectComponent;

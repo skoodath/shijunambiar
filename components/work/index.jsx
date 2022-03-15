@@ -3,7 +3,7 @@ import WorkCard from "./workcard";
 import works from "../data/showcase";
 import Title from "../title";
 
-const Work = () => {
+const WorkComponent = () => {
   const title = {
     name: "Projects",
   };
@@ -23,4 +23,4 @@ const Work = () => {
   );
 };
 
-export default Work;
+export default WorkComponent;

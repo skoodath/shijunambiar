@@ -31,7 +31,7 @@ const Footer = () => (
           offset={0}
           className={styles.menuitem}
         >
-          About
+          About Me
         </Link>
         <a
           href="https://blog.shijunambiar.com"
