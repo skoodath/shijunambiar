@@ -26,9 +26,10 @@ const Home = () => {
       <Menu />
       <main>
         <Landing />
+        <About />
         <Work />
         <Project />
-        <About />
+
         <Footer />
       </main>
     </>
