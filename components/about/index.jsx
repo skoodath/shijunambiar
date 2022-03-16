@@ -48,7 +48,7 @@ const AboutComponent = () => {
             </div>
             <Skills />
             <a
-              href="https://github.com/skoodath/shijunambiar/tree/main/components/data/Shijuambiar.pdf"
+              href="../../ShijuNambiar.pdf"
               className={styles.resume_button}
               download
             >
