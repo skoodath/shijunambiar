@@ -11,8 +11,8 @@ const LandingComponent = () => {
             <div className={styles.name_wrapper}>
               <h3 className={styles.name_text}>Shiju Nambiar</h3>
               <p className={styles.value_para}>
-                A passionate user interface designer, web developer and a cloud
-                enthusiast
+                User interface designer and web developer passionate about
+                creating elegant, responsive, accessible websites
               </p>
               <Social />
             </div>
