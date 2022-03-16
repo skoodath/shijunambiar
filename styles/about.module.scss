@@ -64,6 +64,11 @@
   position: relative;
   z-index: 1;
 }
+.text_alternate {
+  text-transform: uppercase;
+  font-size: 8vmin;
+  color: #0066ff;
+}
 .skill_wrapper {
   width: 100%;
   border-radius: 5px;
@@ -123,19 +128,24 @@
 .text_para {
   letter-spacing: 1px;
   line-height: 1.5;
+  font-size: 1.2rem;
   font-weight: 500;
   position: relative;
   z-index: 0;
   margin: 0 0 1rem 0;
 }
-.text_font_big {
-  font-size: 2rem;
-}
-.text_font_medium {
-  font-size: 1.5rem;
-}
-.text_font_small {
-  font-size: 1.2rem;
+.resume_button {
+  text-decoration: none;
+  text-transform: uppercase;
+  display: inline-block;
+  padding: 1rem;
+  background-color: #0066ff;
+  color: #ffffff;
+  margin: 2rem 0 0 0;
+  border-radius: 5px;
+  &:hover {
+    background-color: #0156d4;
+  }
 }
 
 @media screen and (min-width: $md) {
@@ -159,12 +169,15 @@
     font-size: 1rem;
   }
   .text_para {
-    font-size: 1.2rem;
+    font-size: 1.5rem;
   }
   .intro_card {
     display: flex;
     align-items: center;
     width: 100%;
+  }
+  .text_alternate {
+    font-size: 6vmin;
   }
 }
 @media screen and (min-width: $lg) {
@@ -189,6 +202,9 @@
     margin: 0 auto;
   }
   .text_para {
-    font-size: 1.3rem;
+    font-size: 1.8rem;
+  }
+  .text_alternate {
+    font-size: 4vmin;
   }
 }

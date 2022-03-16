@@ -18,10 +18,12 @@
   color: $litecolor;
   svg {
     stroke-width: 1;
+    transition: all 0.5s cubic-bezier(0.075, 0.82, 0.165, 1);
   }
   &:hover {
     svg {
       stroke: #c6c9d5;
+      stroke-width: 1.5;
     }
   }
 }

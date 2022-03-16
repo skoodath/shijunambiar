@@ -1,5 +1,5 @@
 import styles from "../../styles/about.module.scss";
-import Title from "../title";
+import Title from "../../utilities/title";
 
 import Skills from "./skills";
 
@@ -8,10 +8,10 @@ const AboutComponent = () => {
     name: "About Me",
   };
   const myStyle = {
-    textDecoration: "underline",
-    fontSize: "1.2rem",
-    fontWeight: 600,
+    fontWeight: 900,
+    color: "#0066ff",
   };
+
   return (
     <section className={styles.wrapper} name="about">
       <div className={styles.inner}>
@@ -21,33 +21,38 @@ const AboutComponent = () => {
             <div className={styles.text_wrapper}>
               <div className={styles.text_inner}>
                 <p className={styles.text_para}>
-                  I am a <span style={myStyle}>User Interface Designer</span>{" "}
-                  and <span style={myStyle}>Web Developer</span> from India
-                  Passionate about building performant, responsive, accessible
-                  websites
+                  I am a
+                  <br />
+                  <span className={styles.text_alternate}>
+                    self-taught <span style={myStyle}>Web Developer</span>
+                  </span>{" "}
+                  from Hyderabad, India!
                 </p>
                 <p className={styles.text_para}>
-                  I have donned many hats over the last 15 years starting as
-                  customer support associate,{" "}
-                  <span style={myStyle}>leading teams</span> in business
-                  operations for 12 years managing performance and conflicts and
-                  supporting business operation of an IT vertical of 400 plus
-                  resources contributing to strategic decision making, business
-                  development, innovation and growth
+                  <span className={styles.text_alternate}>lead teams</span> in
+                  customer support and business operations for more than 10
+                  years!
                 </p>
                 <p className={styles.text_para}>
-                  <span style={myStyle}>
-                    In 2016, I decided to follow my passion and equip myself to
-                    become a web developer
+                  Managed an IT portfolio as a{" "}
+                  <span className={styles.text_alternate}>
+                    Business Support manager
                   </span>
                 </p>
                 <p className={styles.text_para}>
-                  I have been constantly learning and building my portfolio and
-                  skills ever since!
+                  Along the way, I decided to follow my passion to become a{" "}
+                  <span className={styles.text_alternate}>web developer</span>{" "}
+                  and the journey continues!
                 </p>
               </div>
             </div>
             <Skills />
+            <a
+              href="https://github.com/skoodath/shijunambiar/tree/main/components/data/shijunambiar.pdf"
+              className={styles.resume_button}
+            >
+              Download Resume
+            </a>
           </div>
         </section>
       </div>

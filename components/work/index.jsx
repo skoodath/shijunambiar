@@ -1,7 +1,7 @@
 import styles from "../../styles/work.module.scss";
 import WorkCard from "./workcard";
 import works from "../data/showcase";
-import Title from "../title";
+import Title from "../../utilities/title";
 
 const WorkComponent = () => {
   const title = {

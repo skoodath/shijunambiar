@@ -2,7 +2,7 @@ import Head from "next/head";
 import dynamic from "next/dynamic";
 
 import Landing from "../components/home";
-import Menu from "../components/menu";
+import Menu from "../utilities/menu";
 
 const Work = dynamic(() => import("../components/work"));
 const Projects = dynamic(() => import("../components/projects"));

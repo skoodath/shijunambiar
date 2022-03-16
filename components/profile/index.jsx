@@ -6,7 +6,7 @@ const Profile = () => {
       <div className={styles.image_inner}>
         <img
           className={styles.profile}
-          src="../../images/profile.png"
+          src="../../images/profile.webp"
           alt="Shiju Nambiar"
         />
       </div>

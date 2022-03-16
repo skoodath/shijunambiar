@@ -1,4 +1,4 @@
-This is my portfolio website [www.shijunambiar.com](https://www.shijunambiar.com) repository!
+This is my [portfolio website](https://www.shijunambiar.com) repository!
 
 ## Built with [NextJS](https://nextjs.org/)
 
@@ -14,4 +14,4 @@ Throughout development, I deployed the site on vercel which made it easier for m
 
 The simple CICD process in which I used _github_ for **continuous integration** and vercel would build and deploy the site to production.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+Check out [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.

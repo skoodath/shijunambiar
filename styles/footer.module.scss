@@ -23,8 +23,9 @@
   cursor: pointer;
   text-decoration: none;
   border-bottom: 1px solid transparent;
+  transition: border-bottom 0.5s cubic-bezier(0.0075, 0.00082, 0.165, 0.8);
   &:hover {
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #c6c9d5;
   }
 }
 .social {
@@ -39,9 +40,10 @@
   cursor: pointer;
   stroke: #c6c9d5;
   stroke-width: 1;
-
+  transition: stroke-width 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover {
-    stroke: $litecolor;
+    stroke: #c7ddff;
+    stroke-width: 1.5;
   }
 }
 .copyright {
