@@ -3,7 +3,6 @@ import styles from "../../styles/project.module.scss";
 
 const Projectcard = ({ ...project }) => {
   const { name, description, livesite, github, tech } = project;
-
   return (
     <div className={styles.card_wrapper}>
       <div className={styles.header}>

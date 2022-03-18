@@ -14,7 +14,7 @@ const ProjectComponent = () => {
     <section className={styles.wrapper}>
       <div className={styles.inner}>
         <h3 className={styles.text} style={TitleStyle}>
-          More Projects
+          Side Projects
         </h3>
         <div className={styles.card_container}>
           {projects.map((project) => (
