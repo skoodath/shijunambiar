@@ -21,6 +21,8 @@ const Home = () => {
           content="Portfolio website showcasing web development and web design skills like JavaScript, React, Next, CSS3, HTML5, Sass, Styled-Components, responsive web design and UI"
         />
         <meta name="author" content="Shiju Nambiar" />
+        <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
+        <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <title>Web Developer | React Developer | Shiju Nambiar</title>
       </Head>
       <Menu />
