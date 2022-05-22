@@ -18,7 +18,7 @@ const Home = () => {
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta
           name="description"
-          content="Web developer and designer portfolio website showcasing web projects built with Reactjs, html, css, javascript, nextjs, scss and other javascript libraries and tools"
+          content="Portfolio website showcasing web development and web design skills like JavaScript, React, Next, CSS3, HTML5, Sass, Styled-Components, responsive web design and UI"
         />
         <meta name="author" content="Shiju Nambiar" />
         <title>Web Developer | React Developer | Shiju Nambiar</title>
