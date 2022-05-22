@@ -23,7 +23,7 @@ const Home = () => {
         <meta name="author" content="Shiju Nambiar" />
         <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
-        <title>Web Developer | React Developer | Shiju Nambiar</title>
+        <title>React | Frontend | JavaScript | Shiju Nambiar</title>
       </Head>
       <Menu />
       <main>
