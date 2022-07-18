@@ -1,0 +1,6 @@
+const skills = [
+  {
+    title: "react",
+    
+  }
+]

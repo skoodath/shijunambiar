@@ -11,7 +11,6 @@ const Profile = dynamic(() => import("../components/profile"));
 const Footer = dynamic(() => import("../components/footer"));
 
 const Home = () => {
-  console.log(Landing);
   return (
     <>
       <Head>
