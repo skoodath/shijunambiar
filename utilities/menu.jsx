@@ -19,6 +19,7 @@ const Menu = () => {
           spy={true}
           smooth={true}
           className={styles.menuitem}
+          activeClass="active"
         >
           Projects
         </ScrollLink>

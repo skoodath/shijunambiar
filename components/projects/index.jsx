@@ -16,11 +16,11 @@ const ProjectComponent = () => {
         <h3 className={styles.text} style={TitleStyle}>
           Side Projects
         </h3>
-        <div className={styles.card_container}>
+        <ul className={styles.card_container}>
           {projects.map((project) => (
             <Projectcard key={project.id} {...project} />
           ))}
-        </div>
+        </ul>
       </div>
     </section>
   );

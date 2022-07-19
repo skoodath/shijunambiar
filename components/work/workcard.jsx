@@ -1,7 +1,6 @@
-import { FiLink, FiGithub } from "react-icons/fi";
 import styles from "../../styles/work.module.scss";
 
-const WorkCard = ({ ...work }) => {
+const WorkCard = ({ work }) => {
   const {
     src,
     alt,
@@ -11,37 +10,36 @@ const WorkCard = ({ ...work }) => {
     description,
     techstack,
     image,
-    width,
-    height,
   } = work;
 
   return (
-    <article className={styles.card_wrapper}>
+    <li className={styles.card_wrapper}>
       <div className={styles.card_inner}>
-        <div className={styles.project_button__wrapper}>
-          <a href={url} target="blank" className={styles.view_link}>
-            <FiLink />
-          </a>
-          <a href={github} target="blank" className={styles.view_link}>
-            <FiGithub />
-          </a>
-        </div>
         <div className={styles.header}>
-          <h3 className={styles.project_title}>{title}</h3>
           <div className={styles.card_image}>
             <img
               src={src}
               alt={alt}
               className={image}
-              width={width}
-              height={height}
+              width="100%"
+              height="auto"
             />
+          </div>
+        </div>
+        <div className={styles.body}>
+          <div className={styles.project_button__wrapper}>
+          <h3 className={styles.site_link}>
+            <a href={url} target="blank">
+              {title}
+            </a>
+            </h3>
+            <a href={github} target="blank" className={styles.source_link}>
+              <code>Github</code>
+            </a>
           </div>
           <div className={styles.project_desc}>
             <p className={styles.project_desc__text}>{description}</p>
           </div>
-        </div>
-        <div className={styles.footer}>
           <ul className={styles.project_skills}>
             {techstack &&
               techstack.map((tech) => (
@@ -52,7 +50,7 @@ const WorkCard = ({ ...work }) => {
           </ul>
         </div>
       </div>
-    </article>
+    </li>
   );
 };
 

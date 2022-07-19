@@ -6,7 +6,7 @@ const Skills = () => {
     <>
       <div className={styles.skill_wrapper}>
         <div className={styles.skill_inner}>
-          <h4 className={styles.subheader}>Languages</h4>
+          <h3 className={styles.subheader}>Languages</h3>
           <ul>
             <li className={styles.skill}>
               <span className={styles.skill_name}>JavaScript</span>
@@ -53,7 +53,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className={styles.skill_inner}>
-          <h4 className={styles.subheader}>Libraries &amp; Frameworks</h4>
+          <h3 className={styles.subheader}>Libraries &amp; Frameworks</h3>
           <ul>
             <li className={styles.skill}>
               <span className={styles.skill_name}>React</span>
@@ -108,7 +108,7 @@ const Skills = () => {
           </ul>
         </div>
         <div className={styles.skill_inner}>
-          <h4 className={styles.subheader}>Tools &amp; Platforms</h4>
+          <h3 className={styles.subheader}>Tools &amp; Platforms</h3>
           <ul>
             <li className={styles.skill}>
               <span className={styles.skill_name}>AWS</span>

@@ -3,20 +3,22 @@ import WorkCard from "./workcard";
 import works from "../data/showcase";
 import Title from "../../utilities/title";
 
+const title = {
+  name: "Projects",
+};
+
 const WorkComponent = () => {
-  const title = {
-    name: "Projects",
-  };
+  
   return (
     <>
       <section className={styles.wrapper} name="work">
         <div className={styles.inner}>
           <Title text={title.name} />
-          <div className={styles.card_container}>
+          <ul className={styles.card_container}>
             {works.map((work) => (
-              <WorkCard key={work.id} {...work} />
+              <WorkCard key={work.id} work={work} />
             ))}
-          </div>
+          </ul>
         </div>
       </section>
     </>
