@@ -48,6 +48,14 @@ const extra = [
     livesite: "https://searchfeature.vercel.app/",
     tech: ["ReactJS", "Styled-Components"],
   },
+  {
+    id: 6,
+    name: "Calendar",
+    description: `Vanilla JavaScript calendar`,
+    github: "https://github.com/skoodath/javascript_calendar",
+    livesite: "https://skoodath.github.io/javascript_calendar/",
+    tech: ["JavaScript", "Sass", "Webpack"],
+  },
 ];
 
 export default extra;
