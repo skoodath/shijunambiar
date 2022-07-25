@@ -52,8 +52,8 @@ const extra = [
     id: 6,
     name: "Calendar",
     description: `Vanilla JavaScript calendar`,
-    github: "https://github.com/skoodath/javascript_calendar",
-    livesite: "https://skoodath.github.io/javascript_calendar/",
+    github: "https://github.com/skoodath/js_calendar",
+    livesite: "https://skoodath.github.io/js_calendar/",
     tech: ["JavaScript", "Sass", "Webpack"],
   },
 ];
