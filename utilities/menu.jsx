@@ -32,7 +32,7 @@ const Menu = () => {
           About Me
         </ScrollLink>
         <a
-          href="http://blog.shijunambiar.com"
+          href="https://blog.shijunambiar.com/"
           className={styles.menuitem}
           target="new"
         >
