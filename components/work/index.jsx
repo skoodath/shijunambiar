@@ -1,6 +1,6 @@
 import styles from "../../styles/work.module.scss";
 import WorkCard from "./workcard";
-import works from "../data/showcase";
+import showcase from "../data/showcase";
 import Title from "../../utilities/title";
 
 const title = {
@@ -15,7 +15,7 @@ const WorkComponent = () => {
         <div className={styles.inner}>
           <Title text={title.name} />
           <ul className={styles.card_container}>
-            {works.map((work) => (
+            {showcase.map((work) => (
               <WorkCard key={work.id} work={work} />
             ))}
           </ul>

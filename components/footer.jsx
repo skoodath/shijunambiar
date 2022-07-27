@@ -1,5 +1,5 @@
 import styles from "../styles/footer.module.scss";
-import { FiGithub, FiLinkedin, FiMail, FiHome } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import { Link } from "react-scroll";
 
 const Footer = () => (

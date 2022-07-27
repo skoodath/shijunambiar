@@ -1,4 +1,4 @@
-const works = [
+const showcase = [
   {
     id: 1,
     src: "/images/networked.webp",
@@ -31,4 +31,4 @@ const works = [
   },
 ];
 
-export default works;
+export default showcase;
