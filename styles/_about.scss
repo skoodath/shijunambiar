@@ -1,0 +1,101 @@
+@use "variables" as *;
+
+.about {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 5rem auto;
+  padding: 0 10%;
+  position: relative;
+  height: 100%;
+  max-width: 960px;
+  overflow: hidden;
+}
+.content {
+  display: flex;
+  flex-direction: column;
+  padding: 3rem 0;
+  position: relative;
+  z-index: 10;
+}
+.left {
+  flex: 1;
+  font-size: 1.3rem;
+  width: 100%;
+  padding: 0;
+}
+.para {
+  //box-shadow: 0 0 3px rgba(0, 0, 0, 0.4);
+}
+.right {
+  flex: 1;
+  width: 100%;
+}
+.listitem {
+  font-size: 1.3rem;
+  display: flex;
+  align-items: center;
+  margin: 0 0 1.5rem 0;
+  span {
+    margin: 0 0 0 1rem;
+  }
+}
+
+/* Core skills */
+
+.skill_section {
+  max-width: 1198px;
+  width: 100%;
+  position: relative;
+  z-index: 10;
+}
+
+.skill_wrapper {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 2rem 0;
+}
+.about_subheader {
+  text-transform: uppercase;
+  font-weight: 800;
+  margin: 2rem 0;
+}
+
+.skill_set {
+  display: flex;
+  flex-flow: row wrap;
+  gap: 10px;
+  width: 100%;
+  margin: 1rem 0 0 0;
+}
+
+.core_skill,
+.other_skill {
+  height: 20px;
+  padding: 1.5rem;
+  position: relative;
+  display: flex;
+  align-items: center;
+  border: 2px solid #d6d6d6;
+  border-radius: 5px;
+  font-weight: 700;
+}
+.core_skill {
+  background-color: #fff;
+}
+.other_skill {
+  background-color: #d6d6d6;
+  border: none;
+}
+
+@media screen and (min-width: $md) {
+  .content {
+    flex-direction: row;
+    gap: 20px;
+  }
+  .para {
+    padding: 0 5rem 5rem 0;
+  }
+}

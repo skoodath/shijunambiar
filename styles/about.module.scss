@@ -66,37 +66,7 @@
   font-size: 8vmin;
   color: #0066ff;
 }
-.skill_wrapper {
-  width: 100%;
-  border-radius: 5px;
-  display: flex;
-  flex-direction: column;
-  margin: 0 0 2rem 0;
-  padding: 1rem;
-  background-color: #f1f3f8;
-}
-.skill_inner {
-  width: 100%;
-  border-bottom: 1px solid #fff;
-  margin: 0 0 0.5rem 0;
-  padding: 0 0.5rem;
-  border-radius: 5px;
-  &:last-child {
-    border-bottom: none;
-  }
-}
-.subheader {
-  border-bottom: 1px solid #cccedd;
-  margin: 0 0 1rem 0;
-  font-size: 1.1rem;
-}
-.skill {
-  height: 20px;
-  margin: 0 0 0.5rem 0;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
+
 .skill_name {
   display: inline-block;
   flex: 65%;

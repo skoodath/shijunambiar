@@ -1,36 +1,21 @@
-import styles from "../styles/globalmenu.module.scss";
-import { Link as ScrollLink } from "react-scroll";
+import styles from "../styles/menu.module.scss";
+import Link from "next/link";
+import Hamburger from "./Hamburger";
 
 const Menu = () => {
   return (
-    <header className={styles.menuwrapper}>
-      <nav className={styles.menuwrapper__inner}>
-        <ScrollLink
-          to="home"
-          spy={true}
-          smooth={true}
-          offset={0}
-          className={styles.menuitem}
-        >
-          Home
-        </ScrollLink>
-        <ScrollLink
-          to="work"
-          spy={true}
-          smooth={true}
-          className={styles.menuitem}
-          activeClass="active"
-        >
-          Projects
-        </ScrollLink>
-        <ScrollLink
-          to="about"
-          spy={true}
-          smooth={true}
-          className={styles.menuitem}
-        >
-          About Me
-        </ScrollLink>
+    <header className={styles.header}>
+      <nav className={styles.logo}></nav>
+      <nav className={styles.navbar}>
+        <Link href="/">
+          <a className={styles.menuitem}>home</a>
+        </Link>
+        <Link href="/projects">
+          <a className={styles.menuitem}>projects</a>
+        </Link>
+        <Link href="/about">
+          <a className={styles.menuitem}>about</a>
+        </Link>
         <a
           href="https://blog.shijunambiar.com/"
           className={styles.menuitem}
@@ -39,6 +24,7 @@ const Menu = () => {
           Blog
         </a>
       </nav>
+      <Hamburger />
     </header>
   );
 };

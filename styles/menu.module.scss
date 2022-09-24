@@ -1,0 +1,115 @@
+@use "variables" as *;
+
+.header {
+  position: fixed;
+  padding: 1rem 10%;
+  left: 0;
+  top: 0;
+  right: 0;
+  margin: 0;
+  z-index: 101;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  background-color: #fff;
+}
+.logo {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 0;
+  flex-basis: 60px;
+  width: 60px;
+  height: 80px;
+  background-color: #634ac9;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  justify-content: space-evenly;
+  align-items: center;
+  flex: 4;
+  width: 100%;
+  height: 40vh;
+  margin: 0 auto;
+  padding: 0.5rem;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: #fff;
+  box-shadow: 0 1px 10px rgba(0, 0, 0, 0.3);
+}
+.menuitem {
+  color: $secondarycolor;
+  position: relative;
+  display: block;
+  text-align: center;
+  font-size: 1rem;
+  letter-spacing: 1px;
+  transition-property: all;
+  transition-duration: 0.2s;
+  transition-timing-function: cubic-bezier(0.0075, 0.00082, 0.00098, 0.8);
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  margin: 0 0.7rem;
+  text-decoration: none;
+  &:hover {
+    transition-property: font-weight;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.0075, 0.00082, 0.00098, 0.8);
+    font-weight: bold;
+  }
+  &:active {
+    transition-property: font-weight;
+    transition-duration: 0.2s;
+    transition-timing-function: cubic-bezier(0.0075, 0.00082, 0.00098, 0.8);
+    font-weight: bold;
+  }
+}
+
+.menu_small {
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  flex: 0;
+  gap: 3px;
+  cursor: pointer;
+  margin: 0 0 0 auto;
+}
+.lines {
+  display: block;
+  background-color: $accentcolor;
+  width: 40px;
+  height: 5px;
+  border-radius: 5px;
+}
+
+@media screen and (min-width: $md) {
+  .menuitem {
+    font-size: 1.3rem;
+    margin: 0 1rem;
+  }
+}
+
+@media screen and (min-width: $lg) {
+  .header {
+    top: 0;
+    bottom: auto;
+  }
+  .navbar {
+    padding: 1rem;
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    box-shadow: none;
+    height: auto;
+  }
+  .menuitem {
+    font-size: 1.5rem;
+  }
+  .menu_small {
+    display: none;
+  }
+}

@@ -1,0 +1,11 @@
+@use "landing";
+@use "about";
+
+.home {
+  background-color: #fff;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}

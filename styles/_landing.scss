@@ -1,49 +1,23 @@
-@import "variables";
-@import "social";
+@use "variables" as *;
+@use "patterns";
 
-.wrapper {
-  height: 60vh;
-  min-height: 598px;
-  background-color: $primarybg;
-  position: relative;
+.landing {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-}
-.inner {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   margin: 0 auto 0;
   position: relative;
-  height: 100%;
+  height: 100vh;
   max-width: 1200px;
+  overflow: hidden;
 }
 
-.name {
-  margin: 0 auto;
-  display: flex;
-  place-items: center;
-  padding: 0;
-  position: relative;
-  overflow: hidden;
-  border-radius: 5px;
-  width: 80%;
-  height: 70%;
-  z-index: 0;
-}
-.banner {
-  position: absolute;
-  width: 100%;
-  height: 80%;
-  background-image: linear-gradient(#202330, #191b25);
-}
 .name_wrapper {
-  width: 100%;
+  width: 80%;
   position: relative;
-  z-index: 3;
-  padding: 0 2rem;
+  z-index: 10;
+  margin: 0 auto;
   overflow: hidden;
   display: flex;
   flex-direction: column;
@@ -53,18 +27,17 @@
   font-size: 2rem;
   font-weight: 600;
   line-height: normal;
-  color: $litecolor;
-  text-transform: uppercase;
+  color: $primarycolor;
   position: relative;
   z-index: 3;
   letter-spacing: 0.08rem;
 }
 
 .value_para {
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 1.5;
   letter-spacing: 0.08rem;
-  color: #c6c9d5;
+  color: $secondarycolor;
   position: relative;
   z-index: 3;
   text-align: center;
@@ -72,7 +45,7 @@
 
 @media screen and (min-width: $md) {
   .name_wrapper {
-    margin: 0 3rem;
+    margin: 0 auto;
   }
   .name_text {
     font-size: 4rem;
@@ -83,17 +56,11 @@
   }
 }
 @media screen and (min-width: $lg) {
-  .wrapper {
-    min-height: 660px;
-  }
   .inner {
     margin: 0 auto;
   }
   .name {
     padding: 0 2rem;
-  }
-  .name_wrapper {
-    margin: 0 2rem;
   }
   .name_text {
     font-size: 5rem;

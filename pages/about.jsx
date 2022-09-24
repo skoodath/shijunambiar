@@ -1,9 +1,6 @@
-import styles from "../../styles/about.module.scss";
-import Title from "../../utilities/title";
+import styles from "../styles/about.module.scss";
 
-import Skills from "./skills";
-
-const AboutComponent = () => {
+const About = () => {
   const title = {
     name: "About Me",
   };
@@ -15,7 +12,6 @@ const AboutComponent = () => {
   return (
     <section className={styles.wrapper} name="about">
       <div className={styles.inner}>
-        <Title text={title.name} />
         <section className={styles.intro_card}>
           <div className={styles.intro_inner}>
             <div className={styles.text_wrapper}>
@@ -46,7 +42,6 @@ const AboutComponent = () => {
                 </p>
               </div>
             </div>
-            <Skills />
             <a
               href="../../ShijuNambiar.pdf"
               className={styles.resume_button}
@@ -61,4 +56,4 @@ const AboutComponent = () => {
   );
 };
 
-export default AboutComponent;
+export default About;

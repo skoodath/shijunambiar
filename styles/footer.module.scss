@@ -1,44 +1,54 @@
 @import "variables";
 
 .wrapper {
-  height: 200px;
   background-color: $footerbg;
   position: relative;
 }
 .inner {
   display: flex;
+  width: 80%;
   height: 100%;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 2rem 0;
 }
-.sitelinks {
+.title {
+  justify-content: flex-start;
+}
+.footer_title {
+  color: #fff;
+  margin: 0 0 1rem 0;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+.navbar {
   display: flex;
-  width: 60%;
-  justify-content: space-around;
-  margin: 0 auto 1rem;
+  flex-direction: column;
+  border-bottom: 1px solid #fff;
+  margin: 0 0 1rem 0;
+  padding: 1rem 0 2rem;
 }
 .menuitem {
-  color: #c6c9d5;
+  color: #fff;
   cursor: pointer;
   text-decoration: none;
-  border-bottom: 1px solid transparent;
-  transition: border-bottom 0.5s cubic-bezier(0.0075, 0.00082, 0.165, 0.8);
+  margin: 0 1rem 0 0;
+  text-transform: uppercase;
   &:hover {
-    border-bottom: 1px solid #c6c9d5;
+    text-decoration: underline;
   }
 }
 .social {
   display: flex;
   width: 100%;
-  justify-content: center;
-  margin: 0 0 1rem 0;
 }
 .socialicons {
-  margin: 0.5rem;
+  margin: 0 0.5rem 0 0;
   font-size: 1.5rem;
   cursor: pointer;
-  stroke: #c6c9d5;
+  stroke: #fff;
   stroke-width: 1;
   transition: stroke-width 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
   &:hover {
@@ -47,23 +57,28 @@
   }
 }
 .copyright {
-  color: #c6c9d5;
+  padding: 1rem 0;
+  color: #fff;
+  margin: 0 auto;
+  font-size: 0.8rem;
 }
 @media (min-width: $md) {
-  .sitelinks {
-    width: 40%;
-    font-size: 1.2rem;
+  .navbar {
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+  .social {
+    justify-content: flex-end;
   }
   .socialicons {
     font-size: 1.6rem;
   }
   .copyright {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
 }
 @media (min-width: $lg) {
-  .sitelinks {
-    width: 30%;
+  .navbar {
     font-size: 1.5rem;
   }
   .socialicons {
@@ -71,8 +86,5 @@
   }
   .wrapper {
     margin: 0;
-  }
-  .copyright {
-    font-size: 1.5rem;
   }
 }

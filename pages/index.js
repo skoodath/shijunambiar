@@ -1,16 +1,7 @@
 import Head from "next/head";
-import dynamic from "next/dynamic";
+import Home from "../components/home/Home";
 
-import Landing from "../components/home";
-import Menu from "../utilities/menu";
-
-const Work = dynamic(() => import("../components/work"));
-const Projects = dynamic(() => import("../components/projects"));
-const About = dynamic(() => import("../components/about"));
-const Profile = dynamic(() => import("../components/profile"));
-const Footer = dynamic(() => import("../components/footer"));
-
-const Home = () => {
+const HomePage = () => {
   return (
     <>
       <Head>
@@ -24,18 +15,9 @@ const Home = () => {
         <link rel="icon" href="/favicon.ico" type="image/x-icon" />
         <title>React | Frontend | JavaScript | Shiju Nambiar</title>
       </Head>
-      <Menu />
-      <main>
-        <Landing />
-        <Profile />
-        <About />
-        <Work />
-
-        <Projects />
-        <Footer />
-      </main>
+      <Home />
     </>
   );
 };
 
-export default Home;
+export default HomePage;
