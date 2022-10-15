@@ -8,13 +8,11 @@
   align-items: center;
   margin: 0 auto 0;
   position: relative;
-  height: 100vh;
-  max-width: 1200px;
-  overflow: hidden;
+  max-width: 80rem;
+  min-height: 100vh;
 }
 
 .name_wrapper {
-  width: 80%;
   position: relative;
   z-index: 10;
   margin: 0 auto;
@@ -34,6 +32,8 @@
 }
 
 .value_para {
+  width: 80%;
+  max-width: 80rem;
   font-size: 1.2rem;
   line-height: 1.5;
   letter-spacing: 0.08rem;

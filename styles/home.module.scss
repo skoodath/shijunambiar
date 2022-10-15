@@ -1,5 +1,6 @@
 @use "landing";
-@use "about";
+@use "intro";
+@use "contact";
 
 .home {
   background-color: #fff;
@@ -7,5 +8,5 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: center;
+  overflow: hidden;
 }

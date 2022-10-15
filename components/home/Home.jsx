@@ -1,5 +1,7 @@
 import styles from "../../styles/home.module.scss";
-import About from "./about/About";
+import Featured from "./featured/Featured";
+import Contacts from "./intro/Contacts";
+import Intro from "./intro/Intro";
 import Landing from "./landing/Landing";
 
 const Home = () => {
@@ -7,7 +9,8 @@ const Home = () => {
     <>
       <section className={styles.home} name="home">
         <Landing />
-        <About />
+        <Intro />
+        <Featured />
       </section>
     </>
   );

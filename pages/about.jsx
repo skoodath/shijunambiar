@@ -1,4 +1,5 @@
 import styles from "../styles/about.module.scss";
+import Title from "../utilities/Title";
 
 const About = () => {
   const title = {
@@ -10,8 +11,9 @@ const About = () => {
   };
 
   return (
-    <section className={styles.wrapper} name="about">
+    <section className={styles.wrapper}>
       <div className={styles.inner}>
+        <Title text="About" />
         <section className={styles.intro_card}>
           <div className={styles.intro_inner}>
             <div className={styles.text_wrapper}>

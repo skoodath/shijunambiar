@@ -2,10 +2,7 @@ export const coreSkills = [
   "React",
   "JavaScript",
   "TypeScript",
-  "Node",
-  "Express",
-  "MongoDB",
-  "JWT",
+  "REST",
   "HTML",
   "CSS",
   "Sass",
@@ -19,4 +16,14 @@ export const coreSkills = [
   "AdobeXD",
 ];
 
-export const otherSkills = ["AWS", "GraphQL", "Firebase", "CI/CD"];
+export const otherSkills = [
+  "AWS",
+  "GraphQL",
+  "Firebase",
+  "CI/CD",
+  "Node",
+  "Express",
+  "MongoDB",
+  "JWT",
+  "PostgreSQL",
+];

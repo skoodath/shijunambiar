@@ -7,7 +7,9 @@ const OtherSkills = () => {
       <div className={styles.skill_wrapper}>
         <ul className={styles.skill_set}>
           {otherSkills.map((core) => (
-            <li className={styles.other_skill}>{core}</li>
+            <li key={core} className={styles.other_skill}>
+              {core}
+            </li>
           ))}
         </ul>
       </div>

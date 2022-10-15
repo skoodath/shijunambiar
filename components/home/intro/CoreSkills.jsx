@@ -7,7 +7,9 @@ const CoreSkills = () => {
       <div className={styles.skill_wrapper}>
         <ul className={styles.skill_set}>
           {coreSkills.map((core) => (
-            <li className={styles.core_skill}>{core}</li>
+            <li key={core} className={styles.core_skill}>
+              {core}
+            </li>
           ))}
         </ul>
       </div>

@@ -1,0 +1,47 @@
+.contact_container {
+  width: 80%;
+  max-width: 80rem;
+}
+.contact_card {
+  width: 100%;
+  max-width: 40rem;
+  min-height: 20rem;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+  margin: auto;
+  border-radius: 10px;
+  overflow: hidden;
+  @media (min-width: 65rem) {
+    flex-direction: row;
+  }
+}
+.contact_header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  padding: 1rem;
+}
+.contact_image {
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  overflow: hidden;
+  border-radius: 50%;
+  display: flex;
+  background-color: #ececed;
+  img {
+    width: 100%;
+    max-width: 100%;
+    object-fit: contain;
+  }
+}
+.contact_title {
+}
+.contact_details {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}

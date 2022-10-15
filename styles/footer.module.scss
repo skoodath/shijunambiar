@@ -1,8 +1,15 @@
-@import "variables";
+@use "patterns";
+@use "variables" as *;
 
 .wrapper {
   background-color: $footerbg;
   position: relative;
+  overflow: hidden;
+}
+.pattern_one {
+  background-color: #634ac9;
+  background-image: linear-gradient(#000000b3, #000000bd);
+  translate: -35% -20%;
 }
 .inner {
   display: flex;
@@ -10,9 +17,11 @@
   height: 100%;
   flex-direction: column;
   justify-content: center;
-  max-width: 960px;
+  max-width: 80rem;
   margin: 0 auto;
   padding: 2rem 0;
+  position: relative;
+  z-index: 10;
 }
 .title {
   justify-content: flex-start;
@@ -28,14 +37,18 @@
   flex-direction: column;
   border-bottom: 1px solid #fff;
   margin: 0 0 1rem 0;
-  padding: 1rem 0 2rem;
+  padding: 1rem 0;
+  gap: 5px;
+  @media (min-width: $md) {
+    gap: 20px;
+  }
 }
 .menuitem {
   color: #fff;
   cursor: pointer;
   text-decoration: none;
-  margin: 0 1rem 0 0;
-  text-transform: uppercase;
+  margin: 0 0 1rem 0;
+  text-transform: capitalize;
   &:hover {
     text-decoration: underline;
   }
