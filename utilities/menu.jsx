@@ -5,7 +5,6 @@ import Hamburger from "./Hamburger";
 const Menu = () => {
   return (
     <header className={styles.header}>
-      <nav className={styles.logo}></nav>
       <nav className={styles.navbar}>
         <Link href="/">
           <a className={styles.menuitem}>home</a>

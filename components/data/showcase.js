@@ -12,12 +12,12 @@ const showcase = [
   {
     id: 2,
     src: "/images/kubeed.webp",
-    alt: "KubeEd landing page",
-    title: "KubeEd",
-    description: `A portfolio website for an online educator`,
+    alt: "multiplication app for kids",
+    title: "Play Learn",
+    description: `A fun webapp for kids to learn multiplicaiton table`,
     techstack: ["ReactJS", "Styled-Components", "AdobeXD"],
-    url: "https://kubeed.netlify.app/",
-    github: "https://github.com/skoodath/kubeed",
+    url: "https://play-learn.netlify.app/",
+    github: "https://github.com/skoodath/play-learn",
   },
   {
     id: 3,

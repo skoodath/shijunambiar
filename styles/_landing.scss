@@ -6,20 +6,24 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin: 0 auto 0;
   position: relative;
-  max-width: 80rem;
-  min-height: 100vh;
+  min-height: 60rem;
+  background-image: linear-gradient(#f3f3f357, #f4f4f4e3);
 }
-
+.pattern_one {
+  background-color: #f4f4f4;
+}
 .name_wrapper {
   position: relative;
   z-index: 10;
   margin: 0 auto;
+  padding: 1rem 0;
   overflow: hidden;
   display: flex;
   flex-direction: column;
   align-items: center;
+  max-width: 75rem;
+  gap: 20px;
 }
 .name_text {
   font-size: 2rem;
@@ -59,9 +63,7 @@
   .inner {
     margin: 0 auto;
   }
-  .name {
-    padding: 0 2rem;
-  }
+
   .name_text {
     font-size: 5rem;
   }

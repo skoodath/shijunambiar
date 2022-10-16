@@ -2,7 +2,6 @@
 
 .header {
   position: fixed;
-  padding: 1rem 10%;
   left: 0;
   top: 0;
   right: 0;
@@ -13,7 +12,7 @@
   align-items: center;
   background-color: #fff;
 }
-.logo {
+/* .logo {
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -23,7 +22,7 @@
   height: 50px;
   background-color: #634ac9;
   border-radius: 50%;
-}
+} */
 .navbar {
   display: flex;
   flex-direction: column;
@@ -32,6 +31,7 @@
   align-items: center;
   flex: 4;
   width: 100%;
+  max-width: 60rem;
   height: 40vh;
   margin: 0 auto;
   padding: 0.5rem;

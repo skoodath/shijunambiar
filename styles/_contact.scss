@@ -1,27 +1,8 @@
-.contact_container {
-  width: 80%;
-  max-width: 80rem;
-}
-.contact_card {
-  width: 100%;
-  max-width: 40rem;
-  min-height: 20rem;
-  display: flex;
-  flex-direction: column;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-  margin: auto;
-  border-radius: 10px;
-  overflow: hidden;
-  @media (min-width: 65rem) {
-    flex-direction: row;
-  }
-}
 .contact_header {
   display: flex;
   flex-direction: column;
   justify-content: space-evenly;
   align-items: center;
-  padding: 1rem;
 }
 .contact_image {
   text-align: center;
@@ -37,11 +18,25 @@
     object-fit: contain;
   }
 }
-.contact_title {
-}
+
 .contact_details {
   display: flex;
   justify-content: center;
   align-items: center;
   padding: 1rem;
+}
+.list {
+  display: flex;
+  gap: 10px;
+}
+.listitem {
+  svg {
+    font-size: 2rem;
+    fill: #4b33ad;
+  }
+  &:hover {
+    svg {
+      fill: rgb(99, 74, 201);
+    }
+  }
 }

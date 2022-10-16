@@ -2,7 +2,7 @@ import styles from "../../../styles/home.module.scss";
 
 const Summary = () => {
   return (
-    <div className={styles.left}>
+    <div className={styles.text}>
       <p className={styles.para}>
         I am a self-taught web developer primarily building websites and webapps
         using ReactJS.

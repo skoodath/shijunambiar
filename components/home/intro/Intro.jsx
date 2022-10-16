@@ -8,7 +8,7 @@ import Contacts from "./Contacts";
 
 const Intro = () => {
   return (
-    <section className={styles.intro}>
+    <section className={styles.intro_container}>
       <Title text="About Me" />
       <section className={styles.content}>
         <section className={styles.intro_section}>
