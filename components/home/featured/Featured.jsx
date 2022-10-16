@@ -23,7 +23,7 @@ const Featured = () => {
           </article>
         ))}
       </div>
-      <ButtonPrimary text="Learn More" route="projects" />
+      <ButtonPrimary text="More Projects" route="projects" />
     </section>
   );
 };

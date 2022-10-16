@@ -14,7 +14,7 @@ const About = () => {
     <section className={styles.wrapper}>
       <div className={styles.inner}>
         <Title text="About" />
-        <section className={styles.intro_card}>
+        {/* <section className={styles.intro_card}>
           <div className={styles.intro_inner}>
             <div className={styles.text_wrapper}>
               <div className={styles.text_inner}>
@@ -52,7 +52,18 @@ const About = () => {
               Download Resume
             </a>
           </div>
-        </section>
+        </section> */}
+        <div style={{ height: "50vh" }}>
+          <p
+            style={{
+              backgroundColor: "#ddd",
+              padding: "2rem",
+              color: "#ff0000",
+            }}
+          >
+            This page is being updated! Will be live shortly
+          </p>
+        </div>
       </div>
     </section>
   );
