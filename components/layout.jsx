@@ -1,5 +1,5 @@
 import Menu from "../common/Menu";
-import Footer from "../common/footer";
+import Footer from "../common/Footer";
 
 const Layout = ({ children }) => {
   return (
