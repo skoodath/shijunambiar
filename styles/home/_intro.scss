@@ -1,5 +1,5 @@
-@use "variables" as *;
-@use "patterns";
+@use "../common/variables" as *;
+@use "../common/patterns";
 
 .intro_container {
   display: flex;

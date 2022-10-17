@@ -1,0 +1,37 @@
+[
+  {
+    "title": "Senior Software Engineer",
+    "organization": "EPAM Anywhere",
+    "tenure": "Jun 2022 - Sep 2022",
+    "description": [
+      "Joined EPAM as a React / JavaScript developer. No projects were assigned due to a layoff due to economic climate prevailing at that time"
+    ]
+  },
+  {
+    "title": "Software Engineer",
+    "organization": "BA Continuum India",
+    "tenure": "Aug 2018 - May 2022",
+    "description": [
+      "Set up dev, QA and production environments for monthly release",
+      "Initiate change request and lead all release activities",
+      "Lead triage calls for any issues",
+      "Create and lead emergency release / postfix releases"
+    ]
+  },
+  {
+    "title": "Business Support Analyst",
+    "organization": "BA Continuum India",
+    "tenure": "June 2016 - Aug 2018",
+    "description": [
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab commodi, fugit perferendis aspernatur temporibu tam in. Expedita temporibus aspernatur adipisci."
+    ]
+  },
+  {
+    "title": "Team Manager",
+    "organization": "BA Continuum India",
+    "tenure": "June 2008 - May 2016",
+    "description": [
+      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab commodi, fugit perferendis aspernatur temporibu tam in. Expedita temporibus aspernatur adipisci."
+    ]
+  }
+]

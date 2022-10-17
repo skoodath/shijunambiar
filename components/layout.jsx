@@ -1,4 +1,4 @@
-import Menu from "../utilities/menu";
+import Menu from "../utilities/Menu";
 import Footer from "../utilities/footer";
 
 const Layout = ({ children }) => {

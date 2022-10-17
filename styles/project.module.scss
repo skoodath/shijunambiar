@@ -1,4 +1,4 @@
-@import "variables";
+@use "./common/variables" as *;
 
 .wrapper {
   display: flex;
@@ -84,7 +84,7 @@
     }
   }
 }
-.source{
+.source {
   font-size: 0.95rem;
   background-color: #eaebef;
   display: block;

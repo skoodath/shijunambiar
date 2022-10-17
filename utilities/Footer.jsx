@@ -1,4 +1,4 @@
-import styles from "../styles/footer.module.scss";
+import styles from "../styles/common/footer.module.scss";
 import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
 import Link from "next/link";
 

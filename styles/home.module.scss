@@ -1,14 +1,15 @@
-@use "landing";
-@use "intro";
-@use "contact";
-@use "summary";
-@use "featured";
+@use "home/landing";
+@use "home/intro";
+@use "home/contact";
+@use "home/summary";
+@use "home/featured";
 
 .home {
-  background-color: #fff;
+  background-color: #fcfcfc;
   position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
   overflow: hidden;
+  margin-top: 5rem;
 }

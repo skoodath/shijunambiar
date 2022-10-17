@@ -7,9 +7,14 @@
   overflow: hidden;
 }
 .pattern_one {
-  background-color: #634ac9;
+  background-color: #15131d;
   background-image: linear-gradient(#000000b3, #000000bd);
   translate: -35% -20%;
+  width: 20rem;
+  @media (min-width: $md) {
+    height: 60rem;
+    translate: -65% -40%;
+  }
 }
 .inner {
   display: flex;

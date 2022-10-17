@@ -1,4 +1,4 @@
-import styles from "../styles/menu.module.scss";
+import styles from "../styles/common/menu.module.scss";
 import Link from "next/link";
 import Hamburger from "./Hamburger";
 

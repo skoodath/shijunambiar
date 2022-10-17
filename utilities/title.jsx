@@ -1,4 +1,4 @@
-import styles from "../styles/title.module.scss";
+import styles from "../styles/common/title.module.scss";
 
 const Title = ({ text }) => {
   return <h2 className={styles.text}>{text}</h2>;
