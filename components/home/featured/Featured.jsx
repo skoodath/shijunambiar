@@ -1,6 +1,6 @@
 import styles from "../../../styles/home.module.scss";
-import { ButtonPrimary } from "../../../utilities/Button";
-import Title from "../../../utilities/Title";
+import { ButtonPrimary } from "../../../common/Button";
+import Title from "../../../common/Title";
 import showcase from "../../data/showcase";
 
 const Featured = () => {

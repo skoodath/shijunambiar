@@ -1,5 +1,5 @@
-import Menu from "../utilities/Menu";
-import Footer from "../utilities/footer";
+import Menu from "../common/Menu";
+import Footer from "../common/footer";
 
 const Layout = ({ children }) => {
   return (

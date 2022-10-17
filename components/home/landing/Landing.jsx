@@ -1,5 +1,5 @@
 import styles from "../../../styles/home.module.scss";
-import { ButtonPrimary } from "../../../utilities/Button";
+import { ButtonPrimary } from "../../../common/Button";
 
 const Landing = () => {
   return (

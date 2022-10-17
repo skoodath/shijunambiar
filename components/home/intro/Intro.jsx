@@ -1,6 +1,6 @@
-import Title from "../../../utilities/Title";
+import Title from "../../../common/Title";
 import styles from "../../../styles/home.module.scss";
-import { ButtonPrimary } from "../../../utilities/Button";
+import { ButtonPrimary } from "../../../common/Button";
 import CoreSkills from "./CoreSkills";
 import OtherSkills from "./OtherSkills";
 import Summary from "./Summary";
