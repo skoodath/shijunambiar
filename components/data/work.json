@@ -2,7 +2,7 @@
   {
     "title": "Senior Software Engineer",
     "organization": "EPAM Anywhere",
-    "tenure": "Jun 2022 - Sep 2022",
+    "tenure": "June 2022 - September 2022",
     "description": [
       "Joined EPAM as a React / JavaScript developer. No projects were assigned due to a layoff due to economic climate prevailing at that time"
     ]
@@ -10,20 +10,41 @@
   {
     "title": "Software Engineer",
     "organization": "BA Continuum India",
-    "tenure": "Aug 2018 - May 2022",
+    "tenure": "March 2021 - May 2022",
     "description": [
       "Set up dev, QA and production environments for monthly release",
       "Initiate change request and lead all release activities",
       "Lead triage calls for any issues",
-      "Create and lead emergency release / postfix releases"
+      "Create and lead emergency release / postfix releases",
+      "Take ownership and troubleshoot build issues and fix working with devops team",
+      "Take part in daily standups and work closely with various scrum teams"
+    ]
+  },
+  {
+    "title": "Senior Analyst",
+    "organization": "BA Continuum India",
+    "tenure": "Aug 2018 - Feb 2021",
+    "description": [
+      "Responsible for designing and developing landing page on SharePoint platform",
+      "Build and maintain sites and productivity tools for more than 50 businesses",
+      "Troubleshoot issue with SharePoint and take ownership of timely communication and addressal of issues",
+      "Ensure tasks are updated and closed on JIRA and participate in daily standups, retrospectives and planning meetings"
     ]
   },
   {
     "title": "Business Support Analyst",
     "organization": "BA Continuum India",
-    "tenure": "June 2016 - Aug 2018",
+    "tenure": "June 2016 - August 2018",
     "description": [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab commodi, fugit perferendis aspernatur temporibu tam in. Expedita temporibus aspernatur adipisci."
+      "Frontfacing a 450 plus headcount IT vertical working with portfolio management team",
+      "Lead and run leadership meetings and drive agenda",
+      "Workforce management, billing and forecasting, seating and planning",
+      "Issue management, business continuity planning and execution",
+      "Drive initiatives and performance",
+      "Reporting and dashboards for business meetings",
+      "Own risk and compliance for the business",
+      "Additionally developed and maintained a team site on SharePoint for the business management team",
+      "designed and developed a landing page and data collection site for a major skill enhancement initiative"
     ]
   },
   {
@@ -31,7 +52,10 @@
     "organization": "BA Continuum India",
     "tenure": "June 2008 - May 2016",
     "description": [
-      "Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ab commodi, fugit perferendis aspernatur temporibu tam in. Expedita temporibus aspernatur adipisci."
+      "Lead various high performing teams in operations",
+      "Drive performance, conduction appraisals and feedback sessions",
+      "Drive initiatives and team building activities",
+      "Conflict resolution and people issue resolution"
     ]
   }
 ]

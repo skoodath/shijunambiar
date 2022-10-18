@@ -1,11 +1,22 @@
 import styles from "../styles/common/menu.module.scss";
 import Link from "next/link";
 import Hamburger from "./Hamburger";
+import { useState } from "react";
 
 const Menu = () => {
+  const [showMenu, setShowMenu] = useState(false);
+
+  const handleClick = () => {
+    setShowMenu(!showMenu);
+  };
+
   return (
     <header className={styles.header}>
-      <nav className={styles.navbar}>
+      <nav
+        className={
+          showMenu ? styles.navbar + " " + styles.navbar_show : styles.navbar
+        }
+      >
         <Link href="/">
           <a className={styles.menuitem}>home</a>
         </Link>
@@ -23,7 +34,7 @@ const Menu = () => {
           Blog
         </a>
       </nav>
-      <Hamburger />
+      <Hamburger onClick={handleClick} />
     </header>
   );
 };

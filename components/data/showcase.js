@@ -13,7 +13,7 @@ const showcase = [
     id: 2,
     src: "/images/kubeed.webp",
     alt: "multiplication app for kids",
-    title: "Play Learn",
+    title: "Fun Math",
     description: `A fun webapp for kids to learn multiplicaiton table`,
     techstack: ["ReactJS", "Styled-Components", "AdobeXD"],
     url: "https://play-learn.netlify.app/",

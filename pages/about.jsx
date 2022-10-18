@@ -1,12 +1,14 @@
 import styles from "../styles/about.module.scss";
 import work from "../components/data/work.json";
+import Title from "../common/Title";
 
 const About = () => {
   return (
     <section className={styles.container}>
       <div className={styles.inner}>
+        <Title text="About Me" />
         <div className={styles.about_article}>
-          <h2 className={styles.about_subheader}>Career Summary</h2>
+          <h2 className={styles.about_subheader}>My Journey</h2>
           <p className={styles.summary_text}>
             <i>2004 - 2016</i>
             <br />I started my professional journey as a customer support
@@ -47,20 +49,23 @@ const About = () => {
         </div>
         <div className={styles.about_article}>
           <h2 className={styles.about_subheader}>Career Timeline</h2>
+
           {work.map((w) => (
             <section className={styles.about_card} key={w.title}>
-              <h3 className={styles.title}>{w.title}</h3>
-              <h4 className={styles.organization}>{w.organization}</h4>
-              <h5 className={styles.tenure}>{w.tenure}</h5>
-              <div className={styles.description}>
-                <h6 className={styles.desc_title}>Responsibilities</h6>
-                <ul className={styles.text}>
-                  {w.description.map((desc) => (
-                    <li className={styles.responsibility} key={desc}>
-                      {desc}
-                    </li>
-                  ))}
-                </ul>
+              <h3 className={styles.card_partition}>{w.tenure}</h3>
+              <div className={styles.card_content}>
+                <h3 className={styles.title}>{w.title}</h3>
+                <h4 className={styles.organization}>{w.organization}</h4>
+                <div className={styles.description}>
+                  <h6 className={styles.desc_title}>Responsibilities</h6>
+                  <ul className={styles.text}>
+                    {w.description.map((desc) => (
+                      <li className={styles.responsibility} key={desc}>
+                        {desc}
+                      </li>
+                    ))}
+                  </ul>
+                </div>
               </div>
             </section>
           ))}

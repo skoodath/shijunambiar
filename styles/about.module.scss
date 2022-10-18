@@ -23,6 +23,7 @@
 }
 .about_article {
   width: 100%;
+  margin: 4rem 0;
 }
 .summary_text {
   font-size: 1.5rem;
@@ -40,17 +41,16 @@
     content: "";
     position: absolute;
     height: 100%;
-    width: 3px;
+    width: 2px;
     border-radius: 10px;
-    background-color: rgb(196, 196, 196);
+    background-color: $accentcolor;
   }
   &::before {
     content: "";
     position: absolute;
-    height: 10px;
-    width: 10px;
-    border-radius: 50%;
-    background-color: rgb(196, 196, 196);
+    height: 0.5rem;
+    width: 10rem;
+    background-color: $accentcolor;
     bottom: 0;
   }
 
@@ -59,7 +59,7 @@
     &::before {
       right: 0;
       z-index: 1;
-      translate: 3px 0;
+      translate: 0;
     }
     &::after {
       right: 0;
@@ -71,7 +71,7 @@
     &::before {
       left: 0;
       z-index: 1;
-      translate: -3px 0;
+      translate: 0;
     }
     &::after {
       left: 0;
@@ -81,19 +81,31 @@
 }
 .about_card {
   margin: 2rem 0 0;
-  padding: 2rem;
-  border-radius: 10px;
   width: 100%;
-  max-width: 35rem;
   &:nth-child(even) {
-    background-color: #f7f8f8;
-    margin-right: auto;
+    .card_content {
+      background-color: #f7f8f8;
+      margin-right: auto;
+    }
   }
   &:nth-child(odd) {
-    margin-left: auto;
+    .card_content {
+      margin-left: auto;
+    }
   }
 }
-
+.card_partition {
+  border-bottom: 1px solid #d9d9d9;
+  color: $secondarycolor;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+}
+.card_content {
+  padding: 2rem;
+  border-radius: 10px;
+  width: min(100%, 45rem);
+  margin-top: 1rem;
+}
 .about_subheader {
   text-transform: uppercase;
   font-weight: 800;
