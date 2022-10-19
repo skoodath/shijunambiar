@@ -1,6 +1,6 @@
 import styles from "../../styles/project.module.scss";
 
-const Projectcard = ({ project }) => {
+const ProjectCard = ({ project }) => {
   const { name, description, livesite, github, tech } = project;
   return (
     <article className={styles.card}>
@@ -30,4 +30,4 @@ const Projectcard = ({ project }) => {
   );
 };
 
-export default Projectcard;
+export default ProjectCard;
