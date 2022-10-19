@@ -47,6 +47,11 @@ const About = () => {
             <b>AWS, JWT, GraphQL, Postgres, Python</b>
           </p>
         </div>
+        <div>
+          <a href="/ShijuNambiar.pdf" className={styles.download} download>
+            Download resume
+          </a>
+        </div>
         <div className={styles.about_article}>
           <h2 className={styles.about_subheader}>Career Timeline</h2>
 

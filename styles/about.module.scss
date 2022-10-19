@@ -40,17 +40,17 @@
   &::after {
     content: "";
     position: absolute;
-    height: 100%;
-    width: 2px;
-    border-radius: 10px;
-    background-color: $accentcolor;
+    height: 3rem;
+    width: 10px;
+    bottom: 0;
+    background-color: $highlightercolor;
   }
   &::before {
     content: "";
     position: absolute;
-    height: 0.5rem;
-    width: 10rem;
-    background-color: $accentcolor;
+    height: 2px;
+    width: 3rem;
+    background-color: $highlightercolor;
     bottom: 0;
   }
 
@@ -63,7 +63,6 @@
     }
     &::after {
       right: 0;
-      top: 0;
     }
   }
   &:nth-child(even) {
@@ -75,7 +74,6 @@
     }
     &::after {
       left: 0;
-      top: 0;
     }
   }
 }
@@ -134,5 +132,25 @@
     content: "»";
     position: absolute;
     left: 0;
+  }
+}
+
+.download {
+  display: flex;
+  justify-content: center;
+  width: 15rem;
+  padding: 0.7rem;
+  margin: 1rem 0 0 0;
+  color: #fff;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  box-shadow: 0 4px 8px rgba(0 0 0 / 0.2);
+  position: relative;
+  z-index: 10;
+  background-color: $accentcolor;
+  &:hover {
+    background-image: linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.05));
+    transition: background-image 0.3s ease-in;
   }
 }

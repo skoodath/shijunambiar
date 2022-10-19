@@ -1,16 +1,16 @@
 import styles from "../../styles/project.module.scss";
 
-const Projectcard = ({ ...project }) => {
+const Projectcard = ({ project }) => {
   const { name, description, livesite, github, tech } = project;
   return (
-    <li className={styles.card_wrapper}>
-      <div className={styles.header}>  
+    <article className={styles.card}>
+      <div className={styles.header}>
         <div className={styles.button_wrapper}>
-        <h3 className={styles.link}>
-          <a href={livesite} target="blank">
-            {name}
-          </a>
-        </h3>
+          <h3 className={styles.link}>
+            <a href={livesite} target="blank">
+              {name}
+            </a>
+          </h3>
           <a href={github} target="blank" className={styles.source}>
             <code>Github</code>
           </a>
@@ -19,14 +19,14 @@ const Projectcard = ({ ...project }) => {
           <p className={styles.description}>{description}</p>
         </div>
       </div>
-        <ul className={styles.project_skills}>
-          {tech.map((t) => (
-            <li key={t} className={styles.skills}>
-              {t}
-            </li>
-          ))}
-        </ul> 
-    </li>
+      <ul className={styles.project_skills}>
+        {tech.map((t) => (
+          <li key={t} className={styles.skills}>
+            {t}
+          </li>
+        ))}
+      </ul>
+    </article>
   );
 };
 

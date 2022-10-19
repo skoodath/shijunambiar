@@ -4,7 +4,6 @@ import Link from "next/link";
 
 const Footer = () => (
   <footer className={styles.wrapper}>
-    <div className={styles.pattern_one}></div>
     <div className={styles.inner}>
       <div className={styles.title}>
         <h1 className={styles.footer_title}>Shiju Nambiar</h1>

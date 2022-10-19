@@ -20,10 +20,11 @@
   gap: 20px;
   @media (min-width: $md) {
     flex-direction: row;
+    flex-wrap: wrap;
   }
 }
 .featured_listitem {
-  width: 100%;
+  width: min(100%, 25rem);
   background-color: #fff;
   display: flex;
   flex-direction: column;

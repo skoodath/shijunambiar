@@ -1,25 +1,17 @@
+import Projectcard from "../components/projects/ProjectCard";
 import styles from "../styles/project.module.scss";
+import extra from "../components/data/extra";
+import Title from "../common/Title";
 
 const Projects = () => {
   return (
-    <section className={styles.wrapper}>
+    <section className={styles.container}>
       <div className={styles.inner}>
-        {/* <h3 className={styles.text}>Side Projects</h3>
-        <ul className={styles.card_container}>
-          {projects.map((project) => (
-            <Projectcard key={project.id} {...project} />
+        <Title text="project" />
+        <div className={styles.card_container}>
+          {extra.map((project) => (
+            <Projectcard project={project} key={project.id} />
           ))}
-        </ul> */}
-        <div style={{ height: "100vh", padding: "20rem" }}>
-          <p
-            style={{
-              backgroundColor: "#ddd",
-              padding: "2rem",
-              color: "#ff0000",
-            }}
-          >
-            This page is being updated! Will be live shortly
-          </p>
         </div>
       </div>
     </section>

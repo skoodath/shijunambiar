@@ -1,42 +1,35 @@
 @use "./common/variables" as *;
 
-.wrapper {
+.container {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background-color: #f1f3f8;
-  padding: 0 0 3rem 0;
+  padding: 3rem 0;
+  margin: 5rem 0 0;
 }
 .inner {
   display: flex;
   flex-flow: column;
-  width: 80%;
-  max-width: 1200px;
+  width: min(80%, 80rem);
   padding: 2rem 0;
   margin: 0 auto;
   justify-content: center;
   align-items: center;
   position: relative;
-  &::before {
-    position: absolute;
-    content: "";
-    width: 20%;
-    min-width: 100px;
-    height: 2px;
-    border-radius: 20px;
-    background-color: #8a8e9e;
-    top: 0;
-    margin: 0 auto;
-  }
 }
 .card_container {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  flex-wrap: wrap;
   justify-content: center;
+  gap: 10px;
+  margin: 4rem 0;
 }
-.card_wrapper {
-  width: 100%;
+.card {
+  width: min(100%, 20rem);
+  min-height: 20rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -45,7 +38,6 @@
   background-color: #fff;
   border-radius: 5px;
   padding: 1rem 0;
-  margin: 0 0 1rem 0;
 }
 .header {
   display: flex;
@@ -113,6 +105,7 @@
   margin: 0 0.5rem 0.5rem 0;
   border-bottom: 1px solid;
   font-size: 0.8rem;
+  list-style-type: none;
 }
 @media screen and (min-width: $md) {
   .card_container {

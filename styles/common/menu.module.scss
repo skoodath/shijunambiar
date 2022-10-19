@@ -34,6 +34,10 @@
   visibility: hidden;
   translate: 0 -100%;
   position: absolute;
+  @media (min-width: $lg) {
+    visibility: visible;
+    translate: 0;
+  }
 }
 .navbar_show {
   visibility: visible;
@@ -42,6 +46,7 @@
 }
 .navbar_hide {
   visibility: hidden;
+  translate: 0 -100%;
 }
 .menuitem {
   color: $secondarycolor;
@@ -50,28 +55,43 @@
   text-align: center;
   font-size: 1rem;
   letter-spacing: 1px;
-  transition-property: all;
-  transition-duration: 0.2s;
-  transition-timing-function: cubic-bezier(0.0075, 0.00082, 0.00098, 0.8);
   text-transform: uppercase;
   cursor: pointer;
   padding: 0.5rem 0;
   margin: 0 0.7rem;
   text-decoration: none;
-  &:hover {
-    transition-property: font-weight;
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.0075, 0.00082, 0.00098, 0.8);
-    font-weight: bold;
+  z-index: 9;
+  span {
+    position: relative;
+    display: block;
+    z-index: 9;
   }
-  &:active {
-    transition-property: font-weight;
-    transition-duration: 0.2s;
-    transition-timing-function: cubic-bezier(0.0075, 0.00082, 0.00098, 0.8);
-    font-weight: bold;
+  &::before {
+    content: "";
+    position: absolute;
+    display: block;
+    height: 30%;
+    width: 0;
+    background-color: $highlightercolor;
+    bottom: 20%;
+    left: 0;
+    z-index: 0;
+    transition: width 300ms cubic-bezier(0.0075, 0.00082, 0.00098, 0.8);
+    transform-origin: left;
+    z-index: 1;
+  }
+  &:hover {
+    &::before {
+      width: 100%;
+    }
   }
 }
 
+.active {
+  &::before {
+    width: 100%;
+  }
+}
 .menu_small {
   z-index: 1001;
   display: flex;
@@ -81,11 +101,6 @@
   gap: 5px;
   cursor: pointer;
   margin: 0 0 0 auto;
-  &:hover {
-    span {
-      width: 40px;
-    }
-  }
 }
 .lines {
   display: block;
@@ -93,12 +108,30 @@
   width: 40px;
   height: 4.5px;
   border-radius: 5px;
-  transition: width 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+  rotate: 0;
+  transition: width 0.3s cubic-bezier(0.075, 0.82, 0.165, 1),
+    rotate 0.3s ease-in-out;
   &:first-child {
     width: 35px;
+    transform-origin: right bottom;
   }
   &:last-child {
     width: 25px;
+    transform-origin: right top;
+  }
+}
+.lines_clicked {
+  &:first-child {
+    transform-origin: right top;
+    rotate: -45deg;
+  }
+  &:nth-child(even) {
+    visibility: hidden;
+  }
+  &:last-child {
+    transform-origin: right bottom;
+    width: 35px;
+    rotate: 45deg;
   }
 }
 
