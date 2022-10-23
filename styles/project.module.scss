@@ -28,7 +28,7 @@
   margin: 4rem 0;
 }
 .card {
-  width: min(100%, 20rem);
+  width: min(100%, 23rem);
   min-height: 20rem;
   display: flex;
   flex-direction: column;
@@ -40,32 +40,28 @@
   padding: 1rem 0;
 }
 .header {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  width: 100%;
-  padding: 0 1.5rem;
+  width: 80%;
   color: $primarycolor;
+  margin: 0 auto;
 }
 
 .details {
-  width: 100%;
-  display: flex;
-  flex-direction: column;
+  width: 80%;
   align-items: flex-start;
+  flex: 2;
 }
 .description {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 .button_wrapper {
   display: flex;
-  justify-content: flex-end;
+  gap: 5px;
   margin: 0;
-  width: 100%;
+  width: 80%;
 }
 .link {
   flex: 1 1 auto;
-  font-size: 0.95rem;
+  font-size: 1.3rem;
   position: relative;
   a {
     text-decoration: none;
@@ -76,19 +72,30 @@
     }
   }
 }
-.source {
+.source,
+.live {
   font-size: 0.95rem;
-  background-color: #eaebef;
   display: block;
-  height: fit-content;
-  padding: 0.2rem 0.5rem;
+  padding: 0.5rem 1rem;
   border-radius: 3px;
   text-decoration: none;
+  text-transform: uppercase;
+  color: #f8f8f8;
   &:hover {
     background-color: #cbcbcb;
     transition: background-color 0.5s ease-in-out;
   }
+  &:visited {
+    color: #f8f8f8;
+  }
 }
+.source {
+  background-color: #2f2d37;
+}
+.live {
+  background-color: #8edd9e;
+}
+
 .footer {
   width: 100%;
   height: 30%;
@@ -96,14 +103,13 @@
   padding: 0 1.5rem;
 }
 .project_skills {
-  width: 100%;
+  width: 80%;
   display: flex;
   flex-flow: row wrap;
-  padding: 1rem 1.5rem;
+  flex: 1;
 }
 .skills {
   margin: 0 0.5rem 0.5rem 0;
-  border-bottom: 1px solid;
   font-size: 0.8rem;
   list-style-type: none;
 }

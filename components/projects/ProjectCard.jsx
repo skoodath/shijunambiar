@@ -5,19 +5,10 @@ const ProjectCard = ({ project }) => {
   return (
     <article className={styles.card}>
       <div className={styles.header}>
-        <div className={styles.button_wrapper}>
-          <h3 className={styles.link}>
-            <a href={livesite} target="blank">
-              {name}
-            </a>
-          </h3>
-          <a href={github} target="blank" className={styles.source}>
-            <code>Github</code>
-          </a>
-        </div>
-        <div className={styles.details}>
-          <p className={styles.description}>{description}</p>
-        </div>
+        <h3 className={styles.link}>{name}</h3>
+      </div>
+      <div className={styles.details}>
+        <p className={styles.description}>{description}</p>
       </div>
       <ul className={styles.project_skills}>
         {tech.map((t) => (
@@ -26,6 +17,14 @@ const ProjectCard = ({ project }) => {
           </li>
         ))}
       </ul>
+      <div className={styles.button_wrapper}>
+        <a href={livesite} target="blank" className={styles.live}>
+          Visit
+        </a>
+        <a href={github} target="blank" className={styles.source}>
+          Github
+        </a>
+      </div>
     </article>
   );
 };

@@ -5,8 +5,8 @@ const Landing = () => {
   return (
     <>
       <div className={styles.landing}>
-        {/* <div className={styles.pattern_one}></div>
-        <div className={styles.pattern_two}></div> */}
+        <div className={styles.pattern_one}></div>
+        <div className={styles.pattern_two}></div>
         <section className={styles.name_wrapper}>
           <h1 className={styles.name_text}>Hi, I 'M SHIJU</h1>
           <p className={styles.value_para}>
