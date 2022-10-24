@@ -29,7 +29,7 @@
   display: flex;
   flex-direction: column;
   padding: 2rem;
-  min-height: 25rem;
+  min-height: 30rem;
   border-radius: 10px;
 }
 .featured_title {
@@ -42,16 +42,18 @@
   flex: 1;
 }
 .featured_image_container {
-  flex: 2;
+  flex: 1;
   width: 100%;
   margin: 1rem 0 0;
   padding: 1rem;
   display: flex;
   justify-content: center;
   background-color: #f3f3f3;
+  border-radius: 7px;
 }
 .featured_image {
   max-width: 80%;
   border-radius: 5px;
-  aspect-ratio: 5/1;
+  aspect-ratio: 4 / 2;
+  box-shadow: 0 0 6px rgb(0 0 0 / 0.2);
 }

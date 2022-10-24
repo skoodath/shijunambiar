@@ -11,7 +11,7 @@ const showcase = [
   },
   {
     id: 2,
-    src: "/images/kubeed.webp",
+    src: "/images/play-learn.webp",
     alt: "multiplication app for kids",
     title: "Fun Math",
     description: `A fun webapp for kids to learn multiplicaiton table`,
