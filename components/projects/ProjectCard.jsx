@@ -1,4 +1,6 @@
 import styles from "../../styles/project.module.scss";
+import { BsGithub } from "react-icons/bs";
+import ProjectButton from "../../common/ProjectButton";
 
 const ProjectCard = ({ project }) => {
   const { name, description, livesite, github, tech } = project;
@@ -17,14 +19,7 @@ const ProjectCard = ({ project }) => {
           </li>
         ))}
       </ul>
-      <div className={styles.button_wrapper}>
-        <a href={livesite} target="blank" className={styles.live}>
-          Visit
-        </a>
-        <a href={github} target="blank" className={styles.source}>
-          Github
-        </a>
-      </div>
+      <ProjectButton livesite={livesite} github={github} />
     </article>
   );
 };

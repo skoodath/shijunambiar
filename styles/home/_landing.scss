@@ -8,15 +8,11 @@
   align-items: center;
   position: relative;
   min-height: 45rem;
-  /* background-image: linear-gradient(#f3f3f357, #f4f4f4e3),
-    url("/images/patternsmall.png"); */
+  background-image: linear-gradient(#f3f3f357, #f4f4f4e3);
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  @media (min-width: $lg) {
-    /* background-image: linear-gradient(#f3f3f357, #f4f4f4e3),
-      url("/images/pattern1.png"); */
-  }
+  overflow-y: hidden;
 }
 .name_wrapper {
   position: relative;

@@ -5,7 +5,7 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: #f1f3f8;
+  background-image: linear-gradient(#f3f3f357, #f4f4f4e3);
   padding: 3rem 0;
   margin: 5rem 0 0;
 }
@@ -37,63 +37,21 @@
   z-index: 1;
   background-color: #fff;
   border-radius: 5px;
-  padding: 1rem 0;
+  padding: 2rem;
 }
 .header {
-  width: 80%;
+  width: 100%;
   color: $primarycolor;
   margin: 0 auto;
 }
 
 .details {
-  width: 80%;
+  width: 100%;
   align-items: flex-start;
   flex: 2;
 }
 .description {
   padding: 0.5rem 0;
-}
-.button_wrapper {
-  display: flex;
-  gap: 5px;
-  margin: 0;
-  width: 80%;
-}
-.link {
-  flex: 1 1 auto;
-  font-size: 1.3rem;
-  position: relative;
-  a {
-    text-decoration: none;
-  }
-  &:hover {
-    a {
-      text-decoration: underline;
-    }
-  }
-}
-.source,
-.live {
-  font-size: 0.95rem;
-  display: block;
-  padding: 0.5rem 1rem;
-  border-radius: 3px;
-  text-decoration: none;
-  text-transform: uppercase;
-  color: #f8f8f8;
-  &:hover {
-    background-color: #cbcbcb;
-    transition: background-color 0.5s ease-in-out;
-  }
-  &:visited {
-    color: #f8f8f8;
-  }
-}
-.source {
-  background-color: #2f2d37;
-}
-.live {
-  background-color: #8edd9e;
 }
 
 .footer {
@@ -103,7 +61,7 @@
   padding: 0 1.5rem;
 }
 .project_skills {
-  width: 80%;
+  width: 100%;
   display: flex;
   flex-flow: row wrap;
   flex: 1;

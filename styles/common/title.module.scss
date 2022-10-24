@@ -7,16 +7,18 @@
   position: relative;
   font-size: 2rem;
   z-index: 10;
+  padding: 0 0 1.5rem 0;
   &::after {
     content: "";
     position: absolute;
     background-color: $highlightercolor;
-    width: 20px;
-    left: 0;
+    width: 75px;
+    left: 50%;
     bottom: 0;
-    height: 6px;
+    translate: -50%;
+    height: 7px;
     z-index: 2;
-    border-radius: 10px;
+    border-radius: 1px;
   }
   @media (min-width: $lg) {
     margin: 3rem 0;

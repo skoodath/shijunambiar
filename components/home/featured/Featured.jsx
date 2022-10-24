@@ -2,6 +2,7 @@ import styles from "../../../styles/home.module.scss";
 import { ButtonPrimary } from "../../../common/Button";
 import Title from "../../../common/Title";
 import showcase from "../../data/showcase";
+import ProjectButton from "../../../common/ProjectButton";
 
 const Featured = () => {
   return (
@@ -20,6 +21,7 @@ const Featured = () => {
                 width="100%"
               />
             </div>
+            <ProjectButton livesite={item.url} github={item.github} />
           </article>
         ))}
       </div>

@@ -1,0 +1,44 @@
+@use "../common/variables" as *;
+
+.button_wrapper {
+  display: flex;
+  gap: 5px;
+  margin: 1rem 0 0;
+  width: 100%;
+}
+.source,
+.live {
+  font-size: 0.95rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  color: #634ac9;
+  text-align: center;
+  padding: 0.7rem;
+  border-radius: 5px;
+  text-decoration: none;
+  text-transform: uppercase;
+  position: relative;
+  &:hover {
+    background-image: linear-gradient(rgb(0 0 0 / 0.2), rgb(0 0 0 / 0.05));
+    box-shadow: 0 4px 8px rgba(0 0 0 / 0.2);
+    transition: box-shadow 0.3s ease-in;
+  }
+  &:visited {
+    color: #634ac9;
+  }
+}
+.source {
+  background-color: #24292f;
+  flex: 1;
+  svg {
+    fill: #f8f8f8;
+    font-size: 1.3rem;
+  }
+}
+.live {
+  border: 1.5px solid #634ac9;
+  flex: 2;
+}
