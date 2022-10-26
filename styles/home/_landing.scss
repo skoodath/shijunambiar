@@ -8,11 +8,16 @@
   align-items: center;
   position: relative;
   min-height: 45rem;
-  background-image: linear-gradient(#f3f3f357, #f4f4f4e3);
+  background-image: linear-gradient(#f3f3f357, #f4f4f4e3),
+    url("/images/bgsmall.svg");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: left;
   background-size: cover;
   overflow: hidden;
+  @media (min-width: $md) {
+    background-image: linear-gradient(#f3f3f357, #f4f4f4e3),
+      url("/images/bglarge.svg");
+  }
 }
 .name_wrapper {
   position: relative;

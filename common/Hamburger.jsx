@@ -14,11 +14,6 @@ const Hamburger = ({ onClick, showMenu }) => {
           showMenu ? `${styles.lines} ${styles.lines_clicked}` : styles.lines
         }
       ></span>
-      <span
-        className={
-          showMenu ? `${styles.lines} ${styles.lines_clicked}` : styles.lines
-        }
-      ></span>
     </nav>
   );
 };

@@ -94,8 +94,6 @@
 }
 .menu_small {
   z-index: 1001;
-  width: 2.5rem;
-  min-height: 2.2rem;
   display: flex;
   flex-direction: column;
   align-items: flex-end;
@@ -103,61 +101,38 @@
   cursor: pointer;
   margin: 0 0 0 auto;
   position: relative;
-  overflow: hidden;
+  gap: 10px;
+  padding: 1rem 0;
 }
 .lines {
   display: block;
   background-color: $accentcolor;
   height: 4px;
   border-radius: 3px;
-  width: 2.5rem;
-  position: absolute;
-  rotate: 0;
+  width: 3rem;
   transition: {
-    property: width, rotate;
+    property: translate, rotate;
     duration: 0.3s;
-    timing-function: cubic-bezier(0.075, 0.82, 0.165, 1);
+    timing-function: cubic-bezier(0.075, 0.82, 0.865, 1);
   }
 
   &:first-child {
-    transform-origin: center;
-    top: 50%;
-    translate: 0 -50%;
+    translate: 0;
   }
-  &:nth-child(2) {
-    bottom: 0;
-    translate: 0 -50%;
-    width: 2rem;
-    transition: {
-      property: visibility, translate;
-      duration: 0.2s;
-      timing-function: ease-in;
-    }
-  }
+
   &:last-child {
-    transform-origin: center;
-    top: 50%;
-    translate: 0 -50%;
+    translate: 0;
   }
 }
 .lines_clicked {
   &:first-child {
-    transform-origin: center;
-    rotate: -135deg;
+    translate: 0px 7px 0px;
+    rotate: -45deg;
   }
-  &:nth-child(2) {
-    visibility: hidden;
-    translate: 100% 0;
 
-    transition: {
-      property: visibility, translate;
-      duration: 0.2s;
-      timing-function: ease-in;
-    }
-  }
   &:last-child {
-    transform-origin: center;
-    rotate: 135deg;
+    translate: 0px -7px 0px;
+    rotate: 45deg;
   }
 }
 
