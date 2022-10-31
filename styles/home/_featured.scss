@@ -31,6 +31,18 @@
   padding: 2rem;
   min-height: 30rem;
   border-radius: 10px;
+  border: 2px solid transparent;
+  border-left: 0px solid transparent;
+  border-right: 0px solid transparent;
+  &:hover {
+    border-top: 2px solid $highlightercolor;
+    transform: scale3d(1.01, 1.01, 1.01);
+    transition: {
+      property: border-top, transform;
+      duration: 0.3s;
+      timer-function: ease-in;
+    }
+  }
 }
 .featured_title {
   text-align: left;

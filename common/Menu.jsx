@@ -15,6 +15,13 @@ const Menu = () => {
 
   return (
     <header className={styles.header}>
+      <nav className={styles.logo}>
+        <img
+          src="/images/logo_color.png"
+          alt="Logo"
+          className={styles.logo_image}
+        />
+      </nav>
       <nav
         className={
           showMenu ? styles.navbar + " " + styles.navbar_show : styles.navbar
