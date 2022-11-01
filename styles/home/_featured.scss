@@ -37,8 +37,9 @@
   &:hover {
     border-top: 2px solid $highlightercolor;
     transform: scale3d(1.01, 1.01, 1.01);
+    box-shadow: 0 2px 3px rgb(0 0 0 / 0.2);
     transition: {
-      property: border-top, transform;
+      property: border-top, transform, box-shadow;
       duration: 0.3s;
       timer-function: ease-in;
     }

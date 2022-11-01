@@ -22,7 +22,10 @@
   display: flex;
 }
 .logo_image {
-  max-width: 75%;
+  max-width: 60%;
+  @media (min-width: $lg) {
+    max-width: 75%;
+  }
 }
 
 .navbar {
@@ -128,9 +131,9 @@
 .lines {
   display: block;
   background-color: $accentcolor;
-  height: 4px;
+  height: 3.5px;
   border-radius: 3px;
-  width: 3rem;
+  width: 2.5rem;
   transition: {
     property: translate, rotate;
     duration: 0.3s;
