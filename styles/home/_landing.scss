@@ -28,7 +28,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  max-width: 75rem;
+  max-width: min(80%, 70rem);
   gap: 20px;
 }
 .name_text {
@@ -38,6 +38,12 @@
   position: relative;
   z-index: 3;
   letter-spacing: 0.08rem;
+  text-align: center;
+  span {
+    text-transform: uppercase;
+    border-bottom: 4px solid $highlightercolor;
+    font-size: 85%;
+  }
 }
 
 .value_para {

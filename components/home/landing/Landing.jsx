@@ -5,14 +5,12 @@ const Landing = () => {
   return (
     <>
       <div className={styles.landing}>
-        {/* <div className={styles.pattern_one}></div>
-        <div className={styles.pattern_two}></div> */}
         <section className={styles.name_wrapper}>
-          <h1 className={styles.name_text}>Hi, I 'M SHIJU</h1>
-          <p className={styles.value_para}>
-            I am a web developer and user interface designer specializing in
-            building performant, responsive websites
-          </p>
+          <h1 className={styles.name_text}>
+            Hi, I 'm <span>shiju</span>, I love{" "}
+            <span style={{ textTransform: "lowercase" }}>creating</span> for the
+            web!
+          </h1>
           <ButtonPrimary text="projects" route="projects" />
         </section>
       </div>
