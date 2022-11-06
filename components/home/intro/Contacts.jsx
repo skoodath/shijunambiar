@@ -6,6 +6,13 @@ import {
   BsGithub,
   BsInstagram,
 } from "react-icons/bs";
+import {
+  FaGithubSquare,
+  FaLinkedin,
+  FaEnvelopeSquare,
+  FaInstagramSquare,
+  FaTwitterSquare,
+} from "react-icons/fa";
 
 const Contacts = () => {
   return (
@@ -19,27 +26,27 @@ const Contacts = () => {
         <ul className={styles.list}>
           <li className={styles.listitem}>
             <a href="mail:shiju.nambiar@outlook.com">
-              <BsEnvelopeFill />
+              <FaEnvelopeSquare />
             </a>
           </li>
           <li className={styles.listitem}>
             <a href="https://twitter.com/spknbr">
-              <BsTwitter />
+              <FaTwitterSquare />
             </a>
           </li>
           <li className={styles.listitem}>
             <a href="https://www.linkedin.com/in/nambiars/">
-              <BsLinkedin />
+              <FaLinkedin />
             </a>
           </li>
           <li className={styles.listitem}>
             <a href="https://github.com/skoodath">
-              <BsGithub />
+              <FaGithubSquare />
             </a>
           </li>
           <li className={styles.listitem}>
             <a href="https://www.instagram.com/frontend.talk/">
-              <BsInstagram />
+              <FaInstagramSquare />
             </a>
           </li>
         </ul>

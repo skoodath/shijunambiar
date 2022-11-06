@@ -1,5 +1,11 @@
 import styles from "../styles/common/footer.module.scss";
-import { FiGithub, FiLinkedin, FiMail } from "react-icons/fi";
+import {
+  FaGithubSquare,
+  FaLinkedin,
+  FaEnvelopeSquare,
+  FaInstagramSquare,
+  FaTwitterSquare,
+} from "react-icons/fa";
 import Link from "next/link";
 
 const Footer = () => (
@@ -8,9 +14,11 @@ const Footer = () => (
       <div className={styles.title}>
         <h1 className={styles.footer_title}>Shiju Nambiar</h1>
         <section className={styles.social}>
-          <FiGithub className={styles.socialicons} />
-          <FiLinkedin className={styles.socialicons} />
-          <FiMail className={styles.socialicons} />
+          <FaEnvelopeSquare />
+          <FaTwitterSquare />
+          <FaLinkedin />
+          <FaGithubSquare />
+          <FaInstagramSquare />
         </section>
       </div>
       <nav className={styles.navbar}>
