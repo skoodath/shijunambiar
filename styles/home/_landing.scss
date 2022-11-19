@@ -40,9 +40,8 @@
   letter-spacing: 0.08rem;
   text-align: center;
   span {
-    text-transform: uppercase;
+    text-transform: capitalize;
     border-bottom: 4px solid $highlightercolor;
-    font-size: 85%;
   }
 }
 

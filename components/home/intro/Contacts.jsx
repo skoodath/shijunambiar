@@ -1,17 +1,12 @@
 import styles from "../../../styles/home.module.scss";
+
 import {
-  BsEnvelopeFill,
-  BsTwitter,
-  BsLinkedin,
-  BsGithub,
-  BsInstagram,
-} from "react-icons/bs";
-import {
-  FaGithubSquare,
-  FaLinkedin,
-  FaEnvelopeSquare,
-  FaInstagramSquare,
-  FaTwitterSquare,
+  FaGithub,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaInstagram,
+  FaTwitter,
+  FaMastodon,
 } from "react-icons/fa";
 
 const Contacts = () => {
@@ -25,28 +20,28 @@ const Contacts = () => {
       <section className={styles.contact_details}>
         <ul className={styles.list}>
           <li className={styles.listitem}>
-            <a href="mail:shiju.nambiar@outlook.com">
-              <FaEnvelopeSquare />
+            <a href="mailto:shiju.nambiar@outlook.com">
+              <FaEnvelope />
             </a>
           </li>
           <li className={styles.listitem}>
             <a href="https://twitter.com/spknbr">
-              <FaTwitterSquare />
+              <FaTwitter />
             </a>
           </li>
           <li className={styles.listitem}>
             <a href="https://www.linkedin.com/in/nambiars/">
-              <FaLinkedin />
+              <FaLinkedinIn />
             </a>
           </li>
           <li className={styles.listitem}>
             <a href="https://github.com/skoodath">
-              <FaGithubSquare />
+              <FaGithub />
             </a>
           </li>
           <li className={styles.listitem}>
             <a href="https://www.instagram.com/frontend.talk/">
-              <FaInstagramSquare />
+              <FaInstagram />
             </a>
           </li>
         </ul>

@@ -1,10 +1,11 @@
 import styles from "../styles/common/footer.module.scss";
 import {
-  FaGithubSquare,
-  FaLinkedin,
-  FaEnvelopeSquare,
-  FaInstagramSquare,
-  FaTwitterSquare,
+  FaGithub,
+  FaLinkedinIn,
+  FaEnvelope,
+  FaInstagram,
+  FaTwitter,
+  FaMastodon,
 } from "react-icons/fa";
 import Link from "next/link";
 
@@ -14,11 +15,21 @@ const Footer = () => (
       <div className={styles.title}>
         <h1 className={styles.footer_title}>Shiju Nambiar</h1>
         <section className={styles.social}>
-          <FaEnvelopeSquare />
-          <FaTwitterSquare />
-          <FaLinkedin />
-          <FaGithubSquare />
-          <FaInstagramSquare />
+          <a href="mailto:shiju.nambiar@outlook.com">
+            <FaEnvelope />
+          </a>
+          <a href="https://twitter.com/spknbr">
+            <FaTwitter />
+          </a>
+          <a href="https://www.linkedin.com/in/nambiars/">
+            <FaLinkedinIn />
+          </a>
+          <a href="https://github.com/skoodath">
+            <FaGithub />
+          </a>
+          <a href="https://www.instagram.com/frontend.talk/">
+            <FaInstagram />
+          </a>
         </section>
       </div>
       <nav className={styles.navbar}>
