@@ -20,12 +20,12 @@ const Contacts = () => {
       <section className={styles.contact_details}>
         <ul className={styles.list}>
           <li className={styles.listitem}>
-            <a href="mailto:shiju.nambiar@outlook.com">
+            <a href="mailto:me@shijunambiar.com">
               <FaEnvelope />
             </a>
           </li>
           <li className={styles.listitem}>
-            <a href="https://twitter.com/spknbr">
+            <a href="https://twitter.com/shaijun">
               <FaTwitter />
             </a>
           </li>
@@ -40,7 +40,7 @@ const Contacts = () => {
             </a>
           </li>
           <li className={styles.listitem}>
-            <a href="https://www.instagram.com/frontend.talk/">
+            <a href="https://www.instagram.com/nambiarshaiju/">
               <FaInstagram />
             </a>
           </li>

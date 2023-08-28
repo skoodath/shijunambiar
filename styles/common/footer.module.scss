@@ -18,10 +18,11 @@
 }
 .inner {
   display: flex;
-  width: 80%;
+  width: 90%;
   height: 100%;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   max-width: 80rem;
   margin: 0 auto;
   padding: 2rem 0;
@@ -40,7 +41,8 @@
 .navbar {
   display: flex;
   flex-direction: column;
-  border-bottom: 1px solid rgb(68, 68, 68);
+  justify-content: center;
+  align-items: center;
   margin: 0 0 1rem 0;
   padding: 1rem 0;
   gap: 5px;
@@ -52,7 +54,7 @@
   color: #fff;
   cursor: pointer;
   text-decoration: none;
-  margin: 0 0 1rem 0;
+  margin: 0 0 0.5rem 0;
   text-transform: uppercase;
   font-size: 1rem;
   &:hover {
@@ -61,11 +63,12 @@
 }
 .social {
   display: flex;
+  justify-content: center;
   width: 100%;
   a {
     svg {
       fill: #fff;
-      font-size: 2.2rem;
+      font-size: 1.8rem;
       margin: 0 0 0 0.5rem;
       &:hover {
         fill: #c7ddff;
@@ -88,15 +91,14 @@
   color: rgb(188, 188, 188);
   margin: 0 auto;
   font-size: 0.8rem;
+  border-top: 1px solid rgb(68, 68, 68);
 }
 @media (min-width: $md) {
   .navbar {
     flex-direction: row;
     justify-content: flex-end;
   }
-  .social {
-    justify-content: flex-end;
-  }
+
   .socialicons {
     font-size: 1.6rem;
   }

@@ -15,10 +15,10 @@ const Footer = () => (
       <div className={styles.title}>
         <h1 className={styles.footer_title}>Shiju Nambiar</h1>
         <section className={styles.social}>
-          <a href="mailto:shiju.nambiar@outlook.com">
+          <a href="mailto:me@shijunambiar.com">
             <FaEnvelope />
           </a>
-          <a href="https://twitter.com/spknbr">
+          <a href="https://twitter.com/shaijun">
             <FaTwitter />
           </a>
           <a href="https://www.linkedin.com/in/nambiars/">
@@ -27,7 +27,7 @@ const Footer = () => (
           <a href="https://github.com/skoodath">
             <FaGithub />
           </a>
-          <a href="https://www.instagram.com/frontend.talk/">
+          <a href="https://www.instagram.com/nambiarshaiju/">
             <FaInstagram />
           </a>
         </section>

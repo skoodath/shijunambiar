@@ -7,10 +7,12 @@ export const coreSkills = [
   "CSS",
   "Sass",
   "Styled-Components",
+  "MUI",
+  "Storybook",
+  "React Query",
   "Git",
   "Webpack",
   "Gulp",
-  "MaterialUI",
   "Chakra-UI",
   "Figma",
   "AdobeXD",
@@ -18,12 +20,10 @@ export const coreSkills = [
 
 export const otherSkills = [
   "AWS",
-  "GraphQL",
   "Firebase",
-  "CI/CD",
   "Node",
   "Express",
   "MongoDB",
   "JWT",
-  "PostgreSQL",
+  "Optimizely CMS",
 ];

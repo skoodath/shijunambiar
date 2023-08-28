@@ -7,12 +7,12 @@ const Button = ({ variant, route, text, ...props }) => {
       <a
         className={styles.button}
         style={{
-          backgroundColor: variant === "filled" ? "#634AC9" : "#fff",
+          backgroundColor: variant === "filled" ? "#171618" : "#fff",
           border:
             variant === "filled"
               ? "3px solid transparent"
-              : "3px solid #634AC9",
-          color: variant === "filled" ? "#fff" : "#634AC9",
+              : "3px solid #171618",
+          color: variant === "filled" ? "#fff" : "#171618",
         }}
         {...props}
       >
