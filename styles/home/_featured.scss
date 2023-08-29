@@ -34,8 +34,7 @@
   border-left: 0px solid transparent;
   border-right: 0px solid transparent;
   &:hover {
-    border-top: 2px solid $highlightercolor;
-    transform: scale3d(1.01, 1.01, 1.01);
+    border-top: 3px solid $highlightercolor;
     box-shadow: 0 2px 3px rgb(0 0 0 / 0.2);
     transition: {
       property: border-top, transform, box-shadow;

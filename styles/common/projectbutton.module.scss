@@ -12,7 +12,7 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 0.5rem 1rem;
+  padding: 0.25rem 1rem;
   color: #171618;
   text-align: center;
   font-weight: 600;
@@ -21,22 +21,28 @@
   text-transform: uppercase;
   position: relative;
   &:hover {
-    box-shadow: 0 4px 8px rgba(0 0 0 / 0.2);
-    transition: box-shadow 0.1s ease-in;
+    transition: text-decoration 0.1s ease-in;
+    text-decoration: underline;
   }
   &:visited {
     color: #171618;
   }
 }
 .source {
-  background-color: #24292f;
   flex: 1;
   svg {
-    fill: #f8f8f8;
-    font-size: 1.3rem;
+    fill: #24292f;
+    stroke: #24292f;
+    font-size: 2.2rem;
+  }
+  &:hover {
+    svg {
+      fill: #24292f;
+      stroke: #24292f;
+    }
   }
 }
 .live {
   border: 1.5px solid #171618;
-  flex: 2;
+  flex: 3;
 }
